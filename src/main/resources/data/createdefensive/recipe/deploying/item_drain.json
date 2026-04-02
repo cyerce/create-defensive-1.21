@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "create:copper_casing"
+    },
+    {
+      "item": "minecraft:iron_bars"
+    }
+  ],
+  "results": [
+    {
+      "id": "create:item_drain"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:copper_sheet"
+  },
+  "transitional_item": {
+    "id": "create:copper_sheet"
+  },
+  "loops": 1,
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:copper_sheet"
+        },
+        {
+          "item": "createdefensive:redstone_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:copper_sheet"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:copper_sheet"
+        },
+        {
+          "item": "minecraft:lightning_rod"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:copper_sheet"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:copper_sheet"
+        },
+        {
+          "tag": "c:wires/lv"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:copper_sheet"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "create:transmitter",
+      "count": 4
+    }
+  ]
+}

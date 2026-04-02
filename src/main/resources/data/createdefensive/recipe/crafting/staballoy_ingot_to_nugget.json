@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "c:ingots/staballoy"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "createdefensive:staballoy_nugget"
+  }
+}

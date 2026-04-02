@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "tag": "c:ingots/silver"
+  },
+  "base": {
+    "item": "minecraft:iron_helmet"
+  },
+  "result": {
+    "id": "createdefensive:silver_helmet"
+  },
+  "template": {
+    "item": "createdefensive:silver_upgrade_smithing_template"
+  }
+}

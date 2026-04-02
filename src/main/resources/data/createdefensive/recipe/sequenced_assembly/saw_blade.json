@@ -1,0 +1,59 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "tag": "c:ingots/iron"
+  },
+  "transitional_item": {
+    "id": "createdefensive:incomplete_saw_blade"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "createdefensive:saw_blade"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_saw_blade"
+        },
+        {
+          "tag": "c:plates/iron"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_saw_blade"
+        }
+      ]
+    },
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_saw_blade"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_saw_blade"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_saw_blade"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_saw_blade"
+        }
+      ]
+    }
+  ]
+}

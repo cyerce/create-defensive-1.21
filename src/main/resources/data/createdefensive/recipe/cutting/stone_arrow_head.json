@@ -1,0 +1,14 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "tag": "minecraft:stone_tool_materials"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:stone_arrow_head",
+      "count": 4
+    }
+  ]
+}

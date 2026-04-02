@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "create:refined_radiance"
+    },
+    {
+      "item": "create:shadow_steel"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:pyraen_ingot"
+    }
+  ]
+}

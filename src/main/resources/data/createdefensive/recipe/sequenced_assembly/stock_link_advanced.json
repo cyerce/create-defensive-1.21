@@ -1,0 +1,66 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:item_vault"
+  },
+  "transitional_item": {
+    "id": "create:item_vault"
+  },
+  "loops": 1,
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:item_vault"
+        },
+        {
+          "item": "createdefensive:logistic_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:item_vault"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:item_vault"
+        },
+        {
+          "tag": "c:wires/mv"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:item_vault"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:item_vault"
+        },
+        {
+          "item": "create:transmitter"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:item_vault"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "create:stock_link",
+      "count": 4
+    }
+  ]
+}

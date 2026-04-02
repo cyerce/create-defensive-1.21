@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "c:plates/gold"
+    },
+    {
+      "item": "createdefensive:spool"
+    },
+    {
+      "item": "createdefensive:spool"
+    },
+    {
+      "item": "createdefensive:spool"
+    },
+    {
+      "item": "createdefensive:spool"
+    },
+    {
+      "item": "createdefensive:spool"
+    },
+    {
+      "item": "createdefensive:spool"
+    },
+    {
+      "item": "createdefensive:spool"
+    },
+    {
+      "item": "createdefensive:spool"
+    }
+  ],
+  "result": {
+    "id": "createdefensive:gold_wire",
+    "count": 8
+  }
+}

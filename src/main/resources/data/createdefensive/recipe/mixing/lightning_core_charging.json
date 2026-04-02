@@ -1,0 +1,29 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createdefensive:uncharged_lightning_core"
+    },
+    {
+      "item": "createdefensive:redstone_crystal"
+    },
+    {
+      "item": "createdefensive:redstone_crystal"
+    },
+    {
+      "item": "createdefensive:redstone_crystal"
+    },
+    {
+      "item": "createdefensive:redstone_crystal"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:lightning_core"
+    },
+    {
+      "id": "createdefensive:inert_redstone_crystal",
+      "count": 4
+    }
+  ]
+}

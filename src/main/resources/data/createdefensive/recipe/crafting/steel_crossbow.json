@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "%": {
+      "item": "createdefensive:steel_cam"
+    },
+    "$": {
+      "tag": "c:ingots/steel"
+    },
+    "#": {
+      "tag": "c:strings"
+    },
+    "@": {
+      "item": "minecraft:tripwire_hook"
+    }
+  },
+  "pattern": [
+    "%$%",
+    "#@#",
+    " $ "
+  ],
+  "result": {
+    "id": "createdefensive:steel_crossbow"
+  }
+}

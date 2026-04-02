@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "tag": "c:ingots/silver"
+  },
+  "base": {
+    "item": "createdefensive:iron_zweihander"
+  },
+  "result": {
+    "id": "createdefensive:silver_zweihander"
+  },
+  "template": {
+    "item": "createdefensive:silver_upgrade_smithing_template"
+  }
+}

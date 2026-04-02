@@ -1,0 +1,14 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "tag": "c:plates/steel"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:electron_tube_pins",
+      "count": 16
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createdefensive:steel_sheet"
+  },
+  "transitional_item": {
+    "id": "createdefensive:incomplete_electron_tube"
+  },
+  "loops": 1,
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_electron_tube"
+        },
+        {
+          "item": "createdefensive:redstone_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_electron_tube"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_electron_tube"
+        },
+        {
+          "tag": "c:wires/mv"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_electron_tube"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_electron_tube"
+        },
+        {
+          "item": "create:polished_rose_quartz"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_electron_tube"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "create:electron_tube",
+      "count": 8
+    }
+  ]
+}
