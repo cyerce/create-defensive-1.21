@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "c:ingots/iron"
+    },
+    "$": {
+      "tag": "c:nuggets/iron"
+    }
+  },
+  "pattern": [
+    " $ ",
+    "$#$",
+    " $ "
+  ],
+  "result": {
+    "id": "createdefensive:iron_throwing_star"
+  }
+}

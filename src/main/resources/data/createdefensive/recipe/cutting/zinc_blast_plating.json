@@ -1,0 +1,14 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "create:zinc_block"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:zinc_blast_plating",
+      "count": 4
+    }
+  ]
+}

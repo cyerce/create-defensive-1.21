@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "%": {
+      "item": "createdefensive:diamond_cam"
+    },
+    "$": {
+      "tag": "c:gems/diamond"
+    },
+    "#": {
+      "tag": "c:strings"
+    },
+    "@": {
+      "item": "minecraft:tripwire_hook"
+    }
+  },
+  "pattern": [
+    "%$%",
+    "#@#",
+    " $ "
+  ],
+  "result": {
+    "id": "createdefensive:diamond_crossbow"
+  }
+}

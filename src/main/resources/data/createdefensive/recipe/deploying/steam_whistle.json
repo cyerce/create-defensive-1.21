@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "tag": "c:ingots/copper"
+    },
+    {
+      "tag": "c:plates/gold"
+    }
+  ],
+  "results": [
+    {
+      "id": "create:steam_whistle"
+    }
+  ]
+}

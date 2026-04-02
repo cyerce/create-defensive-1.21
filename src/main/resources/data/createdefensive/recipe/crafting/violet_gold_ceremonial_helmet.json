@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "c:ingots/purple_gold"
+    },
+    "$": {
+      "tag": "c:gems/diamond"
+    }
+  },
+  "pattern": [
+    "#$#",
+    "# #"
+  ],
+  "result": {
+    "id": "createdefensive:violet_gold_ceremonial_helmet"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createdefensive:powdered_raw_zinc"
+    }
+  ],
+  "results": [
+    {
+      "id": "create:zinc_nugget",
+      "count": 12
+    },
+    {
+      "id": "minecraft:gunpowder",
+      "count": 2,
+      "chance": 0.25
+    },
+    {
+      "id": "create:experience_nugget",
+      "chance": 0.75
+    }
+  ]
+}

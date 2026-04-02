@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "tag": "c:ingots/silver"
+  },
+  "base": {
+    "item": "createdefensive:iron_scythe"
+  },
+  "result": {
+    "id": "createdefensive:silver_scythe"
+  },
+  "template": {
+    "item": "createdefensive:silver_upgrade_smithing_template"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "createdefensive:steel_block"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:steel_blast_plating",
+      "count": 4
+    }
+  ]
+}

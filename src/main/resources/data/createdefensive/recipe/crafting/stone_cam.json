@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "minecraft:stone_tool_materials"
+    },
+    "$": {
+      "tag": "c:nuggets/iron"
+    }
+  },
+  "pattern": [
+    " $ ",
+    "$#$",
+    " $ "
+  ],
+  "result": {
+    "id": "createdefensive:stone_cam"
+  }
+}

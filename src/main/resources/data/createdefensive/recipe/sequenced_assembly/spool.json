@@ -1,0 +1,63 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "tag": "c:plates/iron"
+  },
+  "transitional_item": {
+    "id": "createdefensive:incomplete_spool"
+  },
+  "loops": 1,
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_spool"
+        },
+        {
+          "tag": "c:rods/iron"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_spool"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_spool"
+        },
+        {
+          "tag": "c:plates/iron"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_spool"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_spool"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_spool"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:spool",
+      "count": 4
+    }
+  ]
+}

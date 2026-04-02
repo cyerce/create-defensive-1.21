@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "createdefensive:polished_amethyst"
+  },
+  "result": {
+    "id": "createdefensive:amethyst_tiles",
+    "count": 2
+  }
+}

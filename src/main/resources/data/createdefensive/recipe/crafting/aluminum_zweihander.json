@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "@": {
+      "tag": "c:ingots/aluminum"
+    },
+    "#": {
+      "tag": "c:nuggets/aluminum"
+    },
+    "$": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    "  @",
+    "#@ ",
+    "$# "
+  ],
+  "result": {
+    "id": "createdefensive:aluminum_zweihander"
+  }
+}

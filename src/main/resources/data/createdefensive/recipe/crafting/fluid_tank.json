@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:barrel"
+    },
+    "@": {
+      "tag": "c:plates/bronze"
+    }
+  },
+  "pattern": [
+    "@",
+    "#",
+    "@"
+  ],
+  "result": {
+    "id": "create:fluid_tank",
+    "count": 16
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "minecraft:granite"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:granite_shard"
+    },
+    {
+      "id": "createdefensive:granite_shard",
+      "chance": 0.5
+    }
+  ]
+}

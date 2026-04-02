@@ -1,0 +1,65 @@
+{
+  "type": "create:sequenced_assembly",
+  "transitional_item": {
+    "id": "createdefensive:incomplete_advanced_circuit"
+  },
+  "ingredient": {
+    "item": "createdefensive:basic_circuit"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_advanced_circuit"
+        },
+        {
+          "tag": "c:wires/silver"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_advanced_circuit"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_advanced_circuit"
+        },
+        {
+          "tag": "c:wires/gold"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_advanced_circuit"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_advanced_circuit"
+        },
+        {
+          "item": "create:electron_tube"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_advanced_circuit"
+        }
+      ]
+    }
+  ],
+  "loops": 3,
+  "results": [
+    {
+      "id": "createdefensive:advanced_circuit"
+    }
+  ]
+}

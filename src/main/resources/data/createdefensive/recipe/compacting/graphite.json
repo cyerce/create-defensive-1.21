@@ -1,0 +1,14 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "tag": "c:dusts/carbon"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:graphite",
+      "chance": 0.5
+    }
+  ]
+}

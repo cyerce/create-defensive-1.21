@@ -1,0 +1,38 @@
+{
+  "type": "create:compacting",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "item": "createdefensive:diamond_shard"
+    },
+    {
+      "item": "createdefensive:diamond_shard"
+    },
+    {
+      "item": "createdefensive:diamond_shard"
+    },
+    {
+      "item": "createdefensive:diamond_shard"
+    },
+    {
+      "item": "createdefensive:diamond_shard"
+    },
+    {
+      "item": "createdefensive:diamond_shard"
+    },
+    {
+      "item": "createdefensive:diamond_shard"
+    },
+    {
+      "item": "createdefensive:diamond_shard"
+    },
+    {
+      "item": "createdefensive:diamond_shard"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:diamond"
+    }
+  ]
+}

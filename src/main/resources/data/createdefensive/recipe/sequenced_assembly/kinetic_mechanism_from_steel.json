@@ -1,0 +1,63 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "tag": "c:plates/steel"
+  },
+  "transitional_item": {
+    "id": "createdefensive:incomplete_kinetic_mechanism"
+  },
+  "loops": 1,
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_kinetic_mechanism"
+        },
+        {
+          "item": "create:cogwheel"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_kinetic_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_kinetic_mechanism"
+        },
+        {
+          "tag": "c:nuggets/steel"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_kinetic_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_kinetic_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_kinetic_mechanism"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:kinetic_mechanism",
+      "count": 4
+    }
+  ]
+}

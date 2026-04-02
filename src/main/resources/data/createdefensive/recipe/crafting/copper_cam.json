@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "c:ingots/copper"
+    },
+    "$": {
+      "tag": "c:nuggets/iron"
+    }
+  },
+  "pattern": [
+    " $ ",
+    "$#$",
+    " $ "
+  ],
+  "result": {
+    "id": "createdefensive:copper_cam"
+  }
+}

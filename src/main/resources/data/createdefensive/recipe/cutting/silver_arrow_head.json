@@ -1,0 +1,14 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "tag": "c:ingots/silver"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:silver_arrow_head",
+      "count": 4
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "tag": "c:ingots/platinum"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:platinum_arrow_head",
+      "count": 4
+    }
+  ]
+}

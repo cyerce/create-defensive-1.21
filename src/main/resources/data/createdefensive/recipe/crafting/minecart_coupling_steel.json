@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "create:andesite_alloy"
+    },
+    "@": {
+      "tag": "c:plates/steel"
+    }
+  },
+  "pattern": [
+    "  #",
+    " @ ",
+    "#  "
+  ],
+  "result": {
+    "id": "create:minecart_coupling",
+    "count": 4
+  }
+}

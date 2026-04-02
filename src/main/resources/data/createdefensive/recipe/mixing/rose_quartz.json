@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "minecraft:quartz"
+    },
+    {
+      "item": "createdefensive:redstone_crystal_cluster"
+    }
+  ],
+  "results": [
+    {
+      "id": "create:rose_quartz"
+    }
+  ]
+}

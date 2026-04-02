@@ -1,0 +1,23 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createdefensive:powdered_raw_uranium"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:uranium_nugget",
+      "count": 12
+    },
+    {
+      "id": "minecraft:amethyst_shard",
+      "count": 2,
+      "chance": 0.25
+    },
+    {
+      "id": "create:experience_nugget",
+      "chance": 0.75
+    }
+  ]
+}

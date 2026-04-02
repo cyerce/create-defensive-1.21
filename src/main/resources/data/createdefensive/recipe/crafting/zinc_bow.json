@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "c:ingots/zinc"
+    },
+    "$": {
+      "tag": "c:strings"
+    },
+    "%": {
+      "item": "createdefensive:zinc_cam"
+    }
+  },
+  "pattern": [
+    " #%",
+    "# $",
+    "%$ "
+  ],
+  "result": {
+    "id": "createdefensive:zinc_bow"
+  }
+}

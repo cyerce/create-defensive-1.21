@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "part=top_double_corner,size=medium": {
+      "model": "createdefensive:medium_steel_bell_top_double_corner"
+    },
+    "part=top_corner,size=medium": {
+      "model": "createdefensive:medium_steel_bell_top_corner"
+    },
+    "part=top,size=medium": {
+      "model": "createdefensive:medium_steel_bell_top"
+    },
+    "part=side,size=medium": {
+      "model": "createdefensive:medium_steel_bell_side"
+    },
+    "part=corner,size=medium": {
+      "model": "createdefensive:medium_steel_bell_corner"
+    },
+    "part=lip_side,size=medium": {
+      "model": "createdefensive:medium_steel_bell_lip_side"
+    },
+    "part=lip_corner,size=medium": {
+      "model": "createdefensive:medium_steel_bell_lip_corner"
+    },
+    "part=top_double_corner,size=large": {
+      "model": "createdefensive:large_steel_bell_top_double_corner"
+    },
+    "part=top_corner,size=large": {
+      "model": "createdefensive:large_steel_bell_top_corner"
+    },
+    "part=top,size=large": {
+      "model": "createdefensive:large_steel_bell_top"
+    },
+    "part=top_middle,size=large": {
+      "model": "createdefensive:large_steel_bell_top_middle"
+    },
+    "part=side,size=large": {
+      "model": "createdefensive:large_steel_bell_side"
+    },
+    "part=corner,size=large": {
+      "model": "createdefensive:large_steel_bell_corner"
+    },
+    "part=lip_side,size=large": {
+      "model": "createdefensive:large_steel_bell_lip_side"
+    },
+    "part=lip_corner,size=large": {
+      "model": "createdefensive:large_steel_bell_lip_corner"
+    },
+    "part=unassembled,size=unassembled": {
+      "model": "createdefensive:steel_bellmetal"
+    }
+  }
+}

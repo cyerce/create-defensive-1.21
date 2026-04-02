@@ -1,0 +1,98 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createdefensive:uncharged_power_core"
+  },
+  "transitional_item": {
+    "id": "createdefensive:incomplete_lightning_core"
+  },
+  "loops": 5,
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_lightning_core"
+        },
+        {
+          "item": "createdefensive:advanced_circuit"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_lightning_core"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_lightning_core"
+        },
+        {
+          "tag": "c:plates/electrum"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_lightning_core"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_lightning_core"
+        },
+        {
+          "tag": "c:wires/copper"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_lightning_core"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_lightning_core"
+        },
+        {
+          "tag": "c:wires/zinc"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_lightning_core"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:uncharged_lightning_core",
+      "chance": 120.0
+    },
+    {
+      "id": "createdefensive:uncharged_power_core",
+      "chance": 15.0
+    },
+    {
+      "id": "createdefensive:electrum_sheet",
+      "chance": 10.0
+    },
+    {
+      "id": "createdefensive:copper_wire",
+      "chance": 2.5
+    },
+    {
+      "id": "createdefensive:zinc_wire",
+      "chance": 2.5
+    }
+  ]
+}

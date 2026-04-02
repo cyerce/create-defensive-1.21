@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "c:gems/diamond"
+  },
+  "result": {
+    "id": "createdefensive:small_diamond_tiles",
+    "count": 2
+  }
+}

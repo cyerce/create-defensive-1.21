@@ -1,0 +1,65 @@
+{
+  "type": "create:sequenced_assembly",
+  "transitional_item": {
+    "id": "createdefensive:incomplete_basic_power_core"
+  },
+  "ingredient": {
+    "item": "createdefensive:aluminum_power_armor_components"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_basic_power_core"
+        },
+        {
+          "tag": "c:wires/copper"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_basic_power_core"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_basic_power_core"
+        },
+        {
+          "tag": "c:wires/zinc"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_basic_power_core"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_basic_power_core"
+        },
+        {
+          "item": "createdefensive:redstone_capacitor"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_basic_power_core"
+        }
+      ]
+    }
+  ],
+  "loops": 1,
+  "results": [
+    {
+      "id": "createdefensive:uncharged_basic_power_core"
+    }
+  ]
+}

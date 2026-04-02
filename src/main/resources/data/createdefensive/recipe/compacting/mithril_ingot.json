@@ -1,0 +1,38 @@
+{
+  "type": "create:compacting",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "tag": "c:plates/aluminum"
+    },
+    {
+      "tag": "c:plates/aluminum"
+    },
+    {
+      "tag": "c:plates/aluminum"
+    },
+    {
+      "tag": "c:plates/aluminum"
+    },
+    {
+      "tag": "c:plates/aluminum"
+    },
+    {
+      "tag": "c:plates/aluminum"
+    },
+    {
+      "tag": "c:plates/aluminum"
+    },
+    {
+      "tag": "c:plates/aluminum"
+    },
+    {
+      "tag": "c:plates/aluminum"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:mithril_ingot"
+    }
+  ]
+}

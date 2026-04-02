@@ -1,0 +1,17 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "create:limestone"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:limestone_shard"
+    },
+    {
+      "id": "createdefensive:limestone_shard",
+      "chance": 0.5
+    }
+  ]
+}

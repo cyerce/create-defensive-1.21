@@ -1,0 +1,63 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "tag": "c:plates/bronze"
+  },
+  "transitional_item": {
+    "id": "createdefensive:incomplete_hydraulic_mechanism"
+  },
+  "loops": 1,
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_hydraulic_mechanism"
+        },
+        {
+          "item": "create:fluid_pipe"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_hydraulic_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_hydraulic_mechanism"
+        },
+        {
+          "tag": "c:nuggets/bronze"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_hydraulic_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_hydraulic_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_hydraulic_mechanism"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:hydraulic_mechanism",
+      "count": 4
+    }
+  ]
+}

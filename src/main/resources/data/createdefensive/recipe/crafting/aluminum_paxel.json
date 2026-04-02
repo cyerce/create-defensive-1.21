@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "c:rods/wooden"
+    },
+    "$": {
+      "tag": "c:ingots/aluminum"
+    }
+  },
+  "pattern": [
+    "$$$",
+    " #$",
+    "$  "
+  ],
+  "result": {
+    "id": "createdefensive:aluminum_paxel"
+  }
+}

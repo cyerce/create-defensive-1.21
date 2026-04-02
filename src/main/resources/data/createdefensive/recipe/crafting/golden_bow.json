@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "c:ingots/gold"
+    },
+    "$": {
+      "tag": "c:strings"
+    },
+    "%": {
+      "item": "createdefensive:golden_cam"
+    }
+  },
+  "pattern": [
+    " #%",
+    "# $",
+    "%$ "
+  ],
+  "result": {
+    "id": "createdefensive:golden_bow"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "createdefensive:polished_redstone_crystal"
+  },
+  "result": {
+    "id": "createdefensive:redstone_tiles",
+    "count": 2
+  }
+}

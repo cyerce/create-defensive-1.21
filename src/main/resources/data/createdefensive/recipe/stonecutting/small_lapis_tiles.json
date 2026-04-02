@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "c:gems/lapis"
+  },
+  "result": {
+    "id": "createdefensive:small_lapis_tiles",
+    "count": 2
+  }
+}

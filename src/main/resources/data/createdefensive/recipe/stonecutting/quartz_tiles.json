@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "c:gems/quartz"
+  },
+  "result": {
+    "id": "createdefensive:quartz_tiles",
+    "count": 2
+  }
+}

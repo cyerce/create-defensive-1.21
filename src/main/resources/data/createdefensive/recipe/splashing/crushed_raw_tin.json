@@ -1,0 +1,18 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "create:crushed_raw_tin"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:tin_nugget",
+      "count": 9
+    },
+    {
+      "id": "minecraft:gravel",
+      "chance": 0.75
+    }
+  ]
+}

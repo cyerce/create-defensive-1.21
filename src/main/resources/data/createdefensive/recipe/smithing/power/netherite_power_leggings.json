@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "createdefensive:advanced_circuit"
+  },
+  "base": {
+    "item": "createdefensive:pyraen_leggings"
+  },
+  "result": {
+    "id": "createdefensive:netherite_power_leggings"
+  },
+  "template": {
+    "item": "createdefensive:netherite_power_armor_components"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "c:ingots/iron"
+    },
+    "$": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "# ",
+    "#$",
+    " $"
+  ],
+  "result": {
+    "id": "createdefensive:iron_glaive"
+  }
+}

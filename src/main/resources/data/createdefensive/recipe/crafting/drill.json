@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "$": {
+      "tag": "c:plates/iron"
+    },
+    "#": {
+      "item": "create:andesite_alloy"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#$#",
+    "#$#"
+  ],
+  "result": {
+    "id": "createdefensive:drill",
+    "count": 2
+  }
+}

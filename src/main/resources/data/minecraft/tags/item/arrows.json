@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "createdefensive:aluminum_arrow",
+    "createdefensive:silver_arrow",
+    "createdefensive:platinum_arrow",
+    "createdefensive:steel_arrow",
+    "createdefensive:copper_arrow",
+    "createdefensive:zinc_arrow",
+    "createdefensive:brass_arrow",
+    "createdefensive:rose_quartz_arrow",
+    "createdefensive:wooden_arrow",
+    "createdefensive:stone_arrow",
+    "createdefensive:iron_arrow",
+    "createdefensive:golden_arrow",
+    "createdefensive:diamond_arrow",
+    "createdefensive:netherite_arrow",
+    "createdefensive:electrum_arrow",
+    "createdefensive:stardust_arrow",
+    "createdefensive:pyraen_arrow"
+  ]
+}

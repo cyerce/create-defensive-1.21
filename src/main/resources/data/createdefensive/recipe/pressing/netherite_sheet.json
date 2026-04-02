@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "c:ingots/netherite"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:netherite_sheet"
+    }
+  ]
+}

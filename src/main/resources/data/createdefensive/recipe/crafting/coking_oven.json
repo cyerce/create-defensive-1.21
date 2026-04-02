@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "createdefensive:compact_industrial_iron_block"
+    },
+    "$": {
+      "item": "minecraft:blast_furnace"
+    },
+    "@": {
+      "item": "minecraft:smooth_stone"
+    }
+  },
+  "pattern": [
+    "###",
+    "#$#",
+    "@@@"
+  ],
+  "result": {
+    "id": "createdefensive:coking_oven"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:iron_sheet"
+  },
+  "transitional_item": {
+    "id": "createdefensive:incomplete_electron_tube"
+  },
+  "loops": 1,
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:iron_sheet"
+        },
+        {
+          "item": "createdefensive:redstone_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:iron_sheet"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:iron_sheet"
+        },
+        {
+          "tag": "c:wires/lv"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:iron_sheet"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:iron_sheet"
+        },
+        {
+          "item": "create:polished_rose_quartz"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:iron_sheet"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "create:electron_tube",
+      "count": 4
+    }
+  ]
+}

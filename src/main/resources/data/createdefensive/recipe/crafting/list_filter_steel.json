@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "minecraft:wool"
+    },
+    "@": {
+      "tag": "c:nuggets/steel"
+    }
+  },
+  "pattern": [
+    "@#@"
+  ],
+  "result": {
+    "id": "create:filter",
+    "count": 4
+  }
+}

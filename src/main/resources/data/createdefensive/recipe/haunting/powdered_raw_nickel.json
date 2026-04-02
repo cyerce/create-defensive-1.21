@@ -1,0 +1,23 @@
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "createdefensive:powdered_raw_nickel"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:nickel_nugget",
+      "count": 9
+    },
+    {
+      "id": "minecraft:iron_nugget",
+      "count": 3
+    },
+    {
+      "id": "minecraft:basalt",
+      "count": 2,
+      "chance": 0.5
+    }
+  ]
+}

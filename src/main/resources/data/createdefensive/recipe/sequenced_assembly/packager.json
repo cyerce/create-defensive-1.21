@@ -1,0 +1,79 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:cardboard_block"
+  },
+  "transitional_item": {
+    "id": "create:cardboard_block"
+  },
+  "loops": 1,
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:cardboard_block"
+        },
+        {
+          "item": "createdefensive:logistic_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:cardboard_block"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:cardboard_block"
+        },
+        {
+          "tag": "c:ingots/iron"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:cardboard_block"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:cardboard_block"
+        },
+        {
+          "tag": "c:ingots/iron"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:cardboard_block"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "create:cardboard_block"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:cardboard_block"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "create:packager",
+      "count": 4
+    }
+  ]
+}

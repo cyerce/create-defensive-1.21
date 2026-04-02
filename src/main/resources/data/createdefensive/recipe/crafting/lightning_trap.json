@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "create:industrial_iron_block"
+    },
+    "$": {
+      "item": "minecraft:iron_bars"
+    },
+    "@": {
+      "item": "createdefensive:lightning_core"
+    },
+    "%": {
+      "item": "createdefensive:advanced_circuit"
+    },
+    "^": {
+      "tag": "c:rods/cathode"
+    },
+    "&": {
+      "tag": "c:rods/anode"
+    }
+  },
+  "pattern": [
+    "^$&",
+    "%@%",
+    "###"
+  ],
+  "result": {
+    "id": "createdefensive:lightning_trap"
+  }
+}

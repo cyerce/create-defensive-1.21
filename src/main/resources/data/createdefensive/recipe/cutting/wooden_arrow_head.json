@@ -1,0 +1,14 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "tag": "minecraft:planks"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:wooden_arrow_head",
+      "count": 4
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "c:rods/wooden"
+    },
+    "$": {
+      "tag": "c:gems/diamond"
+    }
+  },
+  "pattern": [
+    "$$$",
+    "$# ",
+    " $ "
+  ],
+  "result": {
+    "id": "createdefensive:diamond_mattock"
+  }
+}

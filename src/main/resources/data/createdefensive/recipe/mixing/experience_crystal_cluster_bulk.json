@@ -1,0 +1,42 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "createdefensive:experience_crystal"
+    },
+    {
+      "item": "createdefensive:experience_crystal"
+    },
+    {
+      "item": "createdefensive:experience_crystal"
+    },
+    {
+      "item": "createdefensive:experience_crystal"
+    },
+    {
+      "item": "createdefensive:experience_crystal"
+    },
+    {
+      "item": "createdefensive:experience_crystal"
+    },
+    {
+      "item": "createdefensive:experience_crystal"
+    },
+    {
+      "item": "createdefensive:experience_crystal"
+    },
+    {
+      "item": "createdefensive:experience_crystal"
+    },
+    {
+      "tag": "c:storage_blocks/lapis"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:experience_crystal_cluster",
+      "count": 9
+    }
+  ]
+}

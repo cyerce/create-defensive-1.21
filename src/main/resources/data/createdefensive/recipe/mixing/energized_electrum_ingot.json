@@ -1,0 +1,20 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "tag": "c:ingots/electrum"
+    },
+    {
+      "item": "minecraft:netherite_scrap"
+    },
+    {
+      "item": "create:polished_rose_quartz"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:energized_electrum_ingot"
+    }
+  ]
+}

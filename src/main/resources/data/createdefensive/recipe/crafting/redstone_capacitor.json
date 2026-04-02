@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "create:sturdy_sheet"
+    },
+    "$": {
+      "tag": "c:wires/gold"
+    },
+    "@": {
+      "item": "createdefensive:redstone_crystal_cluster"
+    }
+  },
+  "pattern": [
+    "#$#",
+    "#@#",
+    "#$#"
+  ],
+  "result": {
+    "id": "createdefensive:redstone_capacitor"
+  }
+}

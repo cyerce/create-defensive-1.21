@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "minecraft:stone_tool_materials"
+    },
+    "$": {
+      "tag": "c:dusts/redstone"
+    },
+    "@": {
+      "tag": "c:ingots/steel"
+    },
+    "!": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "!!!",
+    "#@#",
+    "#$#"
+  ],
+  "result": {
+    "id": "minecraft:piston",
+    "count": 4
+  }
+}

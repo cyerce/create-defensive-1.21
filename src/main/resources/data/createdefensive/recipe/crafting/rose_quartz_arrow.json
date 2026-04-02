@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "createdefensive:rose_quartz_arrow_head"
+    },
+    "$": {
+      "item": "createdefensive:rose_quartz_rod"
+    },
+    "@": {
+      "item": "minecraft:feather"
+    }
+  },
+  "pattern": [
+    "#",
+    "$",
+    "@"
+  ],
+  "result": {
+    "id": "createdefensive:rose_quartz_arrow",
+    "count": 4
+  }
+}

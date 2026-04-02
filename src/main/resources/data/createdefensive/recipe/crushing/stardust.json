@@ -1,0 +1,29 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:nether_star"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:yellow_stardust",
+      "count": 2
+    },
+    {
+      "id": "createdefensive:yellow_stardust",
+      "count": 2,
+      "chance": 0.25
+    },
+    {
+      "id": "createdefensive:blue_stardust",
+      "count": 2
+    },
+    {
+      "id": "createdefensive:blue_stardust",
+      "count": 2,
+      "chance": 0.25
+    }
+  ],
+  "processingTime": 250
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "c:ingots/brass"
+    },
+    "$": {
+      "tag": "c:strings"
+    },
+    "%": {
+      "item": "createdefensive:brass_cam"
+    }
+  },
+  "pattern": [
+    " #%",
+    "# $",
+    "%$ "
+  ],
+  "result": {
+    "id": "createdefensive:brass_bow"
+  }
+}

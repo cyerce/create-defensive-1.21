@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "c:ingots/steel"
+    },
+    "$": {
+      "tag": "c:dusts/redstone"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#$#",
+    " # "
+  ],
+  "result": {
+    "id": "minecraft:compass",
+    "count": 4
+  }
+}

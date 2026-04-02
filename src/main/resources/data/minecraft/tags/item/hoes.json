@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "createdefensive:aluminum_hoe",
+    "createdefensive:silver_hoe",
+    "createdefensive:platinum_hoe",
+    "createdefensive:steel_hoe",
+    "createdefensive:copper_hoe",
+    "createdefensive:zinc_hoe",
+    "createdefensive:brass_hoe",
+    "createdefensive:rose_quartz_hoe",
+    "createdefensive:electrum_hoe",
+    "createdefensive:stardust_hoe",
+    "createdefensive:pyraen_hoe"
+  ]
+}

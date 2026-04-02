@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "createdefensive:small_quartz_tiles"
+    }
+  ],
+  "result": {
+    "id": "createdefensive:quartz_tiles"
+  }
+}

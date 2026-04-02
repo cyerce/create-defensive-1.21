@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "createdefensive:unstable_stardust_blend"
+    },
+    {
+      "item": "createdefensive:crimson_essence"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:stardust_blend"
+    }
+  ]
+}

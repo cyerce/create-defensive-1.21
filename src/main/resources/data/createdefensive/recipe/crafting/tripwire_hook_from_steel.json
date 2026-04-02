@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "c:ingots/steel"
+    },
+    "$": {
+      "item": "minecraft:stick"
+    },
+    "@": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "#",
+    "$",
+    "@"
+  ],
+  "result": {
+    "id": "minecraft:tripwire_hook",
+    "count": 8
+  }
+}

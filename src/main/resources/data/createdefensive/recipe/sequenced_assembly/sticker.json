@@ -1,0 +1,66 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createdefensive:redstone_mechanism"
+  },
+  "transitional_item": {
+    "id": "createdefensive:redstone_mechanism"
+  },
+  "loops": 1,
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdefensive:redstone_mechanism"
+        },
+        {
+          "item": "create:andesite_alloy"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:redstone_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdefensive:redstone_mechanism"
+        },
+        {
+          "tag": "c:cobblestone"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:redstone_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdefensive:redstone_mechanism"
+        },
+        {
+          "tag": "c:slimeballs"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:redstone_mechanism"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "create:sticker",
+      "count": 4
+    }
+  ]
+}

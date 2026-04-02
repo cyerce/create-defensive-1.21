@@ -1,0 +1,18 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "create:crushed_raw_silver"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:silver_nugget",
+      "count": 9
+    },
+    {
+      "id": "minecraft:prismarine_crystals",
+      "chance": 0.25
+    }
+  ]
+}

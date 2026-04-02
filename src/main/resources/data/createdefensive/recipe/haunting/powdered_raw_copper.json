@@ -1,0 +1,23 @@
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "createdefensive:powdered_raw_copper"
+    }
+  ],
+  "results": [
+    {
+      "id": "create:copper_nugget",
+      "count": 9
+    },
+    {
+      "id": "minecraft:gold_nugget",
+      "count": 3
+    },
+    {
+      "id": "minecraft:clay",
+      "count": 2,
+      "chance": 0.5
+    }
+  ]
+}

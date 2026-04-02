@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "c:ingots/brass"
+    },
+    "$": {
+      "tag": "c:nuggets/brass"
+    }
+  },
+  "pattern": [
+    "$$$",
+    "###"
+  ],
+  "result": {
+    "id": "createdefensive:brass_crown"
+  }
+}

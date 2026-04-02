@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "c:ingots/gold"
+    },
+    "$": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " ##",
+    " ##",
+    "$  "
+  ],
+  "result": {
+    "id": "createdefensive:golden_morningstar"
+  }
+}

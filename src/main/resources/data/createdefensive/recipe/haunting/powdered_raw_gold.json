@@ -1,0 +1,23 @@
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "createdefensive:powdered_raw_gold"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:gold_nugget",
+      "count": 9
+    },
+    {
+      "id": "createdefensive:silver_nugget",
+      "count": 3
+    },
+    {
+      "id": "minecraft:quartz",
+      "count": 2,
+      "chance": 0.5
+    }
+  ]
+}

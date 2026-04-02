@@ -1,0 +1,60 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "tag": "c:storage_blocks/brass"
+  },
+  "transitional_item": {
+    "id": "createdefensive:incomplete_brass_hand"
+  },
+  "loops": 1,
+  "sequence": [
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_brass_hand"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_brass_hand"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_brass_hand"
+        },
+        {
+          "tag": "c:plates/andesite_alloy"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_brass_hand"
+        }
+      ]
+    },
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_brass_hand"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_brass_hand"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "create:brass_hand",
+      "count": 3
+    }
+  ]
+}

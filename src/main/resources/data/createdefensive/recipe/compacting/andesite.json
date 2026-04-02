@@ -1,0 +1,17 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "minecraft:andesite"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:andesite_shard"
+    },
+    {
+      "id": "createdefensive:andesite_shard",
+      "chance": 0.5
+    }
+  ]
+}

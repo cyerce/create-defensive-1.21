@@ -1,0 +1,66 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:stock_link"
+  },
+  "transitional_item": {
+    "id": "create:stock_link"
+  },
+  "loops": 1,
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:stock_link"
+        },
+        {
+          "item": "createdefensive:logistic_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:stock_link"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:stock_link"
+        },
+        {
+          "tag": "c:ingots/gold"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:stock_link"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:stock_link"
+        },
+        {
+          "tag": "c:glass"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:stock_link"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "create:stock_ticker",
+      "count": 4
+    }
+  ]
+}

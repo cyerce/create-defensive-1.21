@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "@": {
+      "tag": "c:ingots/zinc"
+    },
+    "#": {
+      "tag": "c:nuggets/zinc"
+    },
+    "$": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    "  @",
+    "#@ ",
+    "$# "
+  ],
+  "result": {
+    "id": "createdefensive:zinc_zweihander"
+  }
+}

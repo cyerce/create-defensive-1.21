@@ -1,0 +1,14 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "tag": "c:gems/diamond"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:diamond_arrow_head",
+      "count": 6
+    }
+  ]
+}

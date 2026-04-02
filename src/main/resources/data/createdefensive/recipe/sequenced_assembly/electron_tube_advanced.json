@@ -1,0 +1,79 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createdefensive:electron_tube_base"
+  },
+  "transitional_item": {
+    "id": "createdefensive:incomplete_electron_tube"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "create:electron_tube",
+      "count": 4
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_electron_tube"
+        },
+        {
+          "item": "createdefensive:electron_tube_pins"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_electron_tube"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_electron_tube"
+        },
+        {
+          "item": "createdefensive:basic_circuit"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_electron_tube"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_electron_tube"
+        },
+        {
+          "item": "createdefensive:electron_tube_bulb"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_electron_tube"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_electron_tube"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_electron_tube"
+        }
+      ]
+    }
+  ]
+}

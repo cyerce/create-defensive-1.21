@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "c:plates/steel"
+    },
+    "$": {
+      "tag": "c:ingots/steel"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#$#",
+    " # "
+  ],
+  "result": {
+    "id": "createdefensive:saw_blade",
+    "count": 8
+  }
+}

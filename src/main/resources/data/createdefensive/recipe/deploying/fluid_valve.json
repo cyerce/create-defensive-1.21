@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "create:fluid_pipe"
+    },
+    {
+      "tag": "c:plates/iron"
+    }
+  ],
+  "results": [
+    {
+      "id": "create:fluid_valve"
+    }
+  ]
+}

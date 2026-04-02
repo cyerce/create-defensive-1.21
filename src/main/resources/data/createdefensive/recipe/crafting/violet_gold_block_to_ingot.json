@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "c:storage_blocks/purple_gold"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "createdefensive:violet_gold_ingot"
+  }
+}

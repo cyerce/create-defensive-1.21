@@ -1,0 +1,62 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createdefensive:bullet_casing"
+  },
+  "transitional_item": {
+    "id": "createdefensive:bullet_casing"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "createdefensive:large_bullet"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdefensive:bullet_casing"
+        },
+        {
+          "item": "createdefensive:gunpowder_pinch"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:bullet_casing"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdefensive:bullet_casing"
+        },
+        {
+          "item": "createdefensive:large_bullet_tip"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:bullet_casing"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createdefensive:bullet_casing"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:bullet_casing"
+        }
+      ]
+    }
+  ]
+}

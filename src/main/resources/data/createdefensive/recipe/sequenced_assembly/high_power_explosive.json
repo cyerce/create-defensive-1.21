@@ -1,0 +1,78 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:tnt"
+  },
+  "transitional_item": {
+    "id": "minecraft:tnt"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:tnt"
+        },
+        {
+          "item": "minecraft:gunpowder"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:tnt"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:tnt"
+        },
+        {
+          "item": "minecraft:paper"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:tnt"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:tnt"
+        },
+        {
+          "item": "minecraft:sand"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:tnt"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "minecraft:tnt"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:tnt"
+        }
+      ]
+    }
+  ],
+  "loops": 5,
+  "results": [
+    {
+      "id": "createdefensive:high_power_explosive"
+    }
+  ]
+}

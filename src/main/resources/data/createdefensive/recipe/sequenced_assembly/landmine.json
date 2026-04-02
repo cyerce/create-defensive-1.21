@@ -1,0 +1,66 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:industrial_iron_block"
+  },
+  "transitional_item": {
+    "id": "create:industrial_iron_block"
+  },
+  "loops": 1,
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:industrial_iron_block"
+        },
+        {
+          "item": "createdefensive:redstone_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:industrial_iron_block"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:industrial_iron_block"
+        },
+        {
+          "item": "minecraft:tnt"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:industrial_iron_block"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:industrial_iron_block"
+        },
+        {
+          "tag": "c:wires/lv"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:industrial_iron_block"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:landmine",
+      "count": 4
+    }
+  ]
+}

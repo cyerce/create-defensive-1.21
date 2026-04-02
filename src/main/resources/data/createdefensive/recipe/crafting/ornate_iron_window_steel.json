@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "c:glass_blocks/colorless"
+    },
+    "@": {
+      "tag": "c:nuggets/steel"
+    }
+  },
+  "pattern": [
+    " @ ",
+    "@#@"
+  ],
+  "result": {
+    "id": "create:ornate_iron_window",
+    "count": 8
+  }
+}

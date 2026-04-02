@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "c:ingots/bronze"
+    },
+    "@": {
+      "tag": "c:plates/bronze"
+    }
+  },
+  "pattern": [
+    "@#@"
+  ],
+  "result": {
+    "id": "create:fluid_pipe",
+    "count": 16
+  }
+}

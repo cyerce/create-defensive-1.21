@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "%": {
+      "item": "createdefensive:golden_cam"
+    },
+    "$": {
+      "tag": "c:ingots/gold"
+    },
+    "#": {
+      "tag": "c:strings"
+    },
+    "@": {
+      "item": "minecraft:tripwire_hook"
+    }
+  },
+  "pattern": [
+    "%$%",
+    "#@#",
+    " $ "
+  ],
+  "result": {
+    "id": "createdefensive:golden_crossbow"
+  }
+}

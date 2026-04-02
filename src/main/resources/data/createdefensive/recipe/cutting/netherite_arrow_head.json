@@ -1,0 +1,14 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "tag": "c:ingots/netherite"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:netherite_arrow_head",
+      "count": 8
+    }
+  ]
+}

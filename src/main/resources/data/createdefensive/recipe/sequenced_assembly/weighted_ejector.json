@@ -1,0 +1,66 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:depot"
+  },
+  "transitional_item": {
+    "id": "create:depot"
+  },
+  "loops": 1,
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:depot"
+        },
+        {
+          "item": "createdefensive:kinetic_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:depot"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:depot"
+        },
+        {
+          "item": "create:cogwheel"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:deploying"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:depot"
+        },
+        {
+          "tag": "c:plates/gold"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:depot"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "create:weighted_ejector",
+      "count": 4
+    }
+  ]
+}

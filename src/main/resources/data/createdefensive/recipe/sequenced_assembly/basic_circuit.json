@@ -1,0 +1,49 @@
+{
+  "type": "create:sequenced_assembly",
+  "transitional_item": {
+    "id": "createdefensive:incomplete_basic_circuit"
+  },
+  "ingredient": {
+    "tag": "c:plates/aluminum"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_basic_circuit"
+        },
+        {
+          "tag": "c:wires/copper"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_basic_circuit"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_basic_circuit"
+        },
+        {
+          "tag": "c:wires/zinc"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_basic_circuit"
+        }
+      ]
+    }
+  ],
+  "loops": 3,
+  "results": [
+    {
+      "id": "createdefensive:basic_circuit"
+    }
+  ]
+}

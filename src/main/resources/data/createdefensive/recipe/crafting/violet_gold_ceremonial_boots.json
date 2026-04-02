@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "c:ingots/purple_gold"
+    }
+  },
+  "pattern": [
+    "# #"
+  ],
+  "result": {
+    "id": "createdefensive:violet_gold_ceremonial_boots"
+  }
+}

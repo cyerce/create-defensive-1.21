@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "c:plates/zinc"
+    },
+    {
+      "item": "createdefensive:spool"
+    },
+    {
+      "item": "createdefensive:spool"
+    },
+    {
+      "item": "createdefensive:spool"
+    },
+    {
+      "item": "createdefensive:spool"
+    },
+    {
+      "item": "createdefensive:spool"
+    },
+    {
+      "item": "createdefensive:spool"
+    },
+    {
+      "item": "createdefensive:spool"
+    },
+    {
+      "item": "createdefensive:spool"
+    }
+  ],
+  "result": {
+    "id": "createdefensive:zinc_wire",
+    "count": 8
+  }
+}

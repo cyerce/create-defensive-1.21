@@ -1,0 +1,6 @@
+{
+  "still": "minecraft:block/water_still",
+  "flowing": "minecraft:block/water_flow",
+  "overlay": "minecraft:block/water_flow",
+  "color": -1593833093
+}

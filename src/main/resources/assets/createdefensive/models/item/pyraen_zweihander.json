@@ -1,0 +1,32 @@
+{
+  "format_version": "1.21.6",
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "createdefensive:item/pyraen_zweihander"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [0, -90, 55],
+      "translation": [0, 15, -1],
+      "scale": [2, 2, 1]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [0, 90, -55],
+      "translation": [0, 15, -1],
+      "scale": [2, 2, 1]
+    },
+    "firstperson_righthand": {
+      "rotation": [-20, -90, 10],
+      "translation": [5, 20, 0],
+      "scale": [3, 3, 1]
+    },
+    "firstperson_lefthand": {
+      "rotation": [-20, -90, -80],
+      "translation": [5, 20, 0],
+      "scale": [3, 3, 1]
+    },
+    "gui": {
+      "scale": [1.1, 1.1, 1.1]
+    }
+  }
+}

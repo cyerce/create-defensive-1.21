@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "c:ingots/netherite"
+    },
+    "@": {
+      "tag": "c:nuggets/electrum"
+    }
+  },
+  "pattern": [
+    "@@@",
+    "@#@",
+    "@@@"
+  ],
+  "result": {
+    "id": "createdefensive:electrum_upgrade_smithing_template"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "tag": "c:ingots/zinc"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:zinc_arrow_head",
+      "count": 4
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:brass_casing"
+  },
+  "transitional_item": {
+    "id": "create:brass_casing"
+  },
+  "loops": 1,
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:brass_casing"
+        },
+        {
+          "item": "createdefensive:logistic_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:brass_casing"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:brass_casing"
+        },
+        {
+          "tag": "c:wires/lv"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:brass_casing"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:brass_casing"
+        },
+        {
+          "item": "create:transmitter"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:brass_casing"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "create:display_link",
+      "count": 2
+    }
+  ]
+}

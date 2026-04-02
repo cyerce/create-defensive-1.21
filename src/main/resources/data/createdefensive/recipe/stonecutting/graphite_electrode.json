@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "createdefensive:graphite_rod"
+  },
+  "result": {
+    "id": "createdefensive:graphite_electrode",
+    "count": 4
+  }
+}

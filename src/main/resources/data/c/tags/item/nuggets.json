@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "createdefensive:aluminum_nugget",
+    "createdefensive:silver_nugget",
+    "createdefensive:platinum_nugget",
+    "createdefensive:lead_nugget",
+    "createdefensive:rose_gold_nugget",
+    "createdefensive:violet_gold_nugget",
+    "createdefensive:steel_nugget",
+    "createdefensive:tin_nugget",
+    "createdefensive:nickel_nugget",
+    "createdefensive:uranium_nugget",
+    "createdefensive:bronze_nugget",
+    "createdefensive:gunsteel_nugget",
+    "createdefensive:invar_nugget",
+    "createdefensive:staballoy_nugget",
+    "createdefensive:electrum_nugget"
+  ]
+}

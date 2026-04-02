@@ -1,0 +1,24 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "tag": "c:ingots/iron"
+    },
+    {
+      "tag": "c:dusts/carbon"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:steel_ingot"
+    },
+    {
+      "id": "createdefensive:slag"
+    },
+    {
+      "id": "createdefensive:slag",
+      "chance": 0.5
+    }
+  ]
+}

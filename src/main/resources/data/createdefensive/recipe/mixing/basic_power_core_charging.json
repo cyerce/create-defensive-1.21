@@ -1,0 +1,29 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createdefensive:uncharged_basic_power_core"
+    },
+    {
+      "item": "createdefensive:redstone_crystal"
+    },
+    {
+      "item": "createdefensive:redstone_crystal"
+    },
+    {
+      "item": "createdefensive:redstone_crystal"
+    },
+    {
+      "item": "createdefensive:redstone_crystal"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:basic_power_core"
+    },
+    {
+      "id": "createdefensive:inert_redstone_crystal",
+      "count": 4
+    }
+  ]
+}
