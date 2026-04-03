@@ -1,0 +1,17 @@
+{
+  "type": "createdefensive:centrifuge",
+  "ingredients": [
+    {
+      "item": "minecraft:pink_candle"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:honeycomb"
+    },
+    {
+      "id": "minecraft:pink_dye"
+    }
+  ],
+  "processing_time": 250
+}

@@ -1,0 +1,24 @@
+{
+  "type": "createdefensive:fractional_distillation",
+  "ingredient": {
+    "type": "neoforge:single",
+    "amount": 1000,
+    "fluid": "createdefensive:natural_gas"
+  },
+  "output0": {
+    "id": "createdefensive:butane",
+    "amount": 250
+  },
+  "output1": {
+    "id": "createdefensive:propane",
+    "amount": 250
+  },
+  "output2": {
+    "id": "createdefensive:ethane",
+    "amount": 250
+  },
+  "output3": {
+    "id": "createdefensive:methane",
+    "amount": 250
+  }
+}

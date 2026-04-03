@@ -1,0 +1,19 @@
+{
+  "type": "createdefensive:centrifuge",
+  "ingredients": [
+    {
+      "item": "minecraft:cobweb"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:string",
+      "count": 2
+    },
+    {
+      "id": "minecraft:string",
+      "chance": 0.5
+    }
+  ],
+  "processing_time": 250
+}

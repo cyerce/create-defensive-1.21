@@ -1,0 +1,13 @@
+{
+  "type": "createdefensive:coking",
+  "ingredient": {
+    "item": "minecraft:coal"
+  },
+  "result": {
+    "id": "createdefensive:coke"
+  },
+  "fluid_result": {
+    "id": "createdefensive:creosote",
+    "amount": 100
+  }
+}

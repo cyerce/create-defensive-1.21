@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "createdefensive:powdered_uranium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "createdefensive:powdered_uranium"
+  }
+}

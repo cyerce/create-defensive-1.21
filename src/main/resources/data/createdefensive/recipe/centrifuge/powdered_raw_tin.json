@@ -1,0 +1,29 @@
+{
+  "type": "createdefensive:centrifuge",
+  "ingredients": [
+    {
+      "item": "createdefensive:powdered_raw_tin"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:tin_nugget",
+      "count": 12
+    },
+    {
+      "id": "create:copper_nugget",
+      "count": 6
+    },
+    {
+      "id": "minecraft:gravel",
+      "count": 2,
+      "chance": 0.75
+    },
+    {
+      "id": "create:experience_nugget",
+      "count": 2,
+      "chance": 0.75
+    }
+  ],
+  "processing_time": 250
+}

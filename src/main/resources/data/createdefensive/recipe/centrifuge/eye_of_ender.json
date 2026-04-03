@@ -1,0 +1,17 @@
+{
+  "type": "createdefensive:centrifuge",
+  "ingredients": [
+    {
+      "item": "minecraft:ender_eye"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:ender_pearl"
+    },
+    {
+      "id": "minecraft:blaze_powder"
+    }
+  ],
+  "processing_time": 250
+}

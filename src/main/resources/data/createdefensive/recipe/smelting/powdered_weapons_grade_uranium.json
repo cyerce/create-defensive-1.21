@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.4,
+  "ingredient": {
+    "item": "createdefensive:powdered_weapons_grade_uranium"
+  },
+  "result": {
+    "id": "createdefensive:weapons_grade_uranium_ingot"
+  }
+}

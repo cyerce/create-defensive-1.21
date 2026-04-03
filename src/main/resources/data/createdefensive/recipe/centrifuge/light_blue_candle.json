@@ -1,0 +1,17 @@
+{
+  "type": "createdefensive:centrifuge",
+  "ingredients": [
+    {
+      "item": "minecraft:light_blue_candle"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:honeycomb"
+    },
+    {
+      "id": "minecraft:light_blue_dye"
+    }
+  ],
+  "processing_time": 250
+}

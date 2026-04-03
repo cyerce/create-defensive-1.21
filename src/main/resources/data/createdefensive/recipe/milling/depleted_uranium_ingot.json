@@ -1,0 +1,13 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "createdefensive:depleted_uranium_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:powdered_depleted_uranium"
+    }
+  ]
+}

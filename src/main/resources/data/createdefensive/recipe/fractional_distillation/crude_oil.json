@@ -1,0 +1,24 @@
+{
+  "type": "createdefensive:fractional_distillation",
+  "ingredient": {
+    "type": "neoforge:single",
+    "amount": 1000,
+    "fluid": "createdefensive:crude_oil"
+  },
+  "output0": {
+    "id": "createdefensive:bitumen",
+    "amount": 250
+  },
+  "output1": {
+    "id": "createdefensive:diesel",
+    "amount": 250
+  },
+  "output2": {
+    "id": "createdefensive:kerosene",
+    "amount": 250
+  },
+  "output3": {
+    "id": "createdefensive:gasoline",
+    "amount": 250
+  }
+}

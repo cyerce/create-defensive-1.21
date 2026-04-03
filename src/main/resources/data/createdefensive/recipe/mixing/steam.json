@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "fluid": "minecraft:water",
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:steam",
+      "amount": 1000
+    }
+  ]
+}

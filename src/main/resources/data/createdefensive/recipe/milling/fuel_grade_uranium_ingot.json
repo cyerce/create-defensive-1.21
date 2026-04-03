@@ -1,0 +1,13 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "createdefensive:fuel_grade_uranium_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:powdered_fuel_grade_uranium"
+    }
+  ]
+}

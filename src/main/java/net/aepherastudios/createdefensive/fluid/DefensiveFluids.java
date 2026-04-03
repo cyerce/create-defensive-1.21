@@ -81,6 +81,31 @@ public class DefensiveFluids {
     public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_METHANE = FLUIDS.register("flowing_methane",
             () -> new BaseFlowingFluid.Flowing(DefensiveFluids.METHANE_PROPERTIES));
 
+    public static final DeferredHolder<Fluid, FlowingFluid> SOURCE_CREOSOTE = FLUIDS.register("creosote",
+            () -> new BaseFlowingFluid.Source(DefensiveFluids.CREOSOTE_PROPERTIES));
+    public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_CREOSOTE = FLUIDS.register("flowing_creosote",
+            () -> new BaseFlowingFluid.Flowing(DefensiveFluids.CREOSOTE_PROPERTIES));
+
+    public static final DeferredHolder<Fluid, FlowingFluid> SOURCE_STEAM = FLUIDS.register("steam",
+            () -> new BaseFlowingFluid.Source(DefensiveFluids.STEAM_PROPERTIES));
+    public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_STEAM = FLUIDS.register("flowing_steam",
+            () -> new BaseFlowingFluid.Flowing(DefensiveFluids.STEAM_PROPERTIES));
+
+    public static final DeferredHolder<Fluid, FlowingFluid> SOURCE_HYDROGEN = FLUIDS.register("hydrogen",
+            () -> new BaseFlowingFluid.Source(DefensiveFluids.HYDROGEN_PROPERTIES));
+    public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_HYDROGEN = FLUIDS.register("flowing_hydrogen",
+            () -> new BaseFlowingFluid.Flowing(DefensiveFluids.HYDROGEN_PROPERTIES));
+
+    public static final DeferredHolder<Fluid, FlowingFluid> SOURCE_OXYGEN = FLUIDS.register("oxygen",
+            () -> new BaseFlowingFluid.Source(DefensiveFluids.OXYGEN_PROPERTIES));
+    public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_OXYGEN = FLUIDS.register("flowing_oxygen",
+            () -> new BaseFlowingFluid.Flowing(DefensiveFluids.OXYGEN_PROPERTIES));
+
+    public static final DeferredHolder<Fluid, FlowingFluid> SOURCE_MUSTARD_GAS = FLUIDS.register("mustard_gas",
+            () -> new BaseFlowingFluid.Source(DefensiveFluids.MUSTARD_GAS_PROPERTIES));
+    public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_MUSTARD_GAS = FLUIDS.register("flowing_mustard_gas",
+            () -> new BaseFlowingFluid.Flowing(DefensiveFluids.MUSTARD_GAS_PROPERTIES));
+
 
 
 
@@ -148,6 +173,32 @@ public class DefensiveFluids {
             MethaneFluidType.METHANE_FLUID_TYPE, SOURCE_METHANE, FLOWING_METHANE)
             .slopeFindDistance(2).levelDecreasePerBlock(2).block(DefensiveBlocks.METHANE)
             .bucket(DefensiveItems.METHANE_BUCKET);
+
+    public static final BaseFlowingFluid.Properties CREOSOTE_PROPERTIES = new BaseFlowingFluid.Properties(
+            CreosoteFluidType.CREOSOTE_FLUID_TYPE, SOURCE_CREOSOTE, FLOWING_CREOSOTE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(DefensiveBlocks.CREOSOTE)
+            .bucket(DefensiveItems.CREOSOTE_BUCKET);
+
+    public static final BaseFlowingFluid.Properties STEAM_PROPERTIES = new BaseFlowingFluid.Properties(
+            SteamFluidType.STEAM_FLUID_TYPE, SOURCE_STEAM, FLOWING_STEAM)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(DefensiveBlocks.STEAM)
+            .bucket(DefensiveItems.STEAM_BUCKET);
+
+    public static final BaseFlowingFluid.Properties HYDROGEN_PROPERTIES = new BaseFlowingFluid.Properties(
+            HydrogenFluidType.HYDROGEN_FLUID_TYPE, SOURCE_HYDROGEN, FLOWING_HYDROGEN)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(DefensiveBlocks.HYDROGEN)
+            .bucket(DefensiveItems.HYDROGEN_BUCKET);
+
+    public static final BaseFlowingFluid.Properties OXYGEN_PROPERTIES = new BaseFlowingFluid.Properties(
+            OxygenFluidType.OXYGEN_FLUID_TYPE, SOURCE_OXYGEN, FLOWING_OXYGEN)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(DefensiveBlocks.OXYGEN)
+            .bucket(DefensiveItems.OXYGEN_BUCKET);
+
+    public static final BaseFlowingFluid.Properties MUSTARD_GAS_PROPERTIES = new BaseFlowingFluid.Properties(
+            MustardGasFluidType.MUSTARD_GAS_FLUID_TYPE, SOURCE_MUSTARD_GAS, FLOWING_MUSTARD_GAS)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(DefensiveBlocks.MUSTARD_GAS)
+            .bucket(DefensiveItems.MUSTARD_GAS_BUCKET);
+
 
 
     public static void register(IEventBus eventBus) {

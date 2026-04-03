@@ -123,6 +123,13 @@ public class DefensiveItems {
     public static final DeferredItem<Item> POWDERED_IRON = ITEMS.register("powdered_iron", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> POWDERED_STEEL = ITEMS.register("powdered_steel", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> POWDERED_LEAD = ITEMS.register("powdered_lead", () -> new Item(new Item.Properties().food(DefensiveFoods.POWDERED_LEAD)));
+    public static final DeferredItem<Item> POWDERED_URANIUM = ITEMS.register("powdered_uranium", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DEPLETED_URANIUM_INGOT = ITEMS.register("depleted_uranium_ingot", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> POWDERED_DEPLETED_URANIUM = ITEMS.register("powdered_depleted_uranium", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> FUEL_GRADE_URANIUM_INGOT = ITEMS.register("fuel_grade_uranium_ingot", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> POWDERED_FUEL_GRADE_URANIUM = ITEMS.register("powdered_fuel_grade_uranium", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> WEAPONS_GRADE_URANIUM_INGOT = ITEMS.register("weapons_grade_uranium_ingot", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> POWDERED_WEAPONS_GRADE_URANIUM = ITEMS.register("powdered_weapons_grade_uranium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> CALCITE_SHARD = ITEMS.register("calcite_shard", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> ANDESITE_SHARD = ITEMS.register("andesite_shard", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> GRANITE_SHARD = ITEMS.register("granite_shard", () -> new Item(new Item.Properties()));
@@ -1269,6 +1276,22 @@ public class DefensiveItems {
     public static final DeferredItem<Item> PROPANE_BUCKET = ITEMS.register("propane_bucket", () -> new BucketItem(DefensiveFluids.SOURCE_PROPANE.value(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
     public static final DeferredItem<Item> ETHANE_BUCKET = ITEMS.register("ethane_bucket", () -> new BucketItem(DefensiveFluids.SOURCE_ETHANE.value(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
     public static final DeferredItem<Item> METHANE_BUCKET = ITEMS.register("methane_bucket", () -> new BucketItem(DefensiveFluids.SOURCE_METHANE.value(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final DeferredItem<Item> CREOSOTE_BUCKET = ITEMS.register("creosote_bucket", () -> new BucketItem(DefensiveFluids.SOURCE_CREOSOTE.value(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final DeferredItem<Item> STEAM_BUCKET = ITEMS.register("steam_bucket", () -> new BucketItem(DefensiveFluids.SOURCE_STEAM.value(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final DeferredItem<Item> HYDROGEN_BUCKET = ITEMS.register("hydrogen_bucket", () -> new BucketItem(DefensiveFluids.SOURCE_HYDROGEN.value(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final DeferredItem<Item> OXYGEN_BUCKET = ITEMS.register("oxygen_bucket", () -> new BucketItem(DefensiveFluids.SOURCE_OXYGEN.value(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final DeferredItem<Item> MUSTARD_GAS_BUCKET = ITEMS.register("mustard_gas_bucket", () -> new BucketItem(DefensiveFluids.SOURCE_MUSTARD_GAS.value(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+
+    public static final DeferredItem<Item> AMMONIA = ITEMS.register("ammonia", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> FORMALDEHYDE = ITEMS.register("formaldehyde", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> HEXAMINE = ITEMS.register("hexamine", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> METHANOL = ITEMS.register("methanol", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> CARBON_MONOXIDE = ITEMS.register("carbon_monoxide", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ETHYLENE = ITEMS.register("ethylene", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SULFUR_DICHLORIDE = ITEMS.register("sulfur_dichloride", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> CHLORINE = ITEMS.register("chlorine", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SULFUR = ITEMS.register("sulfur", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SALT = ITEMS.register("salt", () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

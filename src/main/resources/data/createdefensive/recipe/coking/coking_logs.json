@@ -1,0 +1,14 @@
+{
+  "type": "createdefensive:coking",
+  "ingredient": {
+    "tag": "minecraft:logs_that_burn"
+  },
+  "result": {
+    "id": "minecraft:charcoal",
+    "count": 2
+  },
+  "fluid_result": {
+    "id": "createdefensive:creosote",
+    "amount": 250
+  }
+}

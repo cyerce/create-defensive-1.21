@@ -1,8 +1,14 @@
 package net.aepherastudios.createdefensive.event;
 
 import com.simibubi.create.AllItems;
+import dev.engine_room.flywheel.api.visual.BlockEntityVisual;
+import dev.engine_room.flywheel.api.visualization.BlockEntityVisualizer;
+import dev.engine_room.flywheel.api.visualization.VisualizationContext;
+import dev.engine_room.flywheel.api.visualization.VisualizerRegistry;
 import net.aepherastudios.createdefensive.CreateDefensive;
 import net.aepherastudios.createdefensive.block.DefensiveBlockEntities;
+import net.aepherastudios.createdefensive.block.client.CentrifugeVisual;
+import net.aepherastudios.createdefensive.block.entity.CentrifugeBlockEntity;
 import net.aepherastudios.createdefensive.effect.DefensiveEffects;
 import net.aepherastudios.createdefensive.entity.DefensiveEntities;
 import net.aepherastudios.createdefensive.entity.custom.SuperheatedBlazeEntity;
@@ -34,6 +40,7 @@ import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
 import net.neoforged.neoforge.event.entity.living.LivingDeathEvent;
 import net.neoforged.neoforge.event.entity.living.MobEffectEvent;
 import net.neoforged.neoforge.event.level.BlockEvent;
+import net.neoforged.neoforge.registries.RegisterEvent;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -207,6 +214,24 @@ public class DefensiveEvents {
                 Capabilities.FluidHandler.BLOCK,
                 DefensiveBlockEntities.COKING_OVEN_BE.get(),
                 (blockEntity, side) -> blockEntity.getFluidHandler(side)
+        );
+
+        event.registerBlockEntity(
+                Capabilities.ItemHandler.BLOCK,
+                DefensiveBlockEntities.CENTRIFUGE_BE.get(),
+                (be, side) -> be.inputInv
+        );
+
+        event.registerBlockEntity(
+                Capabilities.FluidHandler.BLOCK,
+                DefensiveBlockEntities.FRACTIONAL_STILL_BE.get(),
+                (be, side) -> be.inputTank
+        );
+
+        event.registerBlockEntity(
+                Capabilities.FluidHandler.BLOCK,
+                DefensiveBlockEntities.FRACTIONAL_STILL_OUTPUT_BE.get(),
+                (be, side) -> be.fluidTank
         );
     }
 

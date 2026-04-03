@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.4,
+  "ingredient": {
+    "item": "createdefensive:powdered_iron"
+  },
+  "result": {
+    "id": "minecraft:iron_ingot"
+  }
+}

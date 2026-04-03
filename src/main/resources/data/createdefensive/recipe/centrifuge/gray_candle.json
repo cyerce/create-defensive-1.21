@@ -1,0 +1,17 @@
+{
+  "type": "createdefensive:centrifuge",
+  "ingredients": [
+    {
+      "item": "minecraft:gray_candle"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:honeycomb"
+    },
+    {
+      "id": "minecraft:gray_dye"
+    }
+  ],
+  "processing_time": 250
+}

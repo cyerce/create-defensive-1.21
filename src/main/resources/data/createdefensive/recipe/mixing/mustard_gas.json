@@ -1,0 +1,18 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "createdefensive:ethylene"
+    },
+    {
+      "item": "createdefensive:sulfur_dichloride"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:mustard_gas",
+      "amount": 250
+    }
+  ]
+}

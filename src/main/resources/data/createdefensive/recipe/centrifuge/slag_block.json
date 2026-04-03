@@ -1,0 +1,31 @@
+{
+  "type": "createdefensive:centrifuge",
+  "ingredients": [
+    {
+      "item": "createdefensive:slag_block"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:gold_nugget",
+      "count": 9,
+      "chance": 0.25
+    },
+    {
+      "id": "create:copper_nugget",
+      "count": 9,
+      "chance": 0.25
+    },
+    {
+      "id": "create:zinc_nugget",
+      "count": 9,
+      "chance": 0.25
+    },
+    {
+      "id": "minecraft:iron_nugget",
+      "count": 9,
+      "chance": 0.75
+    }
+  ],
+  "processing_time": 250
+}

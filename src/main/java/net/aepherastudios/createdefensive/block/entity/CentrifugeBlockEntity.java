@@ -4,11 +4,14 @@ import com.simibubi.create.AllBlockEntityTypes;
 import com.simibubi.create.AllRecipeTypes;
 import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
 import com.simibubi.create.content.kinetics.belt.behaviour.DirectBeltInputBehaviour;
-import com.simibubi.create.content.kinetics.millstone.MillingRecipe;
+import com.simibubi.create.content.kinetics.press.MechanicalPressBlock;
 import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
 import com.simibubi.create.foundation.item.ItemHelper;
 import com.simibubi.create.foundation.mixin.accessor.ItemStackHandlerAccessor;
 import com.simibubi.create.foundation.sound.SoundScapes;
+import net.aepherastudios.createdefensive.block.DefensiveBlockEntities;
+import net.aepherastudios.createdefensive.recipe.DefensiveRecipeTypes;
+import net.aepherastudios.createdefensive.recipe.custom.CentrifugeRecipe;
 import net.createmod.catnip.math.VecHelper;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -41,21 +44,27 @@ public class CentrifugeBlockEntity extends KineticBlockEntity implements Clearab
     public ItemStackHandler outputInv;
     public IItemHandler capability;
     public int timer;
-    private MillingRecipe lastRecipe;
+    private CentrifugeRecipe lastRecipe;
 
-    public CentrifugeBlockEntity(BlockEntityType<?> type, BlockPos pos, BlockState state) {
-        super(type, pos, state);
+    public CentrifugeBlockEntity(BlockPos pos, BlockState state) {
+        super(DefensiveBlockEntities.CENTRIFUGE_BE.get(), pos, state);
         inputInv = new ItemStackHandler(1);
         outputInv = new ItemStackHandler(9);
-        capability = new MillstoneInventoryHandler();
+        capability = new CentrifugeInventoryHandler();
     }
 
     public static void registerCapabilities(RegisterCapabilitiesEvent event) {
         event.registerBlockEntity(
                 Capabilities.ItemHandler.BLOCK,
-                AllBlockEntityTypes.MILLSTONE.get(),
+                DefensiveBlockEntities.CENTRIFUGE_BE.get(),
                 (be, context) -> be.capability
         );
+    }
+
+    @Override
+    public float calculateStressApplied() {
+        this.lastStressApplied = 16.0f;
+        return 16.0f;
     }
 
     @Override
@@ -108,7 +117,7 @@ public class CentrifugeBlockEntity extends KineticBlockEntity implements Clearab
 
         RecipeWrapper inventoryIn = new RecipeWrapper(inputInv);
         if (lastRecipe == null || !lastRecipe.matches(inventoryIn, level)) {
-            Optional<RecipeHolder<MillingRecipe>> recipe = AllRecipeTypes.MILLING.find(inventoryIn, level);
+            Optional<RecipeHolder<CentrifugeRecipe>> recipe = DefensiveRecipeTypes.CENTRIFUGE.find(inventoryIn, level);
             if (!recipe.isPresent()) {
                 timer = 100;
                 sendData();
@@ -146,7 +155,7 @@ public class CentrifugeBlockEntity extends KineticBlockEntity implements Clearab
         RecipeWrapper inventoryIn = new RecipeWrapper(inputInv);
 
         if (lastRecipe == null || !lastRecipe.matches(inventoryIn, level)) {
-            Optional<RecipeHolder<MillingRecipe>> recipe = AllRecipeTypes.MILLING.find(inventoryIn, level);
+            Optional<RecipeHolder<CentrifugeRecipe>> recipe = DefensiveRecipeTypes.CENTRIFUGE.find(inventoryIn, level);
             if (recipe.isEmpty())
                 return;
             lastRecipe = recipe.get().value();
@@ -209,13 +218,13 @@ public class CentrifugeBlockEntity extends KineticBlockEntity implements Clearab
 
         if (lastRecipe != null && lastRecipe.matches(inventoryIn, level))
             return true;
-        return AllRecipeTypes.MILLING.find(inventoryIn, level)
+        return DefensiveRecipeTypes.CENTRIFUGE.find(inventoryIn, level)
                 .isPresent();
     }
 
-    private class MillstoneInventoryHandler extends CombinedInvWrapper {
+    private class CentrifugeInventoryHandler extends CombinedInvWrapper {
 
-        public MillstoneInventoryHandler() {
+        public CentrifugeInventoryHandler() {
             super(inputInv, outputInv);
         }
 

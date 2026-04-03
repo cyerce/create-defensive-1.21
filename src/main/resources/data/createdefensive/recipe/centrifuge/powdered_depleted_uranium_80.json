@@ -1,0 +1,17 @@
+{
+  "type": "createdefensive:centrifuge",
+  "ingredients": [
+    {
+      "item": "createdefensive:powdered_uranium_block_80"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:powdered_weapons_grade_uranium"
+    },
+    {
+      "id": "createdefensive:powdered_depleted_uranium"
+    }
+  ],
+  "processing_time": 250
+}

@@ -1,0 +1,15 @@
+{
+  "type": "createdefensive:centrifuge",
+  "ingredients": [
+    {
+      "item": "minecraft:sculk"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:echo_shard",
+      "chance": 0.01
+    }
+  ],
+  "processing_time": 250
+}

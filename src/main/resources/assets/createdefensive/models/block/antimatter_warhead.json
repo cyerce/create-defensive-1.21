@@ -1,0 +1,8 @@
+{
+  "parent": "createdefensive:block/warhead",
+  "textures": {
+    "bottom": "minecraft:block/antimatter_warhead_bottom",
+    "side": "minecraft:block/antimatter_warhead_side",
+    "top": "minecraft:block/antimatter_warhead_top"
+  }
+}

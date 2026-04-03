@@ -1,0 +1,14 @@
+{
+  "type": "create:compacting",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "createdefensive:powdered_fuel_grade_uranium"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:fuel_grade_uranium_ingot"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.4,
+  "ingredient": {
+    "item": "createdefensive:powdered_depleted_uranium"
+  },
+  "result": {
+    "id": "createdefensive:depleted_uranium_ingot"
+  }
+}

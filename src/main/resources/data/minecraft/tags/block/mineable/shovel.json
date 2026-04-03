@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "createdefensive:powdered_uranium_block",
+    "createdefensive:powdered_uranium_block_10",
+    "createdefensive:powdered_uranium_block_20",
+    "createdefensive:powdered_uranium_block_30",
+    "createdefensive:powdered_uranium_block_40",
+    "createdefensive:powdered_uranium_block_50",
+    "createdefensive:powdered_uranium_block_60",
+    "createdefensive:powdered_uranium_block_70",
+    "createdefensive:powdered_uranium_block_80"
+  ]
+}

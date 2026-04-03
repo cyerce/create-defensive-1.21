@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "c:ingots/lead"
+    },
+    "$": {
+      "item": "createdefensive:hydraulic_mechanism"
+    },
+    "@": {
+      "item": "create:copper_casing"
+    }
+  },
+  "pattern": [
+    "#$#",
+    "#@#",
+    "#$#"
+  ],
+  "result": {
+    "id": "createdefensive:fractional_still_controller"
+  }
+}

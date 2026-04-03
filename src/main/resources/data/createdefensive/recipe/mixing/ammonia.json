@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "fluid": "createdefensive:hydrogen",
+      "amount": 250
+    },
+    {
+      "item": "minecraft:raw_iron"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:ammonia"
+    }
+  ]
+}

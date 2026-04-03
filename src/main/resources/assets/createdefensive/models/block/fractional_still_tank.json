@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "createdefensive:block/fractional_still_tank_top",
+    "side": "createdefensive:block/fractional_still_tank_side"
+  }
+}

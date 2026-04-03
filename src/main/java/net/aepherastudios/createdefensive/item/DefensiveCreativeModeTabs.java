@@ -88,6 +88,14 @@ public class DefensiveCreativeModeTabs {
                         output.accept(DefensiveBlocks.RAW_URANIUM_BLOCK.get());
                         output.accept(DefensiveBlocks.URANIUM_BLOCK.get());
                         output.accept(DefensiveItems.URANIUM_NUGGET.get());
+                        output.accept(DefensiveItems.POWDERED_URANIUM.get());
+                        output.accept(DefensiveItems.FUEL_GRADE_URANIUM_INGOT.get());
+                        output.accept(DefensiveItems.POWDERED_FUEL_GRADE_URANIUM.get());
+                        output.accept(DefensiveItems.WEAPONS_GRADE_URANIUM_INGOT.get());
+                        output.accept(DefensiveItems.POWDERED_WEAPONS_GRADE_URANIUM.get());
+                        output.accept(DefensiveItems.DEPLETED_URANIUM_INGOT.get());
+                        output.accept(DefensiveItems.POWDERED_DEPLETED_URANIUM.get());
+                        output.accept(DefensiveBlocks.POWDERED_URANIUM_BLOCK.get());
                         output.accept(DefensiveItems.ANDESITE_SHEET.get());
                         output.accept(DefensiveItems.POWDERED_RAW_ZINC.get());
                         output.accept(DefensiveItems.ZINC_SHEET.get());
@@ -172,6 +180,9 @@ public class DefensiveCreativeModeTabs {
                         output.accept(DefensiveItems.IRON_GRIT_SANDPAPER.get());
                         output.accept(DefensiveItems.STEEL_GRIT_SANDPAPER.get());
                         output.accept(DefensiveBlocks.COKING_OVEN.get());
+                        output.accept(DefensiveBlocks.FRACTIONAL_STILL_CONTROLLER.get());
+                        output.accept(DefensiveBlocks.FRACTIONAL_STILL_TANK.get());
+                        output.accept(DefensiveBlocks.CENTRIFUGE.get());
                         output.accept(DefensiveItems.GRAPHITE.get());
                         output.accept(DefensiveItems.GRAPHITE_ROD.get());
                         output.accept(DefensiveItems.GRAPHITE_ELECTRODE.get());
@@ -257,6 +268,22 @@ public class DefensiveCreativeModeTabs {
                         output.accept(DefensiveItems.PROPANE_BUCKET.get());
                         output.accept(DefensiveItems.ETHANE_BUCKET.get());
                         output.accept(DefensiveItems.METHANE_BUCKET.get());
+                        output.accept(DefensiveItems.CREOSOTE_BUCKET.get());
+                        output.accept(DefensiveItems.HYDROGEN_BUCKET.get());
+                        output.accept(DefensiveItems.OXYGEN_BUCKET.get());
+                        output.accept(DefensiveItems.STEAM_BUCKET.get());
+                        output.accept(DefensiveItems.MUSTARD_GAS_BUCKET.get());
+
+                        output.accept(DefensiveItems.AMMONIA.get());
+                        output.accept(DefensiveItems.FORMALDEHYDE.get());
+                        output.accept(DefensiveItems.HEXAMINE.get());
+                        output.accept(DefensiveItems.METHANOL.get());
+                        output.accept(DefensiveItems.CARBON_MONOXIDE.get());
+                        output.accept(DefensiveItems.ETHYLENE.get());
+                        output.accept(DefensiveItems.SULFUR_DICHLORIDE.get());
+                        output.accept(DefensiveItems.CHLORINE.get());
+                        output.accept(DefensiveItems.SULFUR.get());
+                        output.accept(DefensiveItems.SALT.get());
 
                     }).build());
 

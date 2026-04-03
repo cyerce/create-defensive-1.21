@@ -1,0 +1,108 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "createdefensive:block/centrifuge_inner",
+		"particle": "createdefensive:block/centrifuge_inner"
+	},
+	"elements": [
+		{
+			"name": "Gear5",
+			"from": [6.5, 6, -1],
+			"to": [9.5, 12, 17],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -0.5, 0]},
+			"faces": {
+				"north": {"uv": [3, 2.75, 3.75, 4.25], "texture": "#0"},
+				"east": {"uv": [3, 0, 7.5, 1.5], "texture": "#0"},
+				"south": {"uv": [3, 2.75, 3.75, 4.25], "texture": "#0"},
+				"west": {"uv": [3, 0, 7.5, 1.5], "texture": "#0"},
+				"up": {"uv": [0.75, 7.5, 0, 3], "texture": "#0"},
+				"down": {"uv": [0.75, 3, 0, 7.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Gear6",
+			"from": [6.5, 6, -1],
+			"to": [9.5, 12, 17],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 7.5, 8]},
+			"faces": {
+				"north": {"uv": [3, 2.75, 3.75, 4.25], "texture": "#0"},
+				"east": {"uv": [3, 0, 7.5, 1.5], "texture": "#0"},
+				"south": {"uv": [3, 2.75, 3.75, 4.25], "texture": "#0"},
+				"west": {"uv": [3, 0, 7.5, 1.5], "texture": "#0"},
+				"up": {"uv": [0.75, 7.5, 0, 3], "texture": "#0"},
+				"down": {"uv": [0.75, 3, 0, 7.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Gear7",
+			"from": [-1, 6, 6.5],
+			"to": [17, 12, 9.5],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 7.5, 8]},
+			"faces": {
+				"north": {"uv": [3, 0, 7.5, 1.5], "texture": "#0"},
+				"east": {"uv": [3, 2.75, 3.75, 4.25], "texture": "#0"},
+				"south": {"uv": [3, 0, 7.5, 1.5], "texture": "#0"},
+				"west": {"uv": [3, 2.75, 3.75, 4.25], "texture": "#0"},
+				"up": {"uv": [5.25, 5.75, 0.75, 5], "texture": "#0"},
+				"down": {"uv": [5.25, 5, 0.75, 5.75], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Gear7",
+			"from": [-1, 6, 6.5],
+			"to": [17, 12, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -0.5, 0]},
+			"faces": {
+				"north": {"uv": [3, 0, 7.5, 1.5], "texture": "#0"},
+				"east": {"uv": [3, 2.75, 3.75, 4.25], "texture": "#0"},
+				"south": {"uv": [3, 0, 7.5, 1.5], "texture": "#0"},
+				"west": {"uv": [3, 2.75, 3.75, 4.25], "texture": "#0"},
+				"up": {"uv": [5.25, 5.75, 0.75, 5], "texture": "#0"},
+				"down": {"uv": [5.25, 5, 0.75, 5.75], "texture": "#0"}
+			}
+		},
+		{
+			"name": "GearCaseInner",
+			"from": [2, 6.5, 2],
+			"to": [14, 11.5, 14],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [3, 1.5, 6, 2.75], "texture": "#0"},
+				"east": {"uv": [3, 1.5, 6, 2.75], "texture": "#0"},
+				"south": {"uv": [3, 1.5, 6, 2.75], "texture": "#0"},
+				"west": {"uv": [3, 1.5, 6, 2.75], "texture": "#0"},
+				"up": {"uv": [3, 3, 0, 0], "texture": "#0"},
+				"down": {"uv": [3, 0, 0, 3], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Axis",
+			"from": [6, 0, 6],
+			"to": [10, 8, 10],
+			"faces": {
+				"north": {"uv": [0.75, 3, 1.75, 5], "texture": "#0"},
+				"east": {"uv": [0.75, 3, 1.75, 5], "texture": "#0"},
+				"south": {"uv": [0.75, 3, 1.75, 5], "texture": "#0"},
+				"west": {"uv": [0.75, 3, 1.75, 5], "texture": "#0"},
+				"up": {"uv": [2.75, 4, 1.75, 3], "texture": "#0"},
+				"down": {"uv": [2.75, 3, 1.75, 4], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "cogwheel",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0, 1, 2, 3, 4]
+		},
+		{
+			"name": "shaft_half",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [5]
+		}
+	]
+}

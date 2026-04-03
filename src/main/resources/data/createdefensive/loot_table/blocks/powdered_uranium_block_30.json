@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "createdefensive:powdered_uranium_block_30"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "createdefensive:block/powdered_uranium_block_30"
+}

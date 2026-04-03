@@ -1,0 +1,8 @@
+{
+  "parent": "createdefensive:block/warhead",
+  "textures": {
+    "bottom": "minecraft:block/thermonuclear_warhead_bottom",
+    "side": "minecraft:block/thermonuclear_warhead_side",
+    "top": "minecraft:block/thermonuclear_warhead_top"
+  }
+}

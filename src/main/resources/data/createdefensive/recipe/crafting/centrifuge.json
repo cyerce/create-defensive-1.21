@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "c:storage_blocks/iron"
+    },
+    "$": {
+      "item": "create:cogwheel"
+    },
+    "@": {
+      "item": "create:andesite_casing"
+    }
+  },
+  "pattern": [
+    "#",
+    "$",
+    "@"
+  ],
+  "result": {
+    "id": "createdefensive:centrifuge"
+  }
+}

@@ -1,4 +1,5 @@
 {
+  "replace": false,
   "values": [
     "createdefensive:oak_truss",
     "createdefensive:birch_truss",

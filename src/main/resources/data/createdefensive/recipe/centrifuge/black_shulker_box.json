@@ -1,0 +1,18 @@
+{
+  "type": "createdefensive:centrifuge",
+  "ingredients": [
+    {
+      "item": "minecraft:black_shulker_box"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:shulker_shell",
+      "count": 2
+    },
+    {
+      "id": "minecraft:black_dye"
+    }
+  ],
+  "processing_time": 250
+}

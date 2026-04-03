@@ -1,11 +1,13 @@
 package net.aepherastudios.createdefensive.block.custom;
 
 import com.simibubi.create.AllBlockEntityTypes;
+import com.simibubi.create.AllBlocks;
 import com.simibubi.create.AllShapes;
 import com.simibubi.create.content.kinetics.base.KineticBlock;
-import com.simibubi.create.content.kinetics.millstone.MillstoneBlockEntity;
 import com.simibubi.create.content.kinetics.simpleRelays.ICogWheel;
 import com.simibubi.create.foundation.block.IBE;
+import net.aepherastudios.createdefensive.block.DefensiveBlockEntities;
+import net.aepherastudios.createdefensive.block.entity.CentrifugeBlockEntity;
 import net.createmod.catnip.data.Iterate;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -18,6 +20,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.pathfinder.PathComputationType;
@@ -28,7 +31,7 @@ import net.neoforged.neoforge.capabilities.Capabilities;
 import net.neoforged.neoforge.items.IItemHandler;
 import net.neoforged.neoforge.items.IItemHandlerModifiable;
 
-public class CentrifugeBlock extends KineticBlock implements IBE<MillstoneBlockEntity>, ICogWheel {
+public class CentrifugeBlock extends KineticBlock implements IBE<CentrifugeBlockEntity>, ICogWheel {
 
     public CentrifugeBlock(Properties properties) {
         super(properties);
@@ -36,7 +39,7 @@ public class CentrifugeBlock extends KineticBlock implements IBE<MillstoneBlockE
 
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter worldIn, BlockPos pos, CollisionContext context) {
-        return AllShapes.MILLSTONE;
+        return Block.box(0,0,0,16,16,16);
     }
 
     @Override
@@ -51,9 +54,9 @@ public class CentrifugeBlock extends KineticBlock implements IBE<MillstoneBlockE
         if (level.isClientSide)
             return ItemInteractionResult.SUCCESS;
 
-        withBlockEntityDo(level, pos, millstone -> {
+        withBlockEntityDo(level, pos, centrifuge -> {
             boolean emptyOutput = true;
-            IItemHandlerModifiable inv = millstone.outputInv;
+            IItemHandlerModifiable inv = centrifuge.outputInv;
             for (int slot = 0; slot < inv.getSlots(); slot++) {
                 ItemStack stackInSlot = inv.getStackInSlot(slot);
                 if (!stackInSlot.isEmpty())
@@ -64,7 +67,7 @@ public class CentrifugeBlock extends KineticBlock implements IBE<MillstoneBlockE
             }
 
             if (emptyOutput) {
-                inv = millstone.inputInv;
+                inv = centrifuge.inputInv;
                 for (int slot = 0; slot < inv.getSlots(); slot++) {
                     player.getInventory()
                             .placeItemBackInInventory(inv.getStackInSlot(slot));
@@ -72,11 +75,16 @@ public class CentrifugeBlock extends KineticBlock implements IBE<MillstoneBlockE
                 }
             }
 
-            millstone.setChanged();
-            millstone.sendData();
+            centrifuge.setChanged();
+            centrifuge.sendData();
         });
 
         return ItemInteractionResult.SUCCESS;
+    }
+
+    @Override
+    public boolean showCapacityWithAnnotation() {
+        return true;
     }
 
     @Override
@@ -90,15 +98,15 @@ public class CentrifugeBlock extends KineticBlock implements IBE<MillstoneBlockE
         if (!entityIn.isAlive())
             return;
 
-        MillstoneBlockEntity millstone = null;
+        CentrifugeBlockEntity centrifuge = null;
         for (BlockPos pos : Iterate.hereAndBelow(entityIn.blockPosition()))
-            if (millstone == null)
-                millstone = getBlockEntity(worldIn, pos);
+            if (centrifuge == null)
+                centrifuge = getBlockEntity(worldIn, pos);
 
-        if (millstone == null)
+        if (centrifuge == null)
             return;
 
-        IItemHandler capability = millstone.getLevel().getCapability(Capabilities.ItemHandler.BLOCK, millstone.getBlockPos(), null);
+        IItemHandler capability = centrifuge.getLevel().getCapability(Capabilities.ItemHandler.BLOCK, centrifuge.getBlockPos(), null);
         if (capability == null)
             return;
 
@@ -117,13 +125,13 @@ public class CentrifugeBlock extends KineticBlock implements IBE<MillstoneBlockE
     }
 
     @Override
-    public Class<MillstoneBlockEntity> getBlockEntityClass() {
-        return MillstoneBlockEntity.class;
+    public Class<CentrifugeBlockEntity> getBlockEntityClass() {
+        return CentrifugeBlockEntity.class;
     }
 
     @Override
-    public BlockEntityType<? extends MillstoneBlockEntity> getBlockEntityType() {
-        return AllBlockEntityTypes.MILLSTONE.get();
+    public BlockEntityType<? extends CentrifugeBlockEntity> getBlockEntityType() {
+        return DefensiveBlockEntities.CENTRIFUGE_BE.get();
     }
 
     @Override

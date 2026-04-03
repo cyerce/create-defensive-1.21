@@ -8,6 +8,8 @@ import net.aepherastudios.createdefensive.fluid.DefensiveFluids;
 import net.aepherastudios.createdefensive.fluid.fluid_types.*;
 import net.aepherastudios.createdefensive.item.DefensiveCreativeModeTabs;
 import net.aepherastudios.createdefensive.item.DefensiveItems;
+import net.aepherastudios.createdefensive.recipe.DefensiveRecipeTypes;
+import net.aepherastudios.createdefensive.recipe.DefensiveRecipes;
 import net.aepherastudios.createdefensive.screen.DefensiveMenuTypes;
 import net.neoforged.bus.api.IEventBus;
 
@@ -20,6 +22,8 @@ public class EventBusRegisters {
         DefensiveBlockEntities.register(modEventBus);
         DefensiveMenuTypes.register(modEventBus);
         DefensiveCreativeModeTabs.register(modEventBus);
+        DefensiveRecipeTypes.register(modEventBus);
+        DefensiveRecipes.register(modEventBus);
 
         CrudeOilFluidType.register(modEventBus);
         DirtyRawCrudeOilFluidType.register(modEventBus);
@@ -34,6 +38,11 @@ public class EventBusRegisters {
         KeroseneFluidType.register(modEventBus);
         DieselFluidType.register(modEventBus);
         BitumenFluidType.register(modEventBus);
+        CreosoteFluidType.register(modEventBus);
+        HydrogenFluidType.register(modEventBus);
+        OxygenFluidType.register(modEventBus);
+        SteamFluidType.register(modEventBus);
+        MustardGasFluidType.register(modEventBus);
 
         DefensiveFluids.register(modEventBus);
     }

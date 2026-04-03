@@ -1,6 +1,10 @@
 package net.aepherastudios.createdefensive.block;
 
+import com.simibubi.create.AllCreativeModeTabs;
+import com.simibubi.create.Create;
 import com.simibubi.create.content.decoration.palettes.GlassPaneBlock;
+import com.simibubi.create.foundation.data.CreateRegistrate;
+import com.tterrag.registrate.util.entry.BlockEntry;
 import net.aepherastudios.createdefensive.CreateDefensive;
 import net.aepherastudios.createdefensive.block.custom.*;
 import net.aepherastudios.createdefensive.fluid.DefensiveFluids;
@@ -36,6 +40,25 @@ public class DefensiveBlocks {
             () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final DeferredBlock<Block> URANIUM_ORE = registerBlock("uranium_ore",
             () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> POWDERED_URANIUM_BLOCK = registerBlock("powdered_uranium_block",
+            () -> new Block(BlockBehaviour.Properties.of().strength(3f).sound(SoundType.SAND)));
+    public static final DeferredBlock<Block> POWDERED_URANIUM_BLOCK_10 = registerBlock("powdered_uranium_block_10",
+            () -> new Block(BlockBehaviour.Properties.of().strength(3f).sound(SoundType.SAND)));
+    public static final DeferredBlock<Block> POWDERED_URANIUM_BLOCK_20 = registerBlock("powdered_uranium_block_20",
+            () -> new Block(BlockBehaviour.Properties.of().strength(3f).sound(SoundType.SAND)));
+    public static final DeferredBlock<Block> POWDERED_URANIUM_BLOCK_30 = registerBlock("powdered_uranium_block_30",
+            () -> new Block(BlockBehaviour.Properties.of().strength(3f).sound(SoundType.SAND)));
+    public static final DeferredBlock<Block> POWDERED_URANIUM_BLOCK_40 = registerBlock("powdered_uranium_block_40",
+            () -> new Block(BlockBehaviour.Properties.of().strength(3f).sound(SoundType.SAND)));
+    public static final DeferredBlock<Block> POWDERED_URANIUM_BLOCK_50 = registerBlock("powdered_uranium_block_50",
+            () -> new Block(BlockBehaviour.Properties.of().strength(3f).sound(SoundType.SAND)));
+    public static final DeferredBlock<Block> POWDERED_URANIUM_BLOCK_60 = registerBlock("powdered_uranium_block_60",
+            () -> new Block(BlockBehaviour.Properties.of().strength(3f).sound(SoundType.SAND)));
+    public static final DeferredBlock<Block> POWDERED_URANIUM_BLOCK_70 = registerBlock("powdered_uranium_block_70",
+            () -> new Block(BlockBehaviour.Properties.of().strength(3f).sound(SoundType.SAND)));
+    public static final DeferredBlock<Block> POWDERED_URANIUM_BLOCK_80 = registerBlock("powdered_uranium_block_80",
+            () -> new Block(BlockBehaviour.Properties.of().strength(3f).sound(SoundType.SAND)));
 
     public static final DeferredBlock<Block> BLEEDING_OBSIDIAN = registerBlock("bleeding_obsidian",
             () -> new Block(BlockBehaviour.Properties.of().strength(50f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
@@ -151,6 +174,13 @@ public class DefensiveBlocks {
 
     public static final DeferredBlock<Block> COKING_OVEN = registerBlock("coking_oven",
             () -> new CokingOvenBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> CENTRIFUGE = registerBlock("centrifuge",
+            () -> new CentrifugeBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> FRACTIONAL_STILL_CONTROLLER = registerBlock("fractional_still_controller",
+            () -> new FractionalStillControllerBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> FRACTIONAL_STILL_TANK = registerBlock("fractional_still_tank",
+            () -> new FractionalStillTankBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
 
     public static final DeferredBlock<Block> SLAG_BLOCK = registerBlock("slag_block",
             () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
@@ -308,6 +338,17 @@ public class DefensiveBlocks {
             () -> new OilBlock(DefensiveFluids.SOURCE_ETHANE, BlockBehaviour.Properties.of().replaceable()));
     public static final DeferredBlock<LiquidBlock> METHANE = BLOCKS.register("methane",
             () -> new OilBlock(DefensiveFluids.SOURCE_METHANE, BlockBehaviour.Properties.of().replaceable()));
+    public static final DeferredBlock<LiquidBlock> CREOSOTE = BLOCKS.register("creosote",
+            () -> new OilBlock(DefensiveFluids.SOURCE_CREOSOTE, BlockBehaviour.Properties.of().replaceable()));
+    public static final DeferredBlock<LiquidBlock> STEAM = BLOCKS.register("steam",
+            () -> new LiquidBlock(DefensiveFluids.SOURCE_STEAM.get(), BlockBehaviour.Properties.of().replaceable()));
+    public static final DeferredBlock<LiquidBlock> HYDROGEN = BLOCKS.register("hydrogen",
+            () -> new LiquidBlock(DefensiveFluids.SOURCE_HYDROGEN.get(), BlockBehaviour.Properties.of().replaceable()));
+    public static final DeferredBlock<LiquidBlock> OXYGEN = BLOCKS.register("oxygen",
+            () -> new LiquidBlock(DefensiveFluids.SOURCE_OXYGEN.get(), BlockBehaviour.Properties.of().replaceable()));
+    public static final DeferredBlock<LiquidBlock> MUSTARD_GAS = BLOCKS.register("mustard_gas",
+            () -> new LiquidBlock(DefensiveFluids.SOURCE_MUSTARD_GAS.get(), BlockBehaviour.Properties.of().replaceable()));
+
 
 
 

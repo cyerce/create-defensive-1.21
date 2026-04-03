@@ -1,0 +1,21 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "fluid": "createdefensive:steam",
+      "amount": 250
+    },
+    {
+      "type": "neoforge:single",
+      "fluid": "createdefensive:ethane",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:ethylene"
+    }
+  ]
+}

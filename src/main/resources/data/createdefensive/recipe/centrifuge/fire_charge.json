@@ -1,0 +1,23 @@
+{
+  "type": "createdefensive:centrifuge",
+  "ingredients": [
+    {
+      "item": "minecraft:fire_charge"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:gunpowder",
+      "chance": 0.25
+    },
+    {
+      "id": "minecraft:charcoal",
+      "chance": 0.25
+    },
+    {
+      "id": "minecraft:blaze_powder",
+      "chance": 0.25
+    }
+  ],
+  "processing_time": 250
+}

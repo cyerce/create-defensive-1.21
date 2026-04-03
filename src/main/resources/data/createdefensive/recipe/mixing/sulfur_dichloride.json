@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "createdefensive:chlorine"
+    },
+    {
+      "item": "createdefensive:sulfur"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:sulfur_dichloride"
+    }
+  ]
+}

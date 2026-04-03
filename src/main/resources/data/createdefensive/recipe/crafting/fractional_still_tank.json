@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "$": {
+      "tag": "c:ingots/lead"
+    },
+    "@": {
+      "item": "create:fluid_tank"
+    }
+  },
+  "pattern": [
+    "$",
+    "@",
+    "$"
+  ],
+  "result": {
+    "id": "createdefensive:fractional_still_controller"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "createdefensive:salt"
+    },
+    {
+      "tag": "c:electrodes/cathode"
+    },
+    {
+      "tag": "c:electrodes/anode"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:chlorine"
+    },
+    {
+      "id": "createdefensive:copper_electrode"
+    },
+    {
+      "id": "createdefensive:zinc_electrode"
+    }
+  ]
+}

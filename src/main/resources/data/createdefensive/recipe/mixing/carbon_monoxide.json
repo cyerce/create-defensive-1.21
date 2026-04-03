@@ -1,0 +1,25 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "fluid": "createdefensive:methane",
+      "amount": 250
+    },
+    {
+      "type": "neoforge:single",
+      "fluid": "createdefensive:steam",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:hydrogen",
+      "amount": 500
+    },
+    {
+      "id": "createdefensive:carbon_monoxide"
+    }
+  ]
+}
