@@ -4,7 +4,7 @@
     "item": "minecraft:paper"
   },
   "transitional_item": {
-    "id": "minecraft:paper"
+    "id": "createdefensive:incomplete_shotgun_shell"
   },
   "loops": 1,
   "results": [
@@ -17,15 +17,15 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "minecraft:paper"
+          "item": "createdefensive:incomplete_shotgun_shell"
         },
         {
-          "item": "createdefensive:gunpowder_pinch"
+          "item": "createdefensive:lead_buckshot"
         }
       ],
       "results": [
         {
-          "id": "minecraft:paper"
+          "id": "createdefensive:incomplete_shotgun_shell"
         }
       ]
     },
@@ -33,15 +33,15 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "minecraft:paper"
+          "item": "createdefensive:incomplete_shotgun_shell"
         },
         {
-          "item": "createdefensive:buckshot"
+          "item": "createdefensive:gunpowder_pinch"
         }
       ],
       "results": [
         {
-          "id": "minecraft:paper"
+          "id": "createdefensive:incomplete_shotgun_shell"
         }
       ]
     },
@@ -49,12 +49,12 @@
       "type": "create:pressing",
       "ingredients": [
         {
-          "item": "minecraft:paper"
+          "item": "createdefensive:incomplete_shotgun_shell"
         }
       ],
       "results": [
         {
-          "id": "minecraft:paper"
+          "id": "createdefensive:incomplete_shotgun_shell"
         }
       ]
     }

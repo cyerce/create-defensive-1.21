@@ -1,8 +1,9 @@
 {
   "parent": "createdefensive:block/warhead",
   "textures": {
-    "bottom": "minecraft:block/conventional_warhead_bottom",
-    "side": "minecraft:block/conventional_warhead_side",
-    "top": "minecraft:block/conventional_warhead_top"
+    "particle": "createdefensive:block/conventional_warhead_side",
+    "top": "createdefensive:block/conventional_warhead_top",
+    "bottom": "createdefensive:block/conventional_warhead_bottom",
+    "side": "createdefensive:block/conventional_warhead_side"
   }
 }

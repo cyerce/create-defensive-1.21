@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
@@ -24,12 +25,13 @@ public class DefensiveConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SILVER_ORE_KEY = registerKey("silver_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_PLATINUM_ORE_KEY = registerKey("platinum_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_LEAD_ORE_KEY = registerKey("lead_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SALT_ORE_KEY = registerKey("salt_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SULFUR_ORE_KEY = registerKey("sulfur_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_TIN_ORE_KEY = registerKey("tin_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_NICKEL_ORE_KEY = registerKey("nickel_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_URANIUM_ORE_KEY = registerKey("uranium_ore");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> OIL_LAKE_KEY = registerKey("oil_lake");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> NATURAL_GAS_KEY = registerKey("natural_gas_lake");
-
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OIL_RESERVE_KEY = registerKey("oil_reserve");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NATURAL_GAS_RESERVE_KEY = registerKey("natural_gas_reserve");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceable = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -53,6 +55,14 @@ public class DefensiveConfiguredFeatures {
                         DefensiveBlocks.LEAD_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables, DefensiveBlocks.DEEPSLATE_LEAD_ORE.get().defaultBlockState()));
 
+        List<OreConfiguration.TargetBlockState> overworldSaltOres = List.of(OreConfiguration.target(stoneReplaceable,
+                        DefensiveBlocks.SALT_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables, DefensiveBlocks.DEEPSLATE_SALT_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> overworldSulfurOres = List.of(OreConfiguration.target(stoneReplaceable,
+                        DefensiveBlocks.SULFUR_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables, DefensiveBlocks.DEEPSLATE_SULFUR_ORE.get().defaultBlockState()));
+
         List<OreConfiguration.TargetBlockState> overworldTinOres = List.of(OreConfiguration.target(stoneReplaceable,
                         DefensiveBlocks.TIN_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables, DefensiveBlocks.DEEPSLATE_TIN_ORE.get().defaultBlockState()));
@@ -69,9 +79,14 @@ public class DefensiveConfiguredFeatures {
         register(context, OVERWORLD_SILVER_ORE_KEY, Feature.ORE, new OreConfiguration(overworldSilverOres, 6));
         register(context, OVERWORLD_PLATINUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldPlatinumOres, 4));
         register(context, OVERWORLD_LEAD_ORE_KEY, Feature.ORE, new OreConfiguration(overworldLeadOres, 4));
+        register(context, OVERWORLD_SALT_ORE_KEY, Feature.ORE, new OreConfiguration(overworldSaltOres, 4));
+        register(context, OVERWORLD_SULFUR_ORE_KEY, Feature.ORE, new OreConfiguration(overworldSulfurOres, 4));
         register(context, OVERWORLD_TIN_ORE_KEY, Feature.ORE, new OreConfiguration(overworldTinOres, 5));
         register(context, OVERWORLD_NICKEL_ORE_KEY, Feature.ORE, new OreConfiguration(overworldNickelOres, 4));
         register(context, OVERWORLD_URANIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldUraniumOres, 4));
+        register(context, OIL_RESERVE_KEY, DefensiveFeatures.OIL_RESERVE.get(), NoneFeatureConfiguration.INSTANCE);
+        register(context, NATURAL_GAS_RESERVE_KEY, DefensiveFeatures.NATURAL_GAS_RESERVE.get(), NoneFeatureConfiguration.INSTANCE);
+
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

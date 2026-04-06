@@ -2,6 +2,10 @@ package net.aepherastudios.createdefensive.entity;
 
 import net.aepherastudios.createdefensive.CreateDefensive;
 import net.aepherastudios.createdefensive.entity.custom.*;
+import net.aepherastudios.createdefensive.entity.custom.dynamite.ChemicalDynamiteEntity;
+import net.aepherastudios.createdefensive.entity.custom.dynamite.DynamiteEntity;
+import net.aepherastudios.createdefensive.entity.custom.dynamite.IncendiaryDynamiteEntity;
+import net.aepherastudios.createdefensive.entity.custom.dynamite.NuclearDynamiteEntity;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -232,6 +236,42 @@ public class DefensiveEntities {
     public static final Supplier<EntityType<SuperheatedBlazeEntity>> SUPERHEATED_BLAZE =
             ENTITY_TYPES.register("superheated_blaze", () -> EntityType.Builder.of(SuperheatedBlazeEntity::new, MobCategory.MONSTER)
                     .sized(0.6f, 1.8f).fireImmune().clientTrackingRange(8).build("superheated_blaze"));
+
+
+
+    public static final Supplier<EntityType<PrimedChemicalExplosive>> PRIMED_CHEMICAL_EXPLOSIVE =
+            ENTITY_TYPES.register("primed_chemical_explosive", () -> EntityType.Builder.of(PrimedChemicalExplosive::new, MobCategory.MISC)
+                    .sized(1f, 1f).fireImmune().clientTrackingRange(8).build("primed_chemical_explosive"));
+
+    public static final Supplier<EntityType<PrimedIncendiaryExplosive>> PRIMED_INCENDIARY_EXPLOSIVE =
+            ENTITY_TYPES.register("primed_incendiary_explosive", () -> EntityType.Builder.of(PrimedIncendiaryExplosive::new, MobCategory.MISC)
+                    .sized(1f, 1f).fireImmune().clientTrackingRange(8).build("primed_incendiary_explosive"));
+
+    public static final Supplier<EntityType<DynamiteEntity>> DYNAMITE =
+            ENTITY_TYPES.register("dynamite", () -> EntityType.Builder.<DynamiteEntity>of(DynamiteEntity::new, MobCategory.MISC)
+                    .sized(0.25f, 0.25f).fireImmune().clientTrackingRange(4).build("dynamite"));
+
+    public static final Supplier<EntityType<IncendiaryDynamiteEntity>> INCENDIARY_DYNAMITE =
+            ENTITY_TYPES.register("incendiary_dynamite", () -> EntityType.Builder.<IncendiaryDynamiteEntity>of(IncendiaryDynamiteEntity::new, MobCategory.MISC)
+                    .sized(0.25f, 0.25f).fireImmune().clientTrackingRange(4).build("incendiary_dynamite"));
+
+    public static final Supplier<EntityType<ChemicalDynamiteEntity>> CHEMICAL_DYNAMITE =
+            ENTITY_TYPES.register("chemical_dynamite", () -> EntityType.Builder.<ChemicalDynamiteEntity>of(ChemicalDynamiteEntity::new, MobCategory.MISC)
+                    .sized(0.25f, 0.25f).fireImmune().clientTrackingRange(4).build("chemical_dynamite"));
+
+    public static final Supplier<EntityType<NuclearDynamiteEntity>> NUCLEAR_DYNAMITE =
+            ENTITY_TYPES.register("nuclear_dynamite", () -> EntityType.Builder.<NuclearDynamiteEntity>of(NuclearDynamiteEntity::new, MobCategory.MISC)
+                    .sized(0.25f, 0.25f).fireImmune().clientTrackingRange(4).build("nuclear_dynamite"));
+
+
+
+    public static final Supplier<EntityType<GasCloudEntity>> GAS_CLOUD =
+            ENTITY_TYPES.register("gas_cloud", () -> EntityType.Builder.of(GasCloudEntity::new, MobCategory.MISC)
+                    .sized(1f, 0.5f).fireImmune().clientTrackingRange(4).build("gas_cloud"));
+
+    public static final Supplier<EntityType<RadiationCloudEntity>> RADIATION_CLOUD =
+            ENTITY_TYPES.register("radiation_cloud", () -> EntityType.Builder.of(RadiationCloudEntity::new, MobCategory.MISC)
+                    .sized(1f, 0.5f).fireImmune().clientTrackingRange(4).build("radiation_cloud"));
 
 
 

@@ -8,12 +8,15 @@
       "fluid": "createdefensive:hydrogen"
     },
     {
-      "item": "createdefensive:carbon_monoxide"
+      "type": "neoforge:single",
+      "amount": 500,
+      "fluid": "createdefensive:carbon_monoxide"
     }
   ],
   "results": [
     {
-      "id": "createdefensive:methanol"
+      "id": "createdefensive:methanol",
+      "amount": 250
     }
   ]
 }

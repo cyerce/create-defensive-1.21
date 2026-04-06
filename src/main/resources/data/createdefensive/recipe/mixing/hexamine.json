@@ -3,10 +3,14 @@
   "heat_requirement": "heated",
   "ingredients": [
     {
-      "item": "createdefensive:ammonia"
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "createdefensive:ammonia"
     },
     {
-      "item": "createdefensive:formaldehyde"
+      "type": "neoforge:single",
+      "amount": 500,
+      "fluid": "createdefensive:formaldehyde"
     }
   ],
   "results": [

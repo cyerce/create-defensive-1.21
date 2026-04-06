@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "createdefensive:natural_gas_reserve",
+  "step": "underground_ores"
+}

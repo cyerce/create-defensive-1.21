@@ -1,0 +1,7 @@
+{
+  "message_id": "bleeding",
+  "scaling": "never",
+  "exhaustion": 0.1,
+  "effects": "hurt",
+  "knockback_factor": 0.0
+}

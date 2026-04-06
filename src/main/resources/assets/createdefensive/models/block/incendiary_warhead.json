@@ -1,0 +1,9 @@
+{
+  "parent": "createdefensive:block/warhead",
+  "textures": {
+    "particle": "createdefensive:block/incendiary_warhead_side",
+    "top": "createdefensive:block/incendiary_warhead_top",
+    "bottom": "createdefensive:block/incendiary_warhead_bottom",
+    "side": "createdefensive:block/incendiary_warhead_side"
+  }
+}

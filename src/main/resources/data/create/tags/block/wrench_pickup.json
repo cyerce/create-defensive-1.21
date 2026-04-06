@@ -44,6 +44,17 @@
     "createdefensive:fire_grate",
     "createdefensive:lightning_trap",
     "createdefensive:air_trap",
-    "createdefensive:gas_trap"
+    "createdefensive:gas_trap",
+    "createdefensive:coking_oven",
+    "createdefensive:electrolysis_controller",
+    "createdefensive:copper_electrolysis_tank",
+    "createdefensive:zinc_electrolysis_tank",
+    "createdefensive:fractional_still_controller",
+    "createdefensive:fractional_still_tank",
+    "createdefensive:centrifuge",
+    "createdefensive:conventional_warhead",
+    "createdefensive:incendiary_warhead",
+    "createdefensive:chemical_warhead",
+    "createdefensive:nuclear_warhead"
   ]
 }

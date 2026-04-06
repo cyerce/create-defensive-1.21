@@ -9,10 +9,15 @@ import mezz.jei.api.registration.IRecipeCategoryRegistration;
 import mezz.jei.api.registration.IRecipeRegistration;
 import net.aepherastudios.createdefensive.CreateDefensive;
 import net.aepherastudios.createdefensive.block.DefensiveBlocks;
+import net.aepherastudios.createdefensive.compat.jei.category.CentrifugingCategory;
+import net.aepherastudios.createdefensive.compat.jei.category.CokingCategory;
+import net.aepherastudios.createdefensive.compat.jei.category.ElectrolysisCategory;
+import net.aepherastudios.createdefensive.compat.jei.category.FractionalDistillationCategory;
 import net.aepherastudios.createdefensive.recipe.DefensiveRecipeTypes;
 import net.aepherastudios.createdefensive.recipe.DefensiveRecipes;
 import net.aepherastudios.createdefensive.recipe.custom.CentrifugeRecipe;
 import net.aepherastudios.createdefensive.recipe.custom.CokingRecipe;
+import net.aepherastudios.createdefensive.recipe.custom.ElectrolysisRecipe;
 import net.aepherastudios.createdefensive.recipe.custom.FractionalDistillationRecipe;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
@@ -28,6 +33,7 @@ public class DefensiveJeiPlugin implements IModPlugin {
     private CentrifugingCategory centrifugingCategory;
     private CokingCategory cokingCategory;
     private FractionalDistillationCategory fractionalDistillationCategory;
+    private ElectrolysisCategory electrolysisCategory;
 
     @Override
     public ResourceLocation getPluginUid() {
@@ -47,8 +53,9 @@ public class DefensiveJeiPlugin implements IModPlugin {
 
         cokingCategory = new CokingCategory(guiHelper);
         fractionalDistillationCategory = new FractionalDistillationCategory(guiHelper);
+        electrolysisCategory = new ElectrolysisCategory(guiHelper);
 
-        registration.addRecipeCategories(centrifugingCategory, cokingCategory, fractionalDistillationCategory);
+        registration.addRecipeCategories(centrifugingCategory, cokingCategory, fractionalDistillationCategory, electrolysisCategory);
     }
 
     @Override
@@ -65,6 +72,11 @@ public class DefensiveJeiPlugin implements IModPlugin {
                     .getAllRecipesFor(DefensiveRecipes.FRACTIONAL_DISTILLATION_TYPE.get());
             registration.addRecipes(FractionalDistillationCategory.RECIPE_TYPE, recipes);
         }
+        if (level != null) {
+            List<RecipeHolder<ElectrolysisRecipe>> recipes = level.getRecipeManager()
+                    .getAllRecipesFor(DefensiveRecipes.ELECTROLYSIS_TYPE.get());
+            registration.addRecipes(ElectrolysisCategory.RECIPE_TYPE, recipes);
+        }
     }
 
     @Override
@@ -74,6 +86,7 @@ public class DefensiveJeiPlugin implements IModPlugin {
                 new ItemStack(DefensiveBlocks.COKING_OVEN.get()),
                 CokingCategory.RECIPE_TYPE
         );
+
         registration.addRecipeCatalyst(
                 new ItemStack(DefensiveBlocks.FRACTIONAL_STILL_TANK.get()),
                 FractionalDistillationCategory.RECIPE_TYPE
@@ -81,6 +94,19 @@ public class DefensiveJeiPlugin implements IModPlugin {
         registration.addRecipeCatalyst(
                 new ItemStack(DefensiveBlocks.FRACTIONAL_STILL_CONTROLLER.get()),
                 FractionalDistillationCategory.RECIPE_TYPE
+        );
+
+        registration.addRecipeCatalyst(
+                new ItemStack(DefensiveBlocks.ELECTROLYSIS_CONTROLLER.get()),
+                ElectrolysisCategory.RECIPE_TYPE
+        );
+        registration.addRecipeCatalyst(
+                new ItemStack(DefensiveBlocks.COPPER_ELECTROLYSIS_TANK.get()),
+                ElectrolysisCategory.RECIPE_TYPE
+        );
+        registration.addRecipeCatalyst(
+                new ItemStack(DefensiveBlocks.ZINC_ELECTROLYSIS_TANK.get()),
+                ElectrolysisCategory.RECIPE_TYPE
         );
     }
 

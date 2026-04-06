@@ -70,6 +70,14 @@ public class DefensiveEffects {
     public static final Holder<MobEffect> HALBERDSFURY = MOB_EFFECTS.register("halberdsfury",
             () -> new BlankEffect(MobEffectCategory.BENEFICIAL, 10551193));
 
+    public static final Holder<MobEffect> MUSTARD_POISONING = MOB_EFFECTS.register("mustard_poisoning",
+            () -> new MustardPoisoningEffect(MobEffectCategory.HARMFUL, 5729601));
+
+    public static final Holder<MobEffect> RADIATION_POISONING = MOB_EFFECTS.register("radiation_poisoning",
+            () -> new RadiationPoisoningEffect(MobEffectCategory.HARMFUL, 742163));
+
+
+
 
 
     public static void register(IEventBus eventBus) {

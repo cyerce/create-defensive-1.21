@@ -22,7 +22,6 @@ public class CokingOvenScreen extends AbstractContainerScreen<CokingOvenMenu> {
     private static final ResourceLocation TEXTURE =
             ResourceLocation.fromNamespaceAndPath(CreateDefensive.MOD_ID, "textures/gui/coking_oven.png");
 
-    // Fluid meter position and size
     private static final int METER_X = 149;
     private static final int METER_Y = 11;
     private static final int METER_WIDTH = 16;
@@ -58,23 +57,19 @@ public class CokingOvenScreen extends AbstractContainerScreen<CokingOvenMenu> {
         int capacity = menu.blockEntity.getTankCapacity();
         int amount = fluidStack.getAmount();
 
-        // Calculate fill height from bottom
         int fillHeight = (int) ((float) amount / capacity * METER_HEIGHT);
         if (fillHeight <= 0) return;
 
-        // Get fluid texture and tint
         IClientFluidTypeExtensions fluidExtensions = IClientFluidTypeExtensions.of(fluidStack.getFluid());
         ResourceLocation stillTexture = fluidExtensions.getStillTexture();
         int tintColor = fluidExtensions.getTintColor(fluidStack);
 
-        // Extract ARGB components from tint
         float a = ((tintColor >> 24) & 0xFF) / 255f;
         float r = ((tintColor >> 16) & 0xFF) / 255f;
         float g = ((tintColor >> 8) & 0xFF) / 255f;
         float b = (tintColor & 0xFF) / 255f;
-        if (a == 0f) a = 1f; // treat fully transparent alpha as opaque
+        if (a == 0f) a = 1f;
 
-        // Bind and render the fluid texture tiled from bottom up
         RenderSystem.setShaderTexture(0, TextureAtlas.LOCATION_BLOCKS);
         RenderSystem.setShaderColor(r, g, b, a);
 
@@ -86,7 +81,6 @@ public class CokingOvenScreen extends AbstractContainerScreen<CokingOvenMenu> {
         int meterBottom = y + METER_Y + METER_HEIGHT;
         int meterTop = meterBottom - fillHeight;
 
-        // Tile the 16x16 sprite to fill the meter area
         int renderY = meterTop;
         while (renderY < meterBottom) {
             int renderX = meterLeft;
@@ -99,10 +93,7 @@ public class CokingOvenScreen extends AbstractContainerScreen<CokingOvenMenu> {
             renderY += rowHeight;
         }
 
-        // Reset shader color
         RenderSystem.setShaderColor(1f, 1f, 1f, 1f);
-
-        // Re-bind GUI texture for the rest of rendering
         RenderSystem.setShaderTexture(0, TEXTURE);
     }
 

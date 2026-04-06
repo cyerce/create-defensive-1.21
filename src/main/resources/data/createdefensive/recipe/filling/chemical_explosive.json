@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:tnt"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "createdefensive:mustard_gas"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:chemical_explosive"
+    }
+  ]
+}

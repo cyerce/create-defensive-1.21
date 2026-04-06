@@ -1,0 +1,62 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:paper"
+  },
+  "transitional_item": {
+    "id": "createdefensive:incomplete_shotgun_slug"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "createdefensive:shotgun_slug"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_shotgun_slug"
+        },
+        {
+          "item": "createdefensive:lead_slug"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_shotgun_slug"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_shotgun_slug"
+        },
+        {
+          "item": "createdefensive:gunpowder_pinch"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_shotgun_slug"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createdefensive:incomplete_shotgun_slug"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdefensive:incomplete_shotgun_slug"
+        }
+      ]
+    }
+  ]
+}

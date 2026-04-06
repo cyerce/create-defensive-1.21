@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "createdefensive:block/electrolysis_controller_back",
+    "up": "createdefensive:block/electrolysis_tank_top",
+    "down": "createdefensive:block/electrolysis_tank_top",
+    "north": "createdefensive:block/electrolysis_controller_front",
+    "west": "createdefensive:block/electrolysis_controller_side_cathode",
+    "south": "createdefensive:block/electrolysis_controller_back",
+    "east": "createdefensive:block/electrolysis_controller_side_anode"
+  }
+}

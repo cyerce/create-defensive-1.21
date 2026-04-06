@@ -1,0 +1,16 @@
+{
+  "type": "create:compacting",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "fluid": "createdefensive:ethylene",
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:polyethylene"
+    }
+  ]
+}

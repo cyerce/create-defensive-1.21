@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "createdefensive:block/electrolysis_controller", "y": 0 },
+    "facing=east":  { "model": "createdefensive:block/electrolysis_controller", "y": 90 },
+    "facing=south": { "model": "createdefensive:block/electrolysis_controller", "y": 180 },
+    "facing=west":  { "model": "createdefensive:block/electrolysis_controller", "y": 270 }
+  }
+}

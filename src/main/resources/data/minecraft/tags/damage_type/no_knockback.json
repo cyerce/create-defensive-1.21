@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "createdefensive:mustard_poisoning",
+    "createdefensive:bleeding",
+    "createdefensive:lead_poisoning",
+    "createdefensive:radiation_poisoning"
+  ]
+}

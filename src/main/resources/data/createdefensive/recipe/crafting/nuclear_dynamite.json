@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "createdefensive:powdered_fuel_grade_uranium"
+    },
+    "$": {
+      "item": "minecraft:paper"
+    },
+    "@": {
+      "tag": "c:strings"
+    }
+  },
+  "pattern": [
+    " @ ",
+    "$#$",
+    " $ "
+  ],
+  "result": {
+    "id": "createdefensive:nuclear_dynamite",
+    "count": 3
+  }
+}

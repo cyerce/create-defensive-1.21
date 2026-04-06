@@ -1,0 +1,26 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "item": "minecraft:tnt"
+    },
+    {
+      "item": "createdefensive:napalm"
+    },
+    {
+      "item": "createdefensive:napalm"
+    },
+    {
+      "item": "createdefensive:napalm"
+    },
+    {
+      "item": "createdefensive:napalm"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:incendiary_explosive"
+    }
+  ]
+}

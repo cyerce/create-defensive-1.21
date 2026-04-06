@@ -1,0 +1,16 @@
+{
+  "type": "createdefensive:electrolysis",
+  "ingredient": {
+    "type": "neoforge:single",
+    "amount": 1000,
+    "fluid": "createdefensive:molten_salt"
+  },
+  "output0": {
+    "id": "createdefensive:chlorine",
+    "amount": 250
+  },
+  "output1": {
+    "id": "createdefensive:molten_sodium",
+    "amount": 250
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "createdefensive:electrolysis",
+  "ingredient": {
+    "type": "neoforge:single",
+    "amount": 1000,
+    "fluid": "minecraft:water"
+  },
+  "output0": {
+    "id": "createdefensive:oxygen",
+    "amount": 250
+  },
+  "output1": {
+    "id": "createdefensive:hydrogen",
+    "amount": 250
+  }
+}

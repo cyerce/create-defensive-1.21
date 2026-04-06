@@ -6,6 +6,10 @@
     "createdefensive:tin_block",
     "createdefensive:raw_tin_block",
     "createdefensive:tin_ore",
-    "createdefensive:deepslate_tin_ore"
+    "createdefensive:deepslate_tin_ore",
+    "createdefensive:salt_ore",
+    "createdefensive:deepslate_salt_ore",
+    "createdefensive:sulfur_ore",
+    "createdefensive:deepslate_sulfur_ore"
   ]
 }

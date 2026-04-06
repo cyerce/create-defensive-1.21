@@ -131,9 +131,6 @@ public class SuperheatedBlazeEntity extends Blaze {
                 && Monster.checkMonsterSpawnRules(type, level, spawnType, pos, random);
     }
 
-    /**
-     * Returns {@code true} if the entity is on fire. Used by render to add the fire effect on rendering.
-     */
     @Override
     public boolean isOnFire() {
         return this.isCharged();
@@ -165,25 +162,15 @@ public class SuperheatedBlazeEntity extends Blaze {
             this.setFlags(EnumSet.of(Flag.MOVE, Flag.LOOK));
         }
 
-        /**
-         * Returns whether execution should begin. You can also read and cache any state necessary for execution in this
-         * method as well.
-         */
         public boolean canUse() {
             LivingEntity livingentity = this.blaze.getTarget();
             return livingentity != null && livingentity.isAlive() && this.blaze.canAttack(livingentity);
         }
 
-        /**
-         * Execute a one shot task or start executing a continuous task
-         */
         public void start() {
             this.attackStep = 0;
         }
 
-        /**
-         * Reset the task's internal state. Called when this task is interrupted by another one
-         */
         public void stop() {
             this.blaze.setCharged(false);
             this.lastSeen = 0;
@@ -193,9 +180,6 @@ public class SuperheatedBlazeEntity extends Blaze {
             return true;
         }
 
-        /**
-         * Keep ticking a continuous task that has already been started
-         */
         public void tick() {
             --this.attackTime;
             LivingEntity livingentity = this.blaze.getTarget();

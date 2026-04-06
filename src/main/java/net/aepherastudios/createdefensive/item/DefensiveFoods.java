@@ -10,6 +10,10 @@ public class DefensiveFoods {
             .saturationModifier(0.2f)
             .effect(() -> new MobEffectInstance(DefensiveEffects.LEAD_POISONING, 12000, 1, true, true, true), 1f)
             .build();
+    public static final FoodProperties POWDERED_URANIUM = new FoodProperties.Builder().nutrition(2)
+            .saturationModifier(0.2f)
+            .effect(() -> new MobEffectInstance(DefensiveEffects.RADIATION_POISONING, 12000, 1, true, true, true), 1f)
+            .build();
     public static final FoodProperties SLAG = new FoodProperties.Builder().nutrition(2)
             .saturationModifier(0.2f)
             .effect(() -> new MobEffectInstance(MobEffects.LEVITATION, 12000, 6, true, true, true), 1f)

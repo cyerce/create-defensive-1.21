@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "createdefensive:salt"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:molten_salt",
+      "amount": 100
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:tnt"
+    },
+    "$": {
+      "item": "minecraft:paper"
+    },
+    "@": {
+      "tag": "c:strings"
+    }
+  },
+  "pattern": [
+    " @ ",
+    "$#$",
+    " $ "
+  ],
+  "result": {
+    "id": "createdefensive:dynamite",
+    "count": 3
+  }
+}

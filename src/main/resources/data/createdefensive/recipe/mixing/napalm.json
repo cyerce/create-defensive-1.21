@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "fluid": "createdefensive:gasoline",
+      "amount": 250
+    },
+    {
+      "item": "createdefensive:polystyrene"
+    },
+    {
+      "item": "createdefensive:polystyrene"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:napalm"
+    }
+  ]
+}

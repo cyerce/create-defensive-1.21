@@ -1,0 +1,33 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": true,
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "createdefensive:incendiary_explosive"
+    },
+    "S": {
+      "tag": "c:ingots/steel"
+    },
+    "R": {
+      "item": "createdefensive:redstone_mechanism"
+    },
+    "C": {
+      "item": "createdefensive:computation_mechanism"
+    },
+    "M": {
+      "item": "createdefensive:radar_mechanism"
+    }
+  },
+  "pattern": [
+    "SCRMS",
+    "SEEES",
+    "SEEES",
+    "SEEES",
+    "SSSSS"
+  ],
+  "result": {
+    "id": "createdefensive:incendiary_warhead"
+  },
+  "show_notification": false
+}

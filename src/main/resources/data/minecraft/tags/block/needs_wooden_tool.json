@@ -16,6 +16,9 @@
     "createdefensive:zinc_truss",
     "createdefensive:brass_truss",
     "createdefensive:coking_oven",
+    "createdefensive:electrolysis_controller",
+    "createdefensive:copper_electrolysis_tank",
+    "createdefensive:zinc_electrolysis_tank",
     "createdefensive:fractional_still_controller",
     "createdefensive:fractional_still_tank",
     "createdefensive:centrifuge",
@@ -61,6 +64,8 @@
     "createdefensive:smoke_catalyst",
     "createdefensive:haunt_catalyst",
     "createdefensive:blast_catalyst",
-    "createdefensive:splash_catalyst"
+    "createdefensive:splash_catalyst",
+    "createdefensive:tar_sand",
+    "createdefensive:gas_vent"
   ]
 }

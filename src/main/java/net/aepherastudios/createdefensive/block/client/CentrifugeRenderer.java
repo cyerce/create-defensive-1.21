@@ -2,7 +2,7 @@ package net.aepherastudios.createdefensive.block.client;
 
 import com.simibubi.create.content.kinetics.base.KineticBlockEntityRenderer;
 import net.aepherastudios.createdefensive.CreateDefensive;
-import net.aepherastudios.createdefensive.block.entity.CentrifugeBlockEntity;
+import net.aepherastudios.createdefensive.block.entity.machine.CentrifugeBlockEntity;
 import net.createmod.catnip.render.CachedBuffers;
 import net.createmod.catnip.render.SuperByteBuffer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;

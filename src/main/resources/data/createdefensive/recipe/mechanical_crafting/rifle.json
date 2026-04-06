@@ -1,0 +1,24 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": true,
+  "category": "misc",
+  "key": {
+    "A": {
+      "tag": "c:plates/gunsteel"
+    },
+    "P": {
+      "tag": "minecraft:planks"
+    },
+    "S": {
+      "item": "createdefensive:firearm_mechanism"
+    }
+  },
+  "pattern": [
+    "AAS",
+    "  P"
+  ],
+  "result": {
+    "id": "createdefensive:rifle"
+  },
+  "show_notification": false
+}

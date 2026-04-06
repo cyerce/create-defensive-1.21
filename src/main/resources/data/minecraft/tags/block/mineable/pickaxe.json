@@ -5,10 +5,14 @@
     "createdefensive:silver_ore",
     "createdefensive:platinum_ore",
     "createdefensive:lead_ore",
+    "createdefensive:sulfur_ore",
+    "createdefensive:salt_ore",
     "createdefensive:deepslate_aluminum_ore",
     "createdefensive:deepslate_silver_ore",
     "createdefensive:deepslate_platinum_ore",
     "createdefensive:deepslate_lead_ore",
+    "createdefensive:deepslate_salt_ore",
+    "createdefensive:deepslate_sulfur_ore",
     "createdefensive:raw_aluminum_block",
     "createdefensive:raw_silver_block",
     "createdefensive:raw_platinum_block",
@@ -50,6 +54,9 @@
     "createdefensive:brown_blast_plating",
     "createdefensive:slag_block",
     "createdefensive:coking_oven",
+    "createdefensive:electrolysis_controller",
+    "createdefensive:copper_electrolysis_tank",
+    "createdefensive:zinc_electrolysis_tank",
     "createdefensive:fractional_still_controller",
     "createdefensive:fractional_still_tank",
     "createdefensive:centrifuge",
@@ -113,6 +120,11 @@
     "createdefensive:blast_catalyst",
     "createdefensive:splash_catalyst",
     "createdefensive:compact_industrial_iron_block",
-    "createdefensive:bleeding_obsidian"
+    "createdefensive:bleeding_obsidian",
+    "createdefensive:gas_vent",
+    "createdefensive:conventional_warhead",
+    "createdefensive:incendiary_warhead",
+    "createdefensive:chemical_warhead",
+    "createdefensive:nuclear_warhead"
   ]
 }

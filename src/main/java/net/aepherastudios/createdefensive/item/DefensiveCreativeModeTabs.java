@@ -52,6 +52,12 @@ public class DefensiveCreativeModeTabs {
                         output.accept(DefensiveBlocks.PLATINUM_BLOCK.get());
                         output.accept(DefensiveItems.PLATINUM_NUGGET.get());
                         output.accept(DefensiveItems.LEAD_INGOT.get());
+                        output.accept(DefensiveBlocks.SALT_ORE.get());
+                        output.accept(DefensiveBlocks.DEEPSLATE_SALT_ORE.get());
+                        output.accept(DefensiveItems.SALT.get());
+                        output.accept(DefensiveBlocks.SULFUR_ORE.get());
+                        output.accept(DefensiveBlocks.DEEPSLATE_SULFUR_ORE.get());
+                        output.accept(DefensiveItems.SULFUR.get());
                         output.accept(DefensiveBlocks.LEAD_ORE.get());
                         output.accept(DefensiveBlocks.DEEPSLATE_LEAD_ORE.get());
                         output.accept(DefensiveItems.RAW_LEAD.get());
@@ -124,6 +130,8 @@ public class DefensiveCreativeModeTabs {
                         output.accept(DefensiveBlocks.ROSE_GOLD_BLOCK.get());
                         output.accept(DefensiveItems.VIOLET_GOLD_INGOT.get());
                         output.accept(DefensiveItems.VIOLET_GOLD_NUGGET.get());
+                        output.accept(DefensiveItems.SODIUM_INGOT.get());
+                        output.accept(DefensiveItems.SODIUM_NUGGET.get());
                         output.accept(DefensiveBlocks.VIOLET_GOLD_BLOCK.get());
                         output.accept(DefensiveItems.ELECTRUM_INGOT.get());
                         output.accept(DefensiveItems.ELECTRUM_SHEET.get());
@@ -136,7 +144,10 @@ public class DefensiveCreativeModeTabs {
                         output.accept(DefensiveItems.BRONZE_NUGGET.get());
                         output.accept(DefensiveBlocks.BRONZE_BLOCK.get());
                         output.accept(DefensiveItems.GUNSTEEL_INGOT.get());
+                        output.accept(DefensiveItems.GUNSTEEL_SHEET.get());
                         output.accept(DefensiveItems.GUNSTEEL_NUGGET.get());
+                        output.accept(DefensiveItems.GUNSTEEL_ROD.get());
+                        output.accept(DefensiveItems.GUNSTEEL_SPRING.get());
                         output.accept(DefensiveBlocks.GUNSTEEL_BLOCK.get());
                         output.accept(DefensiveItems.INVAR_INGOT.get());
                         output.accept(DefensiveItems.INVAR_NUGGET.get());
@@ -180,6 +191,9 @@ public class DefensiveCreativeModeTabs {
                         output.accept(DefensiveItems.IRON_GRIT_SANDPAPER.get());
                         output.accept(DefensiveItems.STEEL_GRIT_SANDPAPER.get());
                         output.accept(DefensiveBlocks.COKING_OVEN.get());
+                        output.accept(DefensiveBlocks.ELECTROLYSIS_CONTROLLER.get());
+                        output.accept(DefensiveBlocks.COPPER_ELECTROLYSIS_TANK.get());
+                        output.accept(DefensiveBlocks.ZINC_ELECTROLYSIS_TANK.get());
                         output.accept(DefensiveBlocks.FRACTIONAL_STILL_CONTROLLER.get());
                         output.accept(DefensiveBlocks.FRACTIONAL_STILL_TANK.get());
                         output.accept(DefensiveBlocks.CENTRIFUGE.get());
@@ -206,12 +220,6 @@ public class DefensiveCreativeModeTabs {
                         output.accept(DefensiveItems.CRUSHED_ANCIENT_DEBRIS.get());
                         output.accept(DefensiveItems.EXPERIENCE_CRYSTAL.get());
                         output.accept(DefensiveItems.EXPERIENCE_CRYSTAL_CLUSTER.get());
-                        output.accept(DefensiveBlocks.LANDMINE.get());
-                        output.accept(DefensiveBlocks.PROXIMITY_MINE.get());
-                        output.accept(DefensiveBlocks.FIRE_GRATE.get());
-                        output.accept(DefensiveBlocks.LIGHTNING_TRAP.get());
-                        output.accept(DefensiveBlocks.AIR_TRAP.get());
-                        output.accept(DefensiveBlocks.GAS_TRAP.get());
                         output.accept(DefensiveItems.POLISHED_AMETHYST.get());
                         output.accept(DefensiveItems.BASIC_POWER_CORE.get());
                         output.accept(DefensiveItems.UNCHARGED_BASIC_POWER_CORE.get());
@@ -222,8 +230,6 @@ public class DefensiveCreativeModeTabs {
                         output.accept(DefensiveItems.LIGHTNING_CORE.get());
                         output.accept(DefensiveItems.UNCHARGED_LIGHTNING_CORE.get());
                         output.accept(DefensiveItems.REDSTONE_CAPACITOR.get());
-
-                        output.accept(DefensiveBlocks.HIGH_POWER_EXPLOSIVE.get());
 
                         output.accept(DefensiveItems.ALUMINUM_POWER_ARMOR_COMPONENTS.get());
                         output.accept(DefensiveItems.STEEL_POWER_ARMOR_COMPONENTS.get());
@@ -256,10 +262,7 @@ public class DefensiveCreativeModeTabs {
                         output.accept(DefensiveItems.SUPERHEATED_BLAZE_SPAWN_EGG.get());
 
                         output.accept(DefensiveItems.CRUDE_OIL_BUCKET.get());
-                        output.accept(DefensiveItems.DIRTY_RAW_CRUDE_OIL_BUCKET.get());
-                        output.accept(DefensiveItems.RAW_CRUDE_OIL_BUCKET.get());
                         output.accept(DefensiveItems.NATURAL_GAS_BUCKET.get());
-                        output.accept(DefensiveItems.RAW_NATURAL_GAS_BUCKET.get());
                         output.accept(DefensiveItems.GASOLINE_BUCKET.get());
                         output.accept(DefensiveItems.KEROSENE_BUCKET.get());
                         output.accept(DefensiveItems.DIESEL_BUCKET.get());
@@ -274,16 +277,25 @@ public class DefensiveCreativeModeTabs {
                         output.accept(DefensiveItems.STEAM_BUCKET.get());
                         output.accept(DefensiveItems.MUSTARD_GAS_BUCKET.get());
 
-                        output.accept(DefensiveItems.AMMONIA.get());
-                        output.accept(DefensiveItems.FORMALDEHYDE.get());
+                        output.accept(DefensiveItems.AMMONIA_BUCKET.get());
+                        output.accept(DefensiveItems.FORMALDEHYDE_BUCKET.get());
+                        output.accept(DefensiveItems.METHANOL_BUCKET.get());
+                        output.accept(DefensiveItems.CARBON_MONOXIDE_BUCKET.get());
+                        output.accept(DefensiveItems.ETHYLENE_BUCKET.get());
+                        output.accept(DefensiveItems.SULFUR_DICHLORIDE_BUCKET.get());
+                        output.accept(DefensiveItems.CHLORINE_BUCKET.get());
+                        output.accept(DefensiveItems.BENZENE_BUCKET.get());
+                        output.accept(DefensiveItems.ETHYLBENZENE_BUCKET.get());
+                        output.accept(DefensiveItems.STYRENE_BUCKET.get());
+                        output.accept(DefensiveItems.MOLTEN_SALT_BUCKET.get());
+                        output.accept(DefensiveItems.MOLTEN_SODIUM_BUCKET.get());
                         output.accept(DefensiveItems.HEXAMINE.get());
-                        output.accept(DefensiveItems.METHANOL.get());
-                        output.accept(DefensiveItems.CARBON_MONOXIDE.get());
-                        output.accept(DefensiveItems.ETHYLENE.get());
-                        output.accept(DefensiveItems.SULFUR_DICHLORIDE.get());
-                        output.accept(DefensiveItems.CHLORINE.get());
                         output.accept(DefensiveItems.SULFUR.get());
                         output.accept(DefensiveItems.SALT.get());
+                        output.accept(DefensiveItems.POLYSTYRENE.get());
+                        output.accept(DefensiveItems.POLYETHYLENE.get());
+                        output.accept(DefensiveItems.PLASTIC.get());
+                        output.accept(DefensiveItems.PLASTIC_SHEET.get());
 
                     }).build());
 
@@ -305,6 +317,8 @@ public class DefensiveCreativeModeTabs {
                         output.accept(DefensiveBlocks.SMALL_LAPIS_TILES.get());
                         output.accept(DefensiveBlocks.DIAMOND_TILES.get());
                         output.accept(DefensiveBlocks.SMALL_DIAMOND_TILES.get());
+
+                        output.accept(DefensiveBlocks.TAR_SAND.get());
 
                         output.accept(DefensiveBlocks.OAK_TRUSS.get());
                         output.accept(DefensiveBlocks.BIRCH_TRUSS.get());
@@ -896,7 +910,54 @@ public class DefensiveCreativeModeTabs {
                     })
                     .build());
 
-    public static void register(IEventBus modEventBus){
+    public static final Supplier<CreativeModeTab> CREATEDEFENSIVE_WEAPONRY = CREATIVE_MODE_TABS.register("createdefensive_weaponry",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(DefensiveBlocks.CHEMICAL_EXPLOSIVE.get()))
+                    .title(Component.translatable("creativetab.createdefensive.createdefensive_weaponry"))
+                    .displayItems((pParameters, output) -> {
+                        output.accept(DefensiveItems.DYNAMITE);
+                        output.accept(DefensiveItems.INCENDIARY_DYNAMITE);
+                        output.accept(DefensiveItems.CHEMICAL_DYNAMITE);
+                        output.accept(DefensiveItems.NUCLEAR_DYNAMITE);
+                        output.accept(DefensiveItems.NAPALM);
+                        output.accept(DefensiveItems.URANIUM_CORE);
+                        output.accept(DefensiveBlocks.HIGH_POWER_EXPLOSIVE);
+                        output.accept(DefensiveBlocks.CHEMICAL_EXPLOSIVE);
+                        output.accept(DefensiveBlocks.INCENDIARY_EXPLOSIVE);
+                        output.accept(DefensiveItems.PISTOL);
+                        output.accept(DefensiveItems.RIFLE);
+                        output.accept(DefensiveItems.SHOTGUN);
+                        output.accept(DefensiveItems.LEAD_SMALL_BULLET);
+                        output.accept(DefensiveItems.STABALLOY_SMALL_BULLET);
+                        output.accept(DefensiveItems.LEAD_LARGE_BULLET);
+                        output.accept(DefensiveItems.STABALLOY_LARGE_BULLET);
+                        output.accept(DefensiveItems.SHOTGUN_SHELL);
+                        output.accept(DefensiveItems.SHOTGUN_SLUG);
+                        output.accept(DefensiveItems.GUNPOWDER_PINCH);
+                        output.accept(DefensiveItems.BULLET_CASING);
+                        output.accept(DefensiveItems.LEAD_SMALL_BULLET_TIP);
+                        output.accept(DefensiveItems.STABALLOY_SMALL_BULLET_TIP);
+                        output.accept(DefensiveItems.LEAD_LARGE_BULLET_TIP);
+                        output.accept(DefensiveItems.STABALLOY_LARGE_BULLET_TIP);
+                        output.accept(DefensiveItems.LEAD_BUCKSHOT);
+                        output.accept(DefensiveItems.LEAD_SLUG);
+                        output.accept(DefensiveItems.FIREARM_MECHANISM);
+
+                        output.accept(DefensiveBlocks.LANDMINE);
+                        output.accept(DefensiveBlocks.PROXIMITY_MINE);
+                        output.accept(DefensiveBlocks.FIRE_GRATE);
+                        output.accept(DefensiveBlocks.LIGHTNING_TRAP);
+                        output.accept(DefensiveBlocks.AIR_TRAP);
+                        output.accept(DefensiveBlocks.GAS_TRAP);
+
+                        output.accept(DefensiveBlocks.CONVENTIONAL_WARHEAD);
+                        output.accept(DefensiveBlocks.INCENDIARY_WARHEAD);
+                        output.accept(DefensiveBlocks.CHEMICAL_WARHEAD);
+                        output.accept(DefensiveBlocks.NUCLEAR_WARHEAD);
+                    })
+                    .build());
+
+
+                        public static void register(IEventBus modEventBus){
         CREATIVE_MODE_TABS.register(modEventBus);
     }
 }

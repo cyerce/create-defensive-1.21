@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "c:ingots/invar"
+    },
+    "@": {
+      "item": "create:fluid_tank"
+    },
+    "$": {
+      "tag": "c:electrodes/zinc"
+    },
+    "%": {
+      "tag": "c:plates/zinc"
+    }
+  },
+  "pattern": [
+    "#$#",
+    "#@#",
+    "#%#"
+  ],
+  "result": {
+    "id": "createdefensive:zinc_electrolysis_tank"
+  }
+}

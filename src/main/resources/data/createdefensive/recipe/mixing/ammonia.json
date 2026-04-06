@@ -13,7 +13,8 @@
   ],
   "results": [
     {
-      "id": "createdefensive:ammonia"
+      "id": "createdefensive:ammonia",
+      "amount": 250
     }
   ]
 }

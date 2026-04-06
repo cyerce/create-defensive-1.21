@@ -6,12 +6,15 @@
       "item": "createdefensive:raw_platinum"
     },
     {
-      "item": "createdefensive:methanol"
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "createdefensive:methanol"
     }
   ],
   "results": [
     {
-      "id": "createdefensive:formaldehyde"
+      "id": "createdefensive:formaldehyde",
+      "amount": 1000
     }
   ]
 }

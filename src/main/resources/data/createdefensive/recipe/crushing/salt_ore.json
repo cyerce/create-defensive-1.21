@@ -1,0 +1,22 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "c:ores/salt"
+    }
+  ],
+  "processing_time": 250,
+  "results": [
+    {
+      "id": "createdefense:salt"
+    },
+    {
+      "chance": 0.75,
+      "id": "createdefense:salt"
+    },
+    {
+      "chance": 0.75,
+      "id": "create:experience_nugget"
+    }
+  ]
+}

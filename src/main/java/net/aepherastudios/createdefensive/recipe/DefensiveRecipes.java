@@ -2,9 +2,11 @@ package net.aepherastudios.createdefensive.recipe;
 
 import net.aepherastudios.createdefensive.CreateDefensive;
 import net.aepherastudios.createdefensive.recipe.custom.CokingRecipe;
-import net.aepherastudios.createdefensive.recipe.custom.CokingRecipeSerializer;
+import net.aepherastudios.createdefensive.recipe.custom.ElectrolysisRecipe;
+import net.aepherastudios.createdefensive.recipe.serializer.CokingRecipeSerializer;
 import net.aepherastudios.createdefensive.recipe.custom.FractionalDistillationRecipe;
-import net.aepherastudios.createdefensive.recipe.custom.FractionalDistillationRecipeSerializer;
+import net.aepherastudios.createdefensive.recipe.serializer.ElectrolysisRecipeSerializer;
+import net.aepherastudios.createdefensive.recipe.serializer.FractionalDistillationRecipeSerializer;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.crafting.RecipeSerializer;
@@ -33,6 +35,12 @@ public class DefensiveRecipes {
 
     public static final Supplier<RecipeType<FractionalDistillationRecipe>> FRACTIONAL_DISTILLATION_TYPE =
             TYPES.register("fractional_distillation", () -> RecipeType.simple(CreateDefensive.asResource("fractional_distillation")));
+
+    public static final Supplier<RecipeSerializer<ElectrolysisRecipe>> ELECTROLYSIS_SERIALIZER =
+            SERIALIZERS.register("electrolysis", ElectrolysisRecipeSerializer::new);
+
+    public static final Supplier<RecipeType<ElectrolysisRecipe>> ELECTROLYSIS_TYPE =
+            TYPES.register("electrolysis", () -> RecipeType.simple(CreateDefensive.asResource("electrolysis")));
 
 
     public static void register(IEventBus modEventBus) {

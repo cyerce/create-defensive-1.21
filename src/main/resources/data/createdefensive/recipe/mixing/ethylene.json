@@ -10,12 +10,13 @@
     {
       "type": "neoforge:single",
       "fluid": "createdefensive:ethane",
-      "amount": 250
+      "amount": 500
     }
   ],
   "results": [
     {
-      "id": "createdefensive:ethylene"
+      "id": "createdefensive:ethylene",
+      "amount": 250
     }
   ]
 }

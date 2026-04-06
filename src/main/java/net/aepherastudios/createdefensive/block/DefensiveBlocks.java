@@ -1,18 +1,18 @@
 package net.aepherastudios.createdefensive.block;
 
-import com.simibubi.create.AllCreativeModeTabs;
-import com.simibubi.create.Create;
 import com.simibubi.create.content.decoration.palettes.GlassPaneBlock;
-import com.simibubi.create.foundation.data.CreateRegistrate;
-import com.tterrag.registrate.util.entry.BlockEntry;
 import net.aepherastudios.createdefensive.CreateDefensive;
 import net.aepherastudios.createdefensive.block.custom.*;
+import net.aepherastudios.createdefensive.block.custom.explosive.*;
+import net.aepherastudios.createdefensive.block.custom.machine.*;
+import net.aepherastudios.createdefensive.block.custom.trap.*;
 import net.aepherastudios.createdefensive.fluid.DefensiveFluids;
 import net.aepherastudios.createdefensive.item.DefensiveItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.Fluids;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -24,6 +24,11 @@ public class DefensiveBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(CreateDefensive.MOD_ID);
 
+    public static final DeferredBlock<Block> TAR_SAND = registerBlock("tar_sand",
+            () -> new Block(BlockBehaviour.Properties.of().strength(2f).sound(SoundType.SAND)));
+    public static final DeferredBlock<Block> GAS_VENT = registerBlock("gas_vent",
+            () -> new Block(BlockBehaviour.Properties.of().strength(2f).sound(SoundType.STONE)));
+
     public static final DeferredBlock<Block> ALUMINUM_ORE = registerBlock("aluminum_ore",
             () -> new Block(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final DeferredBlock<Block> SILVER_ORE = registerBlock("silver_ore",
@@ -32,14 +37,17 @@ public class DefensiveBlocks {
             () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final DeferredBlock<Block> LEAD_ORE = registerBlock("lead_ore",
             () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
-    public static final DeferredBlock<Block> BORAX_ORE = registerBlock("borax_ore",
-            () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final DeferredBlock<Block> TIN_ORE = registerBlock("tin_ore",
             () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final DeferredBlock<Block> NICKEL_ORE = registerBlock("nickel_ore",
             () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final DeferredBlock<Block> URANIUM_ORE = registerBlock("uranium_ore",
             () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> SALT_ORE = registerBlock("salt_ore",
+            () -> new Block(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> SULFUR_ORE = registerBlock("sulfur_ore",
+            () -> new Block(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
 
     public static final DeferredBlock<Block> POWDERED_URANIUM_BLOCK = registerBlock("powdered_uranium_block",
             () -> new Block(BlockBehaviour.Properties.of().strength(3f).sound(SoundType.SAND)));
@@ -71,14 +79,16 @@ public class DefensiveBlocks {
             () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final DeferredBlock<Block> DEEPSLATE_LEAD_ORE = registerBlock("deepslate_lead_ore",
             () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
-    public static final DeferredBlock<Block> DEEPSLATE_BORAX_ORE = registerBlock("deepslate_borax_ore",
-            () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final DeferredBlock<Block> DEEPSLATE_TIN_ORE = registerBlock("deepslate_tin_ore",
             () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final DeferredBlock<Block> DEEPSLATE_NICKEL_ORE = registerBlock("deepslate_nickel_ore",
             () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final DeferredBlock<Block> DEEPSLATE_URANIUM_ORE = registerBlock("deepslate_uranium_ore",
             () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> DEEPSLATE_SALT_ORE = registerBlock("deepslate_salt_ore",
+            () -> new Block(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> DEEPSLATE_SULFUR_ORE = registerBlock("deepslate_sulfur_ore",
+            () -> new Block(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     public static final DeferredBlock<Block> ALUMINUM_BLOCK = registerBlock("aluminum_block",
             () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
@@ -180,6 +190,12 @@ public class DefensiveBlocks {
             () -> new FractionalStillControllerBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final DeferredBlock<Block> FRACTIONAL_STILL_TANK = registerBlock("fractional_still_tank",
             () -> new FractionalStillTankBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> ELECTROLYSIS_CONTROLLER = registerBlock("electrolysis_controller",
+            () -> new ElectrolysisControllerBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> COPPER_ELECTROLYSIS_TANK = registerBlock("copper_electrolysis_tank",
+            () -> new CopperElectrolysisTankBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> ZINC_ELECTROLYSIS_TANK = registerBlock("zinc_electrolysis_tank",
+            () -> new ZincElectrolysisTankBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
 
     public static final DeferredBlock<Block> SLAG_BLOCK = registerBlock("slag_block",
@@ -308,6 +324,19 @@ public class DefensiveBlocks {
 
     public static final DeferredBlock<Block> HIGH_POWER_EXPLOSIVE = registerBlock("high_power_explosive",
             () -> new HighPowerExplosiveBlock(BlockBehaviour.Properties.of().strength(0f).sound(SoundType.GRASS)));
+    public static final DeferredBlock<Block> CHEMICAL_EXPLOSIVE = registerBlock("chemical_explosive",
+            () -> new ChemicalExplosiveBlock(BlockBehaviour.Properties.of().strength(0f).sound(SoundType.GRASS)));
+    public static final DeferredBlock<Block> INCENDIARY_EXPLOSIVE = registerBlock("incendiary_explosive",
+            () -> new IncendiaryExplosiveBlock(BlockBehaviour.Properties.of().strength(0f).sound(SoundType.GRASS)));
+
+    public static final DeferredBlock<Block> CONVENTIONAL_WARHEAD = registerBlock("conventional_warhead",
+            () -> new ConventionalWarheadBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
+    public static final DeferredBlock<Block> INCENDIARY_WARHEAD = registerBlock("incendiary_warhead",
+            () -> new IncendiaryWarheadBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
+    public static final DeferredBlock<Block> CHEMICAL_WARHEAD = registerBlock("chemical_warhead",
+            () -> new ChemicalWarheadBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
+    public static final DeferredBlock<Block> NUCLEAR_WARHEAD = registerBlock("nuclear_warhead",
+            () -> new NuclearWarheadBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
 
     public static final DeferredBlock<Block> REDSTONE_CRYSTAL_BLOCK = registerBlock("redstone_crystal_block",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().strength(1f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
@@ -347,7 +376,31 @@ public class DefensiveBlocks {
     public static final DeferredBlock<LiquidBlock> OXYGEN = BLOCKS.register("oxygen",
             () -> new LiquidBlock(DefensiveFluids.SOURCE_OXYGEN.get(), BlockBehaviour.Properties.of().replaceable()));
     public static final DeferredBlock<LiquidBlock> MUSTARD_GAS = BLOCKS.register("mustard_gas",
-            () -> new LiquidBlock(DefensiveFluids.SOURCE_MUSTARD_GAS.get(), BlockBehaviour.Properties.of().replaceable()));
+            () -> new MustardGasBlock(DefensiveFluids.SOURCE_MUSTARD_GAS, BlockBehaviour.Properties.of().replaceable()));
+    public static final DeferredBlock<LiquidBlock> AMMONIA = BLOCKS.register("ammonia",
+            () -> new LiquidBlock(DefensiveFluids.SOURCE_AMMONIA.get(), BlockBehaviour.Properties.of().replaceable()));
+    public static final DeferredBlock<LiquidBlock> FORMALDEHYDE = BLOCKS.register("formaldehyde",
+            () -> new LiquidBlock(DefensiveFluids.SOURCE_FORMALDEHYDE.get(), BlockBehaviour.Properties.of().replaceable()));
+    public static final DeferredBlock<LiquidBlock> METHANOL = BLOCKS.register("methanol",
+            () -> new LiquidBlock(DefensiveFluids.SOURCE_METHANOL.get(), BlockBehaviour.Properties.of().replaceable()));
+    public static final DeferredBlock<LiquidBlock> CARBON_MONOXIDE = BLOCKS.register("carbon_monoxide",
+            () -> new LiquidBlock(DefensiveFluids.SOURCE_CARBON_MONOXIDE.get(), BlockBehaviour.Properties.of().replaceable()));
+    public static final DeferredBlock<LiquidBlock> ETHYLENE = BLOCKS.register("ethylene",
+            () -> new LiquidBlock(DefensiveFluids.SOURCE_ETHYLENE.get(), BlockBehaviour.Properties.of().replaceable()));
+    public static final DeferredBlock<LiquidBlock> SULFUR_DICHLORIDE = BLOCKS.register("sulfur_dichloride",
+            () -> new LiquidBlock(DefensiveFluids.SOURCE_SULFUR_DICHLORIDE.get(), BlockBehaviour.Properties.of().replaceable()));
+    public static final DeferredBlock<LiquidBlock> CHLORINE = BLOCKS.register("chlorine",
+            () -> new LiquidBlock(DefensiveFluids.SOURCE_CHLORINE.get(), BlockBehaviour.Properties.of().replaceable()));
+    public static final DeferredBlock<LiquidBlock> BENZENE = BLOCKS.register("benzene",
+            () -> new LiquidBlock(DefensiveFluids.SOURCE_BENZENE.get(), BlockBehaviour.Properties.of().replaceable()));
+    public static final DeferredBlock<LiquidBlock> ETHYLBENZENE = BLOCKS.register("ethylbenzene",
+            () -> new LiquidBlock(DefensiveFluids.SOURCE_ETHYLBENZENE.get(), BlockBehaviour.Properties.of().replaceable()));
+    public static final DeferredBlock<LiquidBlock> STYRENE = BLOCKS.register("styrene",
+            () -> new LiquidBlock(DefensiveFluids.SOURCE_STYRENE.get(), BlockBehaviour.Properties.of().replaceable()));
+    public static final DeferredBlock<LiquidBlock> MOLTEN_SALT = BLOCKS.register("molten_salt",
+            () -> new LiquidBlock(DefensiveFluids.SOURCE_MOLTEN_SALT.get(), BlockBehaviour.Properties.of().replaceable()));
+    public static final DeferredBlock<LiquidBlock> MOLTEN_SODIUM = BLOCKS.register("molten_sodium",
+            () -> new LiquidBlock(DefensiveFluids.SOURCE_MOLTEN_SODIUM.get(), BlockBehaviour.Properties.of().replaceable()));
 
 
 

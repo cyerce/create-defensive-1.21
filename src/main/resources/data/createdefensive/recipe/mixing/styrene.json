@@ -1,0 +1,25 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 500,
+      "fluid": "createdefensive:steam"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "createdefensive:ethylbenzene"
+    },
+    {
+      "item": "minecraft:raw_iron"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:styrene",
+      "amount": 500
+    }
+  ]
+}

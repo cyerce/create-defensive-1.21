@@ -1,0 +1,14 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "tag": "c:ingots/staballoy"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:staballoy_large_bullet_tip",
+      "count": 4
+    }
+  ]
+}

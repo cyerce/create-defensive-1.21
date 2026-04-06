@@ -1,5 +1,6 @@
 package net.aepherastudios.createdefensive.util;
 
+import com.sun.jna.platform.mac.Carbon;
 import net.aepherastudios.createdefensive.block.DefensiveBlockEntities;
 import net.aepherastudios.createdefensive.block.DefensiveBlocks;
 import net.aepherastudios.createdefensive.effect.DefensiveEffects;
@@ -8,9 +9,11 @@ import net.aepherastudios.createdefensive.fluid.DefensiveFluids;
 import net.aepherastudios.createdefensive.fluid.fluid_types.*;
 import net.aepherastudios.createdefensive.item.DefensiveCreativeModeTabs;
 import net.aepherastudios.createdefensive.item.DefensiveItems;
+import net.aepherastudios.createdefensive.particle.DefensiveParticles;
 import net.aepherastudios.createdefensive.recipe.DefensiveRecipeTypes;
 import net.aepherastudios.createdefensive.recipe.DefensiveRecipes;
 import net.aepherastudios.createdefensive.screen.DefensiveMenuTypes;
+import net.aepherastudios.createdefensive.worldgen.DefensiveFeatures;
 import net.neoforged.bus.api.IEventBus;
 
 public class EventBusRegisters {
@@ -24,6 +27,8 @@ public class EventBusRegisters {
         DefensiveCreativeModeTabs.register(modEventBus);
         DefensiveRecipeTypes.register(modEventBus);
         DefensiveRecipes.register(modEventBus);
+        DefensiveParticles.register(modEventBus);
+        DefensiveFeatures.register(modEventBus);
 
         CrudeOilFluidType.register(modEventBus);
         DirtyRawCrudeOilFluidType.register(modEventBus);
@@ -43,6 +48,19 @@ public class EventBusRegisters {
         OxygenFluidType.register(modEventBus);
         SteamFluidType.register(modEventBus);
         MustardGasFluidType.register(modEventBus);
+        AmmoniaFluidType.register(modEventBus);
+        FormaldehydeFluidType.register(modEventBus);
+        MethanolFluidType.register(modEventBus);
+        CarbonMonoxideFluidType.register(modEventBus);
+        EthyleneFluidType.register(modEventBus);
+        SulfurDichlorideFluidType.register(modEventBus);
+        ChlorineFluidType.register(modEventBus);
+        BenzeneFluidType.register(modEventBus);
+        EthylbenzeneFluidType.register(modEventBus);
+        StyreneFluidType.register(modEventBus);
+        MoltenSaltFluidType.register(modEventBus);
+        MoltenSodiumFluidType.register(modEventBus);
+
 
         DefensiveFluids.register(modEventBus);
     }

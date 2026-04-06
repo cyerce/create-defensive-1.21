@@ -2,8 +2,10 @@ package net.aepherastudios.createdefensive.util;
 
 import net.aepherastudios.createdefensive.entity.DefensiveEntities;
 import net.aepherastudios.createdefensive.entity.client.*;
+import net.aepherastudios.createdefensive.entity.custom.PrimedIncendiaryExplosive;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
 import static net.aepherastudios.createdefensive.entity.DefensiveEntities.SUPERHEATED_BLAZE;
 
@@ -69,6 +71,17 @@ public class DefensiveEntityRenderers {
         EntityRenderers.register(SUPERHEATED_BLAZE.get(), SuperheatedBlazeEntityRenderer::new);
 
         EntityRenderers.register(DefensiveEntities.PRIMED_HIGH_POWER_EXPLOSIVE.get(), PrimedHighExplosiveRenderer::new);
+        EntityRenderers.register(DefensiveEntities.PRIMED_CHEMICAL_EXPLOSIVE.get(), PrimedChemicalExplosiveRenderer::new);
+        EntityRenderers.register(DefensiveEntities.PRIMED_INCENDIARY_EXPLOSIVE.get(), PrimedIncendiaryExplosiveRenderer::new);
+
+        EntityRenderers.register(DefensiveEntities.DYNAMITE.get(), ThrownItemRenderer::new);
+        EntityRenderers.register(DefensiveEntities.INCENDIARY_DYNAMITE.get(), ThrownItemRenderer::new);
+        EntityRenderers.register(DefensiveEntities.CHEMICAL_DYNAMITE.get(), ThrownItemRenderer::new);
+        EntityRenderers.register(DefensiveEntities.NUCLEAR_DYNAMITE.get(), ThrownItemRenderer::new);
+
+        EntityRenderers.register(DefensiveEntities.GAS_CLOUD.get(), GasCloudRenderer::new);
+        EntityRenderers.register(DefensiveEntities.RADIATION_CLOUD.get(), RadiationCloudRenderer::new);
+
 
     }
 

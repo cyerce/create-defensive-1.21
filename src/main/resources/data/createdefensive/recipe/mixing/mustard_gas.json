@@ -3,16 +3,20 @@
   "heat_requirement": "heated",
   "ingredients": [
     {
-      "item": "createdefensive:ethylene"
+      "type": "neoforge:single",
+      "amount": 500,
+      "fluid": "createdefensive:ethylene"
     },
     {
-      "item": "createdefensive:sulfur_dichloride"
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "createdefensive:sulfur_dichloride"
     }
   ],
   "results": [
     {
       "id": "createdefensive:mustard_gas",
-      "amount": 250
+      "amount": 500
     }
   ]
 }

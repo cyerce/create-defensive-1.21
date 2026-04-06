@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "createdefensive:block/chemical_explosive_bottom",
+    "side": "createdefensive:block/chemical_explosive_side",
+    "top": "createdefensive:block/chemical_explosive_top"
+  }
+}

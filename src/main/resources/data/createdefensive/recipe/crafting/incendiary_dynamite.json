@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "createdefensive:incendiary_explosive"
+    },
+    "$": {
+      "item": "minecraft:paper"
+    },
+    "@": {
+      "tag": "c:strings"
+    }
+  },
+  "pattern": [
+    " @ ",
+    "$#$",
+    " $ "
+  ],
+  "result": {
+    "id": "createdefensive:incendiary_dynamite",
+    "count": 3
+  }
+}

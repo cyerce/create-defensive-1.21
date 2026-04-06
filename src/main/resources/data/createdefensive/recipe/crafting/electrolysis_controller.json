@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "c:ingots/invar"
+    },
+    "$": {
+      "item": "createdefensive:redstone_crystal_cluster"
+    },
+    "@": {
+      "item": "create:fluid_tank"
+    },
+    "%": {
+      "item": "createdefensive:lightning_core"
+    }
+  },
+  "pattern": [
+    "###",
+    "#@#",
+    "$%$"
+  ],
+  "result": {
+    "id": "createdefensive:electrolysis_controller"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "createdefensive:plastic"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:plastic_sheet"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "c:rods/gunsteel"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:gunsteel_spring"
+    }
+  ]
+}

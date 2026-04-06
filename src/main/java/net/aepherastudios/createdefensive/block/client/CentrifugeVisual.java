@@ -6,7 +6,7 @@ import com.simibubi.create.foundation.render.AllInstanceTypes;
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.visualization.VisualizationContext;
 import dev.engine_room.flywheel.lib.model.Models;
-import net.aepherastudios.createdefensive.block.entity.CentrifugeBlockEntity;
+import net.aepherastudios.createdefensive.block.entity.machine.CentrifugeBlockEntity;
 
 import java.util.function.Consumer;
 
@@ -28,7 +28,9 @@ public class CentrifugeVisual extends KineticBlockEntityVisual<CentrifugeBlockEn
     @Override
     public void update(float pt) {
         cog.setup(blockEntity)
-                .setChanged();
+                .setPosition(getVisualPosition());
+        relight(pos, cog);
+        cog.setChanged();
     }
 
     @Override

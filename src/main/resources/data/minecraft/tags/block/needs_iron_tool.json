@@ -48,6 +48,10 @@
     "createdefensive:bronze_block",
     "createdefensive:gunsteel_block",
     "createdefensive:invar_block",
-    "createdefensive:compact_industrial_iron_block"
+    "createdefensive:compact_industrial_iron_block",
+    "createdefensive:conventional_warhead",
+    "createdefensive:incendiary_warhead",
+    "createdefensive:chemical_warhead",
+    "createdefensive:nuclear_warhead"
   ]
 }

@@ -1,0 +1,25 @@
+{
+  "type": "create:compacting",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "createdefensive:polyethylene"
+    },
+    {
+      "item": "createdefensive:polyethylene"
+    },
+    {
+      "item": "createdefensive:polyethylene"
+    },
+    {
+      "item": "createdefensive:polyethylene"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:plastic",
+      "count": 2
+    }
+  ]
+}
+

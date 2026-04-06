@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 500,
+      "fluid": "createdefensive:creosote"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "createdefensive:hydrogen"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:benzene",
+      "amount": 500
+    }
+  ]
+}

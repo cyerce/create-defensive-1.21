@@ -1,19 +1,17 @@
 package net.aepherastudios.createdefensive.event;
 
 import com.simibubi.create.AllItems;
-import dev.engine_room.flywheel.api.visual.BlockEntityVisual;
-import dev.engine_room.flywheel.api.visualization.BlockEntityVisualizer;
-import dev.engine_room.flywheel.api.visualization.VisualizationContext;
-import dev.engine_room.flywheel.api.visualization.VisualizerRegistry;
 import net.aepherastudios.createdefensive.CreateDefensive;
 import net.aepherastudios.createdefensive.block.DefensiveBlockEntities;
-import net.aepherastudios.createdefensive.block.client.CentrifugeVisual;
-import net.aepherastudios.createdefensive.block.entity.CentrifugeBlockEntity;
 import net.aepherastudios.createdefensive.effect.DefensiveEffects;
 import net.aepherastudios.createdefensive.entity.DefensiveEntities;
 import net.aepherastudios.createdefensive.entity.custom.SuperheatedBlazeEntity;
 import net.aepherastudios.createdefensive.item.DefensiveItems;
-import net.aepherastudios.createdefensive.item.custom.*;
+import net.aepherastudios.createdefensive.item.custom.gun.GunItem;
+import net.aepherastudios.createdefensive.item.custom.tool.*;
+import net.aepherastudios.createdefensive.util.AimPacket;
+import net.aepherastudios.createdefensive.util.ShootPacket;
+import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
@@ -24,23 +22,23 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.SpawnPlacementTypes;
-import net.minecraft.world.entity.SpawnPlacements;
-import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.fml.common.Mod;
-import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.capabilities.Capabilities;
 import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
+import net.neoforged.neoforge.client.event.ClientTickEvent;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
 import net.neoforged.neoforge.event.entity.living.LivingDeathEvent;
 import net.neoforged.neoforge.event.entity.living.MobEffectEvent;
+import net.neoforged.neoforge.event.entity.player.AttackEntityEvent;
+import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import net.neoforged.neoforge.event.level.BlockEvent;
-import net.neoforged.neoforge.registries.RegisterEvent;
+import net.neoforged.neoforge.network.PacketDistributor;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -219,7 +217,7 @@ public class DefensiveEvents {
         event.registerBlockEntity(
                 Capabilities.ItemHandler.BLOCK,
                 DefensiveBlockEntities.CENTRIFUGE_BE.get(),
-                (be, side) -> be.inputInv
+                (be, side) -> be.capability
         );
 
         event.registerBlockEntity(
@@ -233,6 +231,30 @@ public class DefensiveEvents {
                 DefensiveBlockEntities.FRACTIONAL_STILL_OUTPUT_BE.get(),
                 (be, side) -> be.fluidTank
         );
+
+        event.registerBlockEntity(
+                Capabilities.FluidHandler.BLOCK,
+                DefensiveBlockEntities.COPPER_ELECTROLYSIS_TANK_BE.get(),
+                (be, side) -> be.outputTank
+        );
+
+        event.registerBlockEntity(
+                Capabilities.FluidHandler.BLOCK,
+                DefensiveBlockEntities.ZINC_ELECTROLYSIS_TANK_BE.get(),
+                (be, side) -> be.outputTank
+        );
+
+        event.registerBlockEntity(
+                Capabilities.FluidHandler.BLOCK,
+                DefensiveBlockEntities.ELECTROLYSIS_CONTROLLER_BE.get(),
+                (be, side) -> be.inputTank
+        );
+
+        event.registerBlockEntity(
+                Capabilities.FluidHandler.BLOCK,
+                DefensiveBlockEntities.GAS_TRAP_BE.get(),
+                (be, side) -> be.gasTank
+        );
     }
 
     @SubscribeEvent
@@ -242,5 +264,55 @@ public class DefensiveEvents {
                 Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
                 SuperheatedBlazeEntity::checkMobSpawnRules,
                 RegisterSpawnPlacementsEvent.Operation.REPLACE);
+    }
+
+    @SubscribeEvent
+    public static void onAttackEntity(AttackEntityEvent event) {
+        ItemStack stack = event.getEntity().getMainHandItem();
+        if (stack.getItem() instanceof GunItem gun) {
+            event.setCanceled(true);
+            if (!event.getEntity().level().isClientSide) {
+                gun.tryShoot(event.getEntity(), stack);
+            }
+        }
+    }
+
+    @SubscribeEvent
+    public static void onLeftClickEmpty(PlayerInteractEvent.LeftClickEmpty event) {
+        if (event.getEntity().level().isClientSide) {
+            ItemStack stack = event.getEntity().getMainHandItem();
+            if (stack.getItem() instanceof GunItem && !event.getEntity().getCooldowns().isOnCooldown(stack.getItem())) {
+                event.getEntity().swingTime = 0;
+                event.getEntity().swinging = false;
+                PacketDistributor.sendToServer(new ShootPacket());
+            }
+        }
+    }
+
+    @SubscribeEvent
+    public static void onLeftClickBlock(PlayerInteractEvent.LeftClickBlock event) {
+        ItemStack stack = event.getEntity().getMainHandItem();
+        if (stack.getItem() instanceof GunItem gun && !event.getEntity().getCooldowns().isOnCooldown(stack.getItem())) {
+            if (!event.getEntity().level().isClientSide) {
+                gun.tryShoot(event.getEntity(), stack);
+            }
+        }
+    }
+
+    @SubscribeEvent
+    public static void onClientTick(ClientTickEvent.Pre event) {
+        Minecraft mc = Minecraft.getInstance();
+        if (mc.player == null) return;
+
+        ItemStack stack = mc.player.getMainHandItem();
+        if (!(stack.getItem() instanceof GunItem)) return;
+
+        boolean isRightClickHeld = mc.options.keyUse.isDown();
+        boolean currentlyAiming = GunItem.isAiming(stack);
+
+        if (isRightClickHeld != currentlyAiming) {
+            PacketDistributor.sendToServer(new AimPacket(isRightClickHeld));
+            GunItem.setAiming(stack, isRightClickHeld);
+        }
     }
 }

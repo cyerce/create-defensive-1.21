@@ -1,7 +1,7 @@
 package net.aepherastudios.createdefensive.screen.menu;
 
 import net.aepherastudios.createdefensive.block.DefensiveBlocks;
-import net.aepherastudios.createdefensive.block.entity.CokingOvenBlockEntity;
+import net.aepherastudios.createdefensive.block.entity.machine.CokingOvenBlockEntity;
 import net.aepherastudios.createdefensive.screen.DefensiveMenuTypes;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;

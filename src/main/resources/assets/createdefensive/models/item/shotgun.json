@@ -151,5 +151,19 @@
 		5,
 		6,
 		7
+	],
+	"overrides": [
+		{
+			"predicate": { "createdefensive:loaded": 1.0 },
+			"model": "createdefensive:item/shotgun_loading"
+		},
+		{
+			"predicate": { "createdefensive:aiming": 1.0 },
+			"model": "createdefensive:item/shotgun_aiming"
+		},
+		{
+			"predicate": { "createdefensive:loaded": 1.0, "createdefensive:aiming": 1.0 },
+			"model": "createdefensive:item/shotgun_aiming"
+		}
 	]
 }

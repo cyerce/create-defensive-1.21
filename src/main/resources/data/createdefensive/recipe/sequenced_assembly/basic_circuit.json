@@ -4,7 +4,7 @@
     "id": "createdefensive:incomplete_basic_circuit"
   },
   "ingredient": {
-    "tag": "c:plates/aluminum"
+    "item": "createdefensive:plastic_sheet"
   },
   "sequence": [
     {

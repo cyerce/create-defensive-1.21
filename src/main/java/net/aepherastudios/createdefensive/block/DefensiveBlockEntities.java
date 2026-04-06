@@ -1,8 +1,8 @@
 package net.aepherastudios.createdefensive.block;
 
-import dev.engine_room.flywheel.api.visualization.VisualizerRegistry;
 import net.aepherastudios.createdefensive.CreateDefensive;
-import net.aepherastudios.createdefensive.block.entity.*;
+import net.aepherastudios.createdefensive.block.entity.machine.*;
+import net.aepherastudios.createdefensive.block.entity.trap.*;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.bus.api.IEventBus;
@@ -50,6 +50,19 @@ public class DefensiveBlockEntities {
     public static final Supplier<BlockEntityType<FractionalStillTank>> FRACTIONAL_STILL_OUTPUT_BE =
             BLOCK_ENTITIES.register("fractional_still_output_be", () -> BlockEntityType.Builder.of(
                     FractionalStillTank::new, DefensiveBlocks.FRACTIONAL_STILL_TANK.get()).build(null));
+
+    public static final Supplier<BlockEntityType<ElectrolysisControllerBlockEntity>> ELECTROLYSIS_CONTROLLER_BE =
+            BLOCK_ENTITIES.register("electrolysis_controller_be", () -> BlockEntityType.Builder.of(
+                    ElectrolysisControllerBlockEntity::new, DefensiveBlocks.ELECTROLYSIS_CONTROLLER.get()).build(null));
+
+    public static final Supplier<BlockEntityType<CopperElectrolysisTankBlockEntity>> COPPER_ELECTROLYSIS_TANK_BE =
+            BLOCK_ENTITIES.register("copper_electrolysis_tank_be", () -> BlockEntityType.Builder.of(
+                    CopperElectrolysisTankBlockEntity::new, DefensiveBlocks.COPPER_ELECTROLYSIS_TANK.get()).build(null));
+
+    public static final Supplier<BlockEntityType<ZincElectrolysisTankBlockEntity>> ZINC_ELECTROLYSIS_TANK_BE =
+            BLOCK_ENTITIES.register("zinc_electrolysis_tank_be", () -> BlockEntityType.Builder.of(
+                    ZincElectrolysisTankBlockEntity::new, DefensiveBlocks.ZINC_ELECTROLYSIS_TANK.get()).build(null));
+
 
 
     public static void register(IEventBus eventBus) {

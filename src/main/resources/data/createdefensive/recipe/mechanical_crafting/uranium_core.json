@@ -1,0 +1,34 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": true,
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "createdefensive:weapons_grade_uranium_ingot"
+    },
+    "P": {
+      "item": "createdefensive:hexamine"
+    },
+    "S": {
+      "item": "createdefensive:depleted_uranium_ingot"
+    },
+    "D": {
+      "item": "createdefensive:redstone_mechanism"
+    }
+  },
+  "pattern": [
+    "   SSS   ",
+    " SSPPPSS ",
+    " SPPAPPS ",
+    "SPPAAAPPS",
+    "SPAAAAAPS",
+    "SPPAAAPPS",
+    " SPPAPPS ",
+    " SSPPPSS ",
+    "   SDS   "
+  ],
+  "result": {
+    "id": "createdefensive:uranium_core"
+  },
+  "show_notification": false
+}

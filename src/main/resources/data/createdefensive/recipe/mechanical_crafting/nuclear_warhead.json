@@ -1,0 +1,36 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": true,
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "createdefensive:uranium_core"
+    },
+    "S": {
+      "tag": "c:ingots/steel"
+    },
+    "R": {
+      "item": "createdefensive:redstone_mechanism"
+    },
+    "C": {
+      "item": "createdefensive:computation_mechanism"
+    },
+    "M": {
+      "item": "createdefensive:radar_mechanism"
+    },
+    "H": {
+      "item": "createdefensive:hexamine"
+    }
+  },
+  "pattern": [
+    "SCRMS",
+    "SHHHS",
+    "SHEHS",
+    "SHHHS",
+    "SSSSS"
+  ],
+  "result": {
+    "id": "createdefensive:nuclear_warhead"
+  },
+  "show_notification": false
+}

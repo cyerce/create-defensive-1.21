@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "c:ingots/gunsteel"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:gunsteel_sheet"
+    }
+  ]
+}

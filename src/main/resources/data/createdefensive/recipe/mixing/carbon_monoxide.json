@@ -19,7 +19,8 @@
       "amount": 500
     },
     {
-      "id": "createdefensive:carbon_monoxide"
+      "id": "createdefensive:carbon_monoxide",
+      "amount": 250
     }
   ]
 }

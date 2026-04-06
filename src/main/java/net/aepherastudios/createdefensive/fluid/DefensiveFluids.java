@@ -106,6 +106,67 @@ public class DefensiveFluids {
     public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_MUSTARD_GAS = FLUIDS.register("flowing_mustard_gas",
             () -> new BaseFlowingFluid.Flowing(DefensiveFluids.MUSTARD_GAS_PROPERTIES));
 
+    public static final DeferredHolder<Fluid, FlowingFluid> SOURCE_AMMONIA = FLUIDS.register("ammonia",
+            () -> new BaseFlowingFluid.Source(DefensiveFluids.AMMONIA_PROPERTIES));
+    public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_AMMONIA = FLUIDS.register("flowing_ammonia",
+            () -> new BaseFlowingFluid.Flowing(DefensiveFluids.AMMONIA_PROPERTIES));
+
+    public static final DeferredHolder<Fluid, FlowingFluid> SOURCE_FORMALDEHYDE = FLUIDS.register("formaldehyde",
+            () -> new BaseFlowingFluid.Source(DefensiveFluids.FORMALDEHYDE_PROPERTIES));
+    public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_FORMALDEHYDE = FLUIDS.register("flowing_formaldehyde",
+            () -> new BaseFlowingFluid.Flowing(DefensiveFluids.FORMALDEHYDE_PROPERTIES));
+
+    public static final DeferredHolder<Fluid, FlowingFluid> SOURCE_METHANOL = FLUIDS.register("methanol",
+            () -> new BaseFlowingFluid.Source(DefensiveFluids.METHANOL_PROPERTIES));
+    public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_METHANOL = FLUIDS.register("flowing_methanol",
+            () -> new BaseFlowingFluid.Flowing(DefensiveFluids.METHANOL_PROPERTIES));
+
+    public static final DeferredHolder<Fluid, FlowingFluid> SOURCE_CARBON_MONOXIDE = FLUIDS.register("carbon_monoxide",
+            () -> new BaseFlowingFluid.Source(DefensiveFluids.CARBON_MONOXIDE_PROPERTIES));
+    public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_CARBON_MONOXIDE = FLUIDS.register("flowing_carbon_monoxide",
+            () -> new BaseFlowingFluid.Flowing(DefensiveFluids.CARBON_MONOXIDE_PROPERTIES));
+
+    public static final DeferredHolder<Fluid, FlowingFluid> SOURCE_ETHYLENE = FLUIDS.register("ethylene",
+            () -> new BaseFlowingFluid.Source(DefensiveFluids.ETHYLENE_PROPERTIES));
+    public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_ETHYLENE = FLUIDS.register("flowing_ethylene",
+            () -> new BaseFlowingFluid.Flowing(DefensiveFluids.ETHYLENE_PROPERTIES));
+
+    public static final DeferredHolder<Fluid, FlowingFluid> SOURCE_SULFUR_DICHLORIDE = FLUIDS.register("sulfur_dichloride",
+            () -> new BaseFlowingFluid.Source(DefensiveFluids.SULFUR_DICHLORIDE_PROPERTIES));
+    public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_SULFUR_DICHLORIDE = FLUIDS.register("flowing_sulfur_dichloride",
+            () -> new BaseFlowingFluid.Flowing(DefensiveFluids.SULFUR_DICHLORIDE_PROPERTIES));
+
+    public static final DeferredHolder<Fluid, FlowingFluid> SOURCE_CHLORINE = FLUIDS.register("chlorine",
+            () -> new BaseFlowingFluid.Source(DefensiveFluids.CHLORINE_PROPERTIES));
+    public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_CHLORINE = FLUIDS.register("flowing_chlorine",
+            () -> new BaseFlowingFluid.Flowing(DefensiveFluids.CHLORINE_PROPERTIES));
+
+    public static final DeferredHolder<Fluid, FlowingFluid> SOURCE_BENZENE = FLUIDS.register("benzene",
+            () -> new BaseFlowingFluid.Source(DefensiveFluids.BENZENE_PROPERTIES));
+    public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_BENZENE = FLUIDS.register("flowing_benzene",
+            () -> new BaseFlowingFluid.Flowing(DefensiveFluids.BENZENE_PROPERTIES));
+
+    public static final DeferredHolder<Fluid, FlowingFluid> SOURCE_ETHYLBENZENE = FLUIDS.register("ethylbenzene",
+            () -> new BaseFlowingFluid.Source(DefensiveFluids.ETHYLBENZENE_PROPERTIES));
+    public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_ETHYLBENZENE = FLUIDS.register("flowing_ethylbenzene",
+            () -> new BaseFlowingFluid.Flowing(DefensiveFluids.ETHYLBENZENE_PROPERTIES));
+
+    public static final DeferredHolder<Fluid, FlowingFluid> SOURCE_STYRENE = FLUIDS.register("styrene",
+            () -> new BaseFlowingFluid.Source(DefensiveFluids.STYRENE_PROPERTIES));
+    public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_STYRENE = FLUIDS.register("flowing_styrene",
+            () -> new BaseFlowingFluid.Flowing(DefensiveFluids.STYRENE_PROPERTIES));
+
+    public static final DeferredHolder<Fluid, FlowingFluid> SOURCE_MOLTEN_SALT = FLUIDS.register("molten_salt",
+            () -> new BaseFlowingFluid.Source(DefensiveFluids.MOLTEN_SALT_PROPERTIES));
+    public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_MOLTEN_SALT = FLUIDS.register("flowing_molten_salt",
+            () -> new BaseFlowingFluid.Flowing(DefensiveFluids.MOLTEN_SALT_PROPERTIES));
+
+    public static final DeferredHolder<Fluid, FlowingFluid> SOURCE_MOLTEN_SODIUM = FLUIDS.register("molten_sodium",
+            () -> new BaseFlowingFluid.Source(DefensiveFluids.MOLTEN_SODIUM_PROPERTIES));
+    public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_MOLTEN_SODIUM = FLUIDS.register("flowing_molten_sodium",
+            () -> new BaseFlowingFluid.Flowing(DefensiveFluids.MOLTEN_SODIUM_PROPERTIES));
+
+
 
 
 
@@ -198,6 +259,66 @@ public class DefensiveFluids {
             MustardGasFluidType.MUSTARD_GAS_FLUID_TYPE, SOURCE_MUSTARD_GAS, FLOWING_MUSTARD_GAS)
             .slopeFindDistance(2).levelDecreasePerBlock(2).block(DefensiveBlocks.MUSTARD_GAS)
             .bucket(DefensiveItems.MUSTARD_GAS_BUCKET);
+
+    public static final BaseFlowingFluid.Properties AMMONIA_PROPERTIES = new BaseFlowingFluid.Properties(
+            AmmoniaFluidType.AMMONIA_FLUID_TYPE, SOURCE_AMMONIA, FLOWING_AMMONIA)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(DefensiveBlocks.AMMONIA)
+            .bucket(DefensiveItems.AMMONIA_BUCKET);
+
+    public static final BaseFlowingFluid.Properties FORMALDEHYDE_PROPERTIES = new BaseFlowingFluid.Properties(
+            FormaldehydeFluidType.FORMALDEHYDE_FLUID_TYPE, SOURCE_FORMALDEHYDE, FLOWING_FORMALDEHYDE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(DefensiveBlocks.FORMALDEHYDE)
+            .bucket(DefensiveItems.FORMALDEHYDE_BUCKET);
+
+    public static final BaseFlowingFluid.Properties METHANOL_PROPERTIES = new BaseFlowingFluid.Properties(
+            MethanolFluidType.METHANOL_FLUID_TYPE, SOURCE_METHANOL, FLOWING_METHANOL)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(DefensiveBlocks.METHANOL)
+            .bucket(DefensiveItems.METHANOL_BUCKET);
+
+    public static final BaseFlowingFluid.Properties CARBON_MONOXIDE_PROPERTIES = new BaseFlowingFluid.Properties(
+            CarbonMonoxideFluidType.CARBON_MONOXIDE_FLUID_TYPE, SOURCE_CARBON_MONOXIDE, FLOWING_CARBON_MONOXIDE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(DefensiveBlocks.CARBON_MONOXIDE)
+            .bucket(DefensiveItems.CARBON_MONOXIDE_BUCKET);
+
+    public static final BaseFlowingFluid.Properties ETHYLENE_PROPERTIES = new BaseFlowingFluid.Properties(
+            EthyleneFluidType.ETHYLENE_FLUID_TYPE, SOURCE_ETHYLENE, FLOWING_ETHYLENE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(DefensiveBlocks.ETHYLENE)
+            .bucket(DefensiveItems.ETHYLENE_BUCKET);
+
+    public static final BaseFlowingFluid.Properties SULFUR_DICHLORIDE_PROPERTIES = new BaseFlowingFluid.Properties(
+            SulfurDichlorideFluidType.SULFUR_DICHLORIDE_FLUID_TYPE, SOURCE_SULFUR_DICHLORIDE, FLOWING_SULFUR_DICHLORIDE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(DefensiveBlocks.SULFUR_DICHLORIDE)
+            .bucket(DefensiveItems.SULFUR_DICHLORIDE_BUCKET);
+
+    public static final BaseFlowingFluid.Properties CHLORINE_PROPERTIES = new BaseFlowingFluid.Properties(
+            ChlorineFluidType.CHLORINE_FLUID_TYPE, SOURCE_CHLORINE, FLOWING_CHLORINE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(DefensiveBlocks.CHLORINE)
+            .bucket(DefensiveItems.CHLORINE_BUCKET);
+
+    public static final BaseFlowingFluid.Properties BENZENE_PROPERTIES = new BaseFlowingFluid.Properties(
+            BenzeneFluidType.BENZENE_FLUID_TYPE, SOURCE_BENZENE, FLOWING_BENZENE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(DefensiveBlocks.BENZENE)
+            .bucket(DefensiveItems.BENZENE_BUCKET);
+
+    public static final BaseFlowingFluid.Properties ETHYLBENZENE_PROPERTIES = new BaseFlowingFluid.Properties(
+            EthylbenzeneFluidType.ETHYLBENZENE_FLUID_TYPE, SOURCE_ETHYLBENZENE, FLOWING_ETHYLBENZENE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(DefensiveBlocks.ETHYLBENZENE)
+            .bucket(DefensiveItems.ETHYLBENZENE_BUCKET);
+
+    public static final BaseFlowingFluid.Properties STYRENE_PROPERTIES = new BaseFlowingFluid.Properties(
+            StyreneFluidType.STYRENE_FLUID_TYPE, SOURCE_STYRENE, FLOWING_STYRENE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(DefensiveBlocks.STYRENE)
+            .bucket(DefensiveItems.STYRENE_BUCKET);
+
+    public static final BaseFlowingFluid.Properties MOLTEN_SALT_PROPERTIES = new BaseFlowingFluid.Properties(
+            MoltenSaltFluidType.MOLTEN_SALT_FLUID_TYPE, SOURCE_MOLTEN_SALT, FLOWING_MOLTEN_SALT)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(DefensiveBlocks.MOLTEN_SALT)
+            .bucket(DefensiveItems.MOLTEN_SALT_BUCKET);
+
+    public static final BaseFlowingFluid.Properties MOLTEN_SODIUM_PROPERTIES = new BaseFlowingFluid.Properties(
+            MoltenSodiumFluidType.MOLTEN_SODIUM_FLUID_TYPE, SOURCE_MOLTEN_SODIUM, FLOWING_MOLTEN_SODIUM)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(DefensiveBlocks.MOLTEN_SODIUM)
+            .bucket(DefensiveItems.MOLTEN_SODIUM_BUCKET);
 
 
 

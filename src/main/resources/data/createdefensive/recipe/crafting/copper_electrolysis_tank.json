@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "c:ingots/invar"
+    },
+    "@": {
+      "item": "create:fluid_tank"
+    },
+    "$": {
+      "tag": "c:electrodes/copper"
+    },
+    "%": {
+      "tag": "c:plates/copper"
+    }
+  },
+  "pattern": [
+    "#$#",
+    "#@#",
+    "#%#"
+  ],
+  "result": {
+    "id": "createdefensive:copper_electrolysis_tank"
+  }
+}

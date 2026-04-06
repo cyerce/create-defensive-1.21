@@ -122,5 +122,19 @@
 			"color": 0,
 			"children": [0, 1, 2, 3, 4, 5]
 		}
+	],
+	"overrides": [
+		{
+			"predicate": { "createdefensive:loaded": 1.0 },
+			"model": "createdefensive:item/pistol_loading"
+		},
+		{
+			"predicate": { "createdefensive:aiming": 1.0 },
+			"model": "createdefensive:item/pistol_aiming"
+		},
+		{
+			"predicate": { "createdefensive:loaded": 1.0, "createdefensive:aiming": 1.0 },
+			"model": "createdefensive:item/pistol_aiming"
+		}
 	]
 }

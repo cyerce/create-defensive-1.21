@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "createdefensive:crude_oil",
+    "createdefensive:natural_gas"
+  ]
+}
