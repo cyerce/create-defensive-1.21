@@ -1,0 +1,9 @@
+{
+  "type": "createdefensive:reactor_item",
+  "ingredient": {
+    "tag": "c:ingots/bismuth"
+  },
+  "result": {
+    "id": "createdefensive:polonium_ingot"
+  }
+}

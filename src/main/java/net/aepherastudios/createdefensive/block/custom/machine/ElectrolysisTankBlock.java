@@ -15,7 +15,6 @@ import org.jetbrains.annotations.Nullable;
 
 public abstract class ElectrolysisTankBlock extends BaseEntityBlock {
 
-    public static final MapCodec<CokingOvenBlock> CODEC = simpleCodec(CokingOvenBlock::new);
     public static final VoxelShape SHAPE = Block.box(0,0,0,16,16,16);
 
     protected ElectrolysisTankBlock(Properties properties) {
@@ -23,9 +22,7 @@ public abstract class ElectrolysisTankBlock extends BaseEntityBlock {
     }
 
     @Override
-    protected MapCodec<? extends BaseEntityBlock> codec() {
-        return CODEC;
-    }
+    protected abstract MapCodec<? extends BaseEntityBlock> codec();
 
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext){

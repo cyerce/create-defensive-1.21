@@ -27,12 +27,10 @@ public class FractionalStillTankBlock extends BaseEntityBlock {
         return SHAPE;
     }
 
-
     @Override
     public RenderShape getRenderShape(BlockState pState) {
         return RenderShape.MODEL;
     }
-
 
     @Override
     protected MapCodec<? extends BaseEntityBlock> codec() {

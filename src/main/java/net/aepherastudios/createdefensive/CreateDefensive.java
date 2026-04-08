@@ -1,6 +1,7 @@
 package net.aepherastudios.createdefensive;
 
 import com.simibubi.create.api.stress.BlockStressValues;
+import com.simibubi.create.compat.jei.category.MixingCategory;
 import dev.engine_room.flywheel.api.visual.BlockEntityVisual;
 import dev.engine_room.flywheel.api.visualization.BlockEntityVisualizer;
 import dev.engine_room.flywheel.api.visualization.VisualizationContext;
@@ -22,6 +23,7 @@ import net.aepherastudios.createdefensive.particle.custom.RadioactiveCloudPartic
 import net.aepherastudios.createdefensive.recipe.DefensiveRecipes;
 import net.aepherastudios.createdefensive.screen.DefensiveMenuTypes;
 import net.aepherastudios.createdefensive.screen.screen.CokingOvenScreen;
+import net.aepherastudios.createdefensive.screen.screen.ReactorScreen;
 import net.aepherastudios.createdefensive.util.*;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -69,12 +71,6 @@ public class CreateDefensive {
 
         modEventBus.addListener(this::addCreative);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
-
-        NeoForge.EVENT_BUS.addListener((ServerStartedEvent event) -> {
-            var recipes = event.getServer().getRecipeManager()
-                    .getAllRecipesFor(DefensiveRecipes.COKING_TYPE.get());
-            CreateDefensive.LOGGER.info("Loaded {} coking recipes", recipes.size());
-        });
 
     }
 
@@ -169,6 +165,7 @@ public class CreateDefensive {
         @SubscribeEvent
         public static void registerScreens(RegisterMenuScreensEvent event) {
             event.register(DefensiveMenuTypes.COKING_OVEN_MENU.get(), CokingOvenScreen::new);
+            event.register(DefensiveMenuTypes.REACTOR_MENU.get(), ReactorScreen::new);
         }
 
         @SubscribeEvent

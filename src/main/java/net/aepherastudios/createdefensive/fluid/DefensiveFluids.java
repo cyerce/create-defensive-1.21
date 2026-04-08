@@ -166,6 +166,16 @@ public class DefensiveFluids {
     public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_MOLTEN_SODIUM = FLUIDS.register("flowing_molten_sodium",
             () -> new BaseFlowingFluid.Flowing(DefensiveFluids.MOLTEN_SODIUM_PROPERTIES));
 
+    public static final DeferredHolder<Fluid, FlowingFluid> SOURCE_IRRADIATED_WATER = FLUIDS.register("irradiated_water",
+            () -> new BaseFlowingFluid.Source(DefensiveFluids.IRRADIATED_WATER_PROPERTIES));
+    public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_IRRADIATED_WATER = FLUIDS.register("flowing_irradiated_water",
+            () -> new BaseFlowingFluid.Flowing(DefensiveFluids.IRRADIATED_WATER_PROPERTIES));
+
+    public static final DeferredHolder<Fluid, FlowingFluid> SOURCE_SUPERHEATED_IRRADIATED_WATER = FLUIDS.register("superheated_irradiated_water",
+            () -> new BaseFlowingFluid.Source(DefensiveFluids.SUPERHEATED_IRRADIATED_WATER_PROPERTIES));
+    public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_SUPERHEATED_IRRADIATED_WATER = FLUIDS.register("flowing_superheated_irradiated_water",
+            () -> new BaseFlowingFluid.Flowing(DefensiveFluids.SUPERHEATED_IRRADIATED_WATER_PROPERTIES));
+
 
 
 
@@ -319,6 +329,17 @@ public class DefensiveFluids {
             MoltenSodiumFluidType.MOLTEN_SODIUM_FLUID_TYPE, SOURCE_MOLTEN_SODIUM, FLOWING_MOLTEN_SODIUM)
             .slopeFindDistance(2).levelDecreasePerBlock(2).block(DefensiveBlocks.MOLTEN_SODIUM)
             .bucket(DefensiveItems.MOLTEN_SODIUM_BUCKET);
+
+    public static final BaseFlowingFluid.Properties IRRADIATED_WATER_PROPERTIES = new BaseFlowingFluid.Properties(
+            IrradiatedWaterFluidType.IRRADIATED_WATER_FLUID_TYPE, SOURCE_IRRADIATED_WATER, FLOWING_IRRADIATED_WATER)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(DefensiveBlocks.IRRADIATED_WATER)
+            .bucket(DefensiveItems.IRRADIATED_WATER_BUCKET);
+
+    public static final BaseFlowingFluid.Properties SUPERHEATED_IRRADIATED_WATER_PROPERTIES = new BaseFlowingFluid.Properties(
+            SuperheatedIrradiatedWaterFluidType.SUPERHEATED_IRRADIATED_WATER_FLUID_TYPE, SOURCE_SUPERHEATED_IRRADIATED_WATER, FLOWING_SUPERHEATED_IRRADIATED_WATER)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(DefensiveBlocks.SUPERHEATED_IRRADIATED_WATER)
+            .bucket(DefensiveItems.SUPERHEATED_IRRADIATED_WATER_BUCKET);
+
 
 
 

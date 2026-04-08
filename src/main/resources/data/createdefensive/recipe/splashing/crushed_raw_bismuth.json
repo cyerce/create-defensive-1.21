@@ -1,0 +1,18 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createdefensive:crushed_raw_bismuth"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:bismuth_nugget",
+      "count": 9
+    },
+    {
+      "id": "createdefensive:sulfur",
+      "chance": 0.5
+    }
+  ]
+}

@@ -13,6 +13,7 @@ import net.aepherastudios.createdefensive.util.AimPacket;
 import net.aepherastudios.createdefensive.util.ShootPacket;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.damagesource.DamageSource;
@@ -252,8 +253,22 @@ public class DefensiveEvents {
 
         event.registerBlockEntity(
                 Capabilities.FluidHandler.BLOCK,
-                DefensiveBlockEntities.GAS_TRAP_BE.get(),
-                (be, side) -> be.gasTank
+                DefensiveBlockEntities.REACTOR_COOLANT_TANK_BE.get(),
+                (be, side) -> {
+                    if (side == Direction.UP) return be.inputTank;
+                    if (side == Direction.DOWN) return be.outputTank;
+                    return null;
+                }
+        );
+
+        event.registerBlockEntity(
+                Capabilities.FluidHandler.BLOCK,
+                DefensiveBlockEntities.REACTOR_RESOURCE_TANK_BE.get(),
+                (be, side) -> {
+                    if (side == Direction.UP) return be.inputTank;
+                    if (side == Direction.DOWN) return be.outputTank;
+                    return null;
+                }
         );
     }
 

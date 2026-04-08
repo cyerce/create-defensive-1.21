@@ -8,11 +8,11 @@
   "processing_time": 250,
   "results": [
     {
-      "id": "createdefense:salt"
+      "id": "createdefensive:salt"
     },
     {
       "chance": 0.75,
-      "id": "createdefense:salt"
+      "id": "createdefensive:salt"
     },
     {
       "chance": 0.75,

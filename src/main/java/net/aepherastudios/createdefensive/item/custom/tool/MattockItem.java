@@ -11,6 +11,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EquipmentSlotGroup;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
@@ -111,5 +112,10 @@ public class MattockItem extends DiggerItem {
     public boolean canPerformAction(ItemStack stack, ItemAbility toolAction) {
         return ItemAbilities.DEFAULT_AXE_ACTIONS.contains(toolAction)
                 || ItemAbilities.DEFAULT_HOE_ACTIONS.contains(toolAction);
+    }
+
+    @Override
+    public boolean canDisableShield(ItemStack stack, ItemStack shield, LivingEntity entity, LivingEntity attacker) {
+        return true;
     }
 }

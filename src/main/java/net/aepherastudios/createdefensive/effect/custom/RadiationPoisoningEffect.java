@@ -18,7 +18,6 @@ public class RadiationPoisoningEffect extends MobEffect {
         if (pLivingEntity.level() instanceof ServerLevel serverLevel) {
             float damage = 1f * (pAmplifier + 1);
             pLivingEntity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 50, 0, true, false));
-            pLivingEntity.addEffect(new MobEffectInstance(MobEffects.DARKNESS, 50, 0, true, false));
             pLivingEntity.hurt(DefensiveDamageSources.radiationPoisoning(serverLevel), damage);
         }
         return super.applyEffectTick(pLivingEntity, pAmplifier);

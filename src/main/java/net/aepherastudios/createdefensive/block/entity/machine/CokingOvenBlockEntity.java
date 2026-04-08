@@ -7,7 +7,7 @@ import com.simibubi.create.foundation.utility.BlockHelper;
 import net.aepherastudios.createdefensive.block.DefensiveBlockEntities;
 import net.aepherastudios.createdefensive.block.custom.machine.CokingOvenBlock;
 import net.aepherastudios.createdefensive.recipe.DefensiveRecipes;
-import net.aepherastudios.createdefensive.recipe.custom.CokingRecipe;
+import net.aepherastudios.createdefensive.recipe.type.CokingRecipe;
 import net.aepherastudios.createdefensive.screen.menu.CokingOvenMenu;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;

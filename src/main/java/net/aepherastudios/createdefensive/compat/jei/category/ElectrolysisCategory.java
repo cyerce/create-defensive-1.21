@@ -2,7 +2,6 @@ package net.aepherastudios.createdefensive.compat.jei.category;
 
 import com.simibubi.create.compat.jei.ItemIcon;
 import com.simibubi.create.compat.jei.category.CreateRecipeCategory;
-import com.simibubi.create.foundation.gui.AllGuiTextures;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
 import mezz.jei.api.gui.drawable.IDrawable;
 import mezz.jei.api.gui.ingredient.IRecipeSlotsView;
@@ -14,7 +13,7 @@ import mezz.jei.api.recipe.category.IRecipeCategory;
 import net.aepherastudios.createdefensive.CreateDefensive;
 import net.aepherastudios.createdefensive.block.DefensiveBlocks;
 import net.aepherastudios.createdefensive.compat.jei.animated_elements.AnimatedElectrolysis;
-import net.aepherastudios.createdefensive.recipe.custom.ElectrolysisRecipe;
+import net.aepherastudios.createdefensive.recipe.type.ElectrolysisRecipe;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;

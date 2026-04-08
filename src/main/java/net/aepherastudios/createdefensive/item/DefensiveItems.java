@@ -55,6 +55,8 @@ public class DefensiveItems {
     public static final DeferredItem<Item> TIN_INGOT = ITEMS.register("tin_ingot", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> NICKEL_INGOT = ITEMS.register("nickel_ingot", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> URANIUM_INGOT = ITEMS.register("uranium_ingot", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BISMUTH_INGOT = ITEMS.register("bismuth_ingot", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> POLONIUM_INGOT = ITEMS.register("polonium_ingot", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BRONZE_INGOT = ITEMS.register("bronze_ingot", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> GUNSTEEL_INGOT = ITEMS.register("gunsteel_ingot", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> GUNSTEEL_SHEET = ITEMS.register("gunsteel_sheet", () -> new Item(new Item.Properties()));
@@ -178,6 +180,11 @@ public class DefensiveItems {
 
     public static final DeferredItem<Item> URANIUM_CORE = ITEMS.register("uranium_core", () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> FUEL_ROD = ITEMS.register("fuel_rod", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SPENT_FUEL_ROD = ITEMS.register("spent_fuel_rod", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> CONTROL_ROD = ITEMS.register("control_rod", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> NEUTRON_ACTIVATOR = ITEMS.register("neutron_activator", () -> new Item(new Item.Properties()));
+
     public static final DeferredItem<Item> PISTOL = ITEMS.register("pistol", () -> new PistolItem(new Item.Properties()));
     public static final DeferredItem<Item> RIFLE = ITEMS.register("rifle", () -> new RifleItem(new Item.Properties()));
     public static final DeferredItem<Item> SHOTGUN = ITEMS.register("shotgun", () -> new ShotgunItem(new Item.Properties()));
@@ -214,6 +221,8 @@ public class DefensiveItems {
     public static final DeferredItem<Item> TIN_NUGGET = ITEMS.register("tin_nugget", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> NICKEL_NUGGET = ITEMS.register("nickel_nugget", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> URANIUM_NUGGET = ITEMS.register("uranium_nugget", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BISMUTH_NUGGET = ITEMS.register("bismuth_nugget", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> POLONIUM_NUGGET = ITEMS.register("polonium_nugget", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BRONZE_NUGGET = ITEMS.register("bronze_nugget", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> GUNSTEEL_NUGGET = ITEMS.register("gunsteel_nugget", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> INVAR_NUGGET = ITEMS.register("invar_nugget", () -> new Item(new Item.Properties()));
@@ -232,6 +241,9 @@ public class DefensiveItems {
     public static final DeferredItem<Item> RAW_TIN = ITEMS.register("raw_tin", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> RAW_NICKEL = ITEMS.register("raw_nickel", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> RAW_URANIUM = ITEMS.register("raw_uranium", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> RAW_BISMUTH = ITEMS.register("raw_bismuth", () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> CRUSHED_BISMUTH = ITEMS.register("crushed_bismuth", () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> POWDERED_RAW_IRON = ITEMS.register("powdered_raw_iron", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> POWDERED_RAW_GOLD = ITEMS.register("powdered_raw_gold", () -> new Item(new Item.Properties()));
@@ -244,6 +256,7 @@ public class DefensiveItems {
     public static final DeferredItem<Item> POWDERED_RAW_TIN = ITEMS.register("powdered_raw_tin", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> POWDERED_RAW_NICKEL = ITEMS.register("powdered_raw_nickel", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> POWDERED_RAW_URANIUM = ITEMS.register("powdered_raw_uranium", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> POWDERED_RAW_BISMUTH = ITEMS.register("powdered_raw_bismuth", () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> KINETIC_MECHANISM = ITEMS.register("kinetic_mechanism", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> REDSTONE_MECHANISM = ITEMS.register("redstone_mechanism", () -> new Item(new Item.Properties()));
@@ -1327,6 +1340,8 @@ public class DefensiveItems {
     public static final DeferredItem<Item> STYRENE_BUCKET = ITEMS.register("styrene_bucket", () -> new BucketItem(DefensiveFluids.SOURCE_STYRENE.value(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
     public static final DeferredItem<Item> MOLTEN_SALT_BUCKET = ITEMS.register("molten_salt_bucket", () -> new BucketItem(DefensiveFluids.SOURCE_MOLTEN_SALT.value(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
     public static final DeferredItem<Item> MOLTEN_SODIUM_BUCKET = ITEMS.register("molten_sodium_bucket", () -> new BucketItem(DefensiveFluids.SOURCE_MOLTEN_SODIUM.value(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final DeferredItem<Item> IRRADIATED_WATER_BUCKET = ITEMS.register("irradiated_water_bucket", () -> new BucketItem(DefensiveFluids.SOURCE_IRRADIATED_WATER.value(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final DeferredItem<Item> SUPERHEATED_IRRADIATED_WATER_BUCKET = ITEMS.register("superheated_irradiated_water_bucket", () -> new BucketItem(DefensiveFluids.SOURCE_SUPERHEATED_IRRADIATED_WATER.value(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
     public static final DeferredItem<Item> HEXAMINE = ITEMS.register("hexamine", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> SULFUR = ITEMS.register("sulfur", () -> new Item(new Item.Properties()));

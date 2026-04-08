@@ -2,7 +2,7 @@ package net.aepherastudios.createdefensive.recipe.serializer;
 
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.aepherastudios.createdefensive.recipe.custom.FractionalDistillationRecipe;
+import net.aepherastudios.createdefensive.recipe.type.FractionalDistillationRecipe;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.world.item.crafting.RecipeSerializer;

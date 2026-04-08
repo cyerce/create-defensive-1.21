@@ -1,0 +1,22 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "createdefensive:crushed_bismuth"
+    }
+  ],
+  "processing_time": 250,
+  "results": [
+    {
+      "id": "createdefensive:powdered_raw_bismuth"
+    },
+    {
+      "chance": 0.5,
+      "id": "createdefensive:powdered_raw_bismuth"
+    },
+    {
+      "chance": 0.75,
+      "id": "create:experience_nugget"
+    }
+  ]
+}

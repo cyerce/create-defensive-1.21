@@ -1,5 +1,4 @@
 {
-  "replace": false,
   "values": [
     "createdefensive:aluminum_block",
     "createdefensive:silver_block",
@@ -19,6 +18,8 @@
     "createdefensive:raw_nickel_block",
     "createdefensive:uranium_block",
     "createdefensive:raw_uranium_block",
+    "createdefensive:bismuth_block",
+    "createdefensive:raw_bismuth_block",
     "createdefensive:bronze_block",
     "createdefensive:gunsteel_block",
     "createdefensive:invar_block",

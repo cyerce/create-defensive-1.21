@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "c:ingots/polonium"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "createdefensive:polonium_nugget"
+  }
+}

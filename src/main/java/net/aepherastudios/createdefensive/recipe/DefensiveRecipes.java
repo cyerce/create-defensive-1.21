@@ -1,12 +1,8 @@
 package net.aepherastudios.createdefensive.recipe;
 
 import net.aepherastudios.createdefensive.CreateDefensive;
-import net.aepherastudios.createdefensive.recipe.custom.CokingRecipe;
-import net.aepherastudios.createdefensive.recipe.custom.ElectrolysisRecipe;
-import net.aepherastudios.createdefensive.recipe.serializer.CokingRecipeSerializer;
-import net.aepherastudios.createdefensive.recipe.custom.FractionalDistillationRecipe;
-import net.aepherastudios.createdefensive.recipe.serializer.ElectrolysisRecipeSerializer;
-import net.aepherastudios.createdefensive.recipe.serializer.FractionalDistillationRecipeSerializer;
+import net.aepherastudios.createdefensive.recipe.serializer.*;
+import net.aepherastudios.createdefensive.recipe.type.*;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.crafting.RecipeSerializer;
@@ -42,6 +38,17 @@ public class DefensiveRecipes {
     public static final Supplier<RecipeType<ElectrolysisRecipe>> ELECTROLYSIS_TYPE =
             TYPES.register("electrolysis", () -> RecipeType.simple(CreateDefensive.asResource("electrolysis")));
 
+    public static final Supplier<RecipeSerializer<ReactorItemRecipe>> REACTOR_ITEM_RECIPE_SERIALIZER =
+            SERIALIZERS.register("reactor_item", ReactorItemRecipeSerializer::new);
+
+    public static final Supplier<RecipeType<ReactorItemRecipe>> REACTOR_ITEM_TYPE =
+            TYPES.register("reactor_item", () -> RecipeType.simple(CreateDefensive.asResource("reactor_item")));
+
+    public static final Supplier<RecipeSerializer<ReactorFluidRecipe>> REACTOR_FLUID_RECIPE_SERIALIZER =
+            SERIALIZERS.register("reactor_fluid", ReactorFluidRecipeSerializer::new);
+
+    public static final Supplier<RecipeType<ReactorFluidRecipe>> REACTOR_FLUID_TYPE =
+            TYPES.register("reactor_fluid", () -> RecipeType.simple(CreateDefensive.asResource("reactor_fluid")));
 
     public static void register(IEventBus modEventBus) {
         SERIALIZERS.register(modEventBus);

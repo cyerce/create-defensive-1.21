@@ -17,6 +17,8 @@
     "createdefensive:nickel_ore",
     "createdefensive:deepslate_nickel_ore",
     "createdefensive:uranium_ore",
-    "createdefensive:deepslate_uranium_ore"
+    "createdefensive:deepslate_uranium_ore",
+    "createdefensive:bismuth_ore",
+    "createdefensive:deepslate_bismuth_ore"
   ]
 }

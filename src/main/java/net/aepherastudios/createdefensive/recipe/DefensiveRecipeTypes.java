@@ -2,11 +2,10 @@ package net.aepherastudios.createdefensive.recipe;
 
 import com.mojang.serialization.Codec;
 import com.simibubi.create.AllTags;
-import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder;
 import com.simibubi.create.content.processing.recipe.StandardProcessingRecipe;
 import com.simibubi.create.foundation.recipe.IRecipeTypeInfo;
 import net.aepherastudios.createdefensive.CreateDefensive;
-import net.aepherastudios.createdefensive.recipe.custom.CentrifugeRecipe;
+import net.aepherastudios.createdefensive.recipe.type.CentrifugeRecipe;
 import net.createmod.catnip.lang.Lang;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;

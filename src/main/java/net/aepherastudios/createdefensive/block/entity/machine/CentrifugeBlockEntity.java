@@ -8,7 +8,7 @@ import com.simibubi.create.foundation.mixin.accessor.ItemStackHandlerAccessor;
 import com.simibubi.create.foundation.sound.SoundScapes;
 import net.aepherastudios.createdefensive.block.DefensiveBlockEntities;
 import net.aepherastudios.createdefensive.recipe.DefensiveRecipeTypes;
-import net.aepherastudios.createdefensive.recipe.custom.CentrifugeRecipe;
+import net.aepherastudios.createdefensive.recipe.type.CentrifugeRecipe;
 import net.createmod.catnip.math.VecHelper;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

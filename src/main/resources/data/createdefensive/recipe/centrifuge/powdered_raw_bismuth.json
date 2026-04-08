@@ -1,0 +1,29 @@
+{
+  "type": "createdefensive:centrifuge",
+  "ingredients": [
+    {
+      "item": "createdefensive:powdered_raw_bismuth"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdefensive:bismuth_nugget",
+      "count": 12
+    },
+    {
+      "id": "createdefensive:lead_nugget",
+      "count": 6
+    },
+    {
+      "id": "createdefensive:sulfur",
+      "count": 2,
+      "chance": 0.75
+    },
+    {
+      "id": "create:experience_nugget",
+      "count": 2,
+      "chance": 0.75
+    }
+  ],
+  "processing_time": 250
+}

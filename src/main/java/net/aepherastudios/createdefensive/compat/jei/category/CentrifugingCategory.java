@@ -8,7 +8,7 @@ import mezz.jei.api.gui.ingredient.IRecipeSlotsView;
 import mezz.jei.api.recipe.IFocusGroup;
 import mezz.jei.api.recipe.RecipeIngredientRole;
 import net.aepherastudios.createdefensive.compat.jei.animated_elements.AnimatedCentrifuge;
-import net.aepherastudios.createdefensive.recipe.custom.CentrifugeRecipe;
+import net.aepherastudios.createdefensive.recipe.type.CentrifugeRecipe;
 import net.minecraft.client.gui.GuiGraphics;
 
 import javax.annotation.ParametersAreNonnullByDefault;

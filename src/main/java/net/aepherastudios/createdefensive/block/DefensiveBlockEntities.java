@@ -63,7 +63,17 @@ public class DefensiveBlockEntities {
             BLOCK_ENTITIES.register("zinc_electrolysis_tank_be", () -> BlockEntityType.Builder.of(
                     ZincElectrolysisTankBlockEntity::new, DefensiveBlocks.ZINC_ELECTROLYSIS_TANK.get()).build(null));
 
+    public static final Supplier<BlockEntityType<ReactorBlockEntity>> REACTOR_BE =
+            BLOCK_ENTITIES.register("reactor_be", () -> BlockEntityType.Builder.of(
+                    ReactorBlockEntity::new, DefensiveBlocks.REACTOR.get()).build(null));
 
+    public static final Supplier<BlockEntityType<ReactorCoolantTankBlockEntity>> REACTOR_COOLANT_TANK_BE =
+            BLOCK_ENTITIES.register("reactor_coolant_tank_be", () -> BlockEntityType.Builder.of(
+                    ReactorCoolantTankBlockEntity::new, DefensiveBlocks.REACTOR_COOLANT_TANK.get()).build(null));
+
+    public static final Supplier<BlockEntityType<ReactorResourceTankBlockEntity>> REACTOR_RESOURCE_TANK_BE =
+            BLOCK_ENTITIES.register("reactor_resource_tank_be", () -> BlockEntityType.Builder.of(
+                    ReactorResourceTankBlockEntity::new, DefensiveBlocks.REACTOR_RESOURCE_TANK.get()).build(null));
 
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);

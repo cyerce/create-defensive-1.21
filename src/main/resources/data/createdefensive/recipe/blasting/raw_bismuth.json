@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 0.4,
+  "ingredient": {
+    "tag": "c:raw_materials/bismuth"
+  },
+  "result": {
+    "id": "createdefensive:bismuth_ingot"
+  }
+}

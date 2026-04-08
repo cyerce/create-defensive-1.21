@@ -2,6 +2,7 @@ package net.aepherastudios.createdefensive.screen;
 
 import net.aepherastudios.createdefensive.CreateDefensive;
 import net.aepherastudios.createdefensive.screen.menu.CokingOvenMenu;
+import net.aepherastudios.createdefensive.screen.menu.ReactorMenu;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.MenuType;
@@ -17,6 +18,10 @@ public class DefensiveMenuTypes {
 
     public static final DeferredHolder<MenuType<?>, MenuType<CokingOvenMenu>> COKING_OVEN_MENU =
             registerMenuType("coking_oven_menu", CokingOvenMenu::new);
+
+    public static final DeferredHolder<MenuType<?>, MenuType<ReactorMenu>> REACTOR_MENU =
+            registerMenuType("reactor_menu", ReactorMenu::new);
+
 
 
     private static <T extends AbstractContainerMenu>DeferredHolder<MenuType<?>, MenuType<T>> registerMenuType(String name,

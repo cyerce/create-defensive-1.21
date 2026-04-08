@@ -94,6 +94,20 @@ public class DefensiveCreativeModeTabs {
                         output.accept(DefensiveBlocks.RAW_URANIUM_BLOCK.get());
                         output.accept(DefensiveBlocks.URANIUM_BLOCK.get());
                         output.accept(DefensiveItems.URANIUM_NUGGET.get());
+                        output.accept(DefensiveItems.BISMUTH_INGOT.get());
+                        output.accept(DefensiveBlocks.BISMUTH_ORE.get());
+                        output.accept(DefensiveBlocks.DEEPSLATE_BISMUTH_ORE.get());
+                        output.accept(DefensiveItems.RAW_BISMUTH.get());
+                        output.accept(DefensiveItems.CRUSHED_BISMUTH.get());
+                        output.accept(DefensiveItems.POWDERED_RAW_BISMUTH.get());
+                        output.accept(DefensiveBlocks.RAW_BISMUTH_BLOCK.get());
+                        output.accept(DefensiveBlocks.BISMUTH_BLOCK.get());
+                        output.accept(DefensiveItems.BISMUTH_NUGGET.get());
+                        output.accept(DefensiveItems.POLONIUM_INGOT.get());
+                        output.accept(DefensiveBlocks.POLONIUM_BLOCK.get());
+                        output.accept(DefensiveItems.POLONIUM_NUGGET.get());
+
+
                         output.accept(DefensiveItems.POWDERED_URANIUM.get());
                         output.accept(DefensiveItems.FUEL_GRADE_URANIUM_INGOT.get());
                         output.accept(DefensiveItems.POWDERED_FUEL_GRADE_URANIUM.get());

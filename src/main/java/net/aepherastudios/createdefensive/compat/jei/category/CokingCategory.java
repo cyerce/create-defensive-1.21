@@ -14,7 +14,7 @@ import mezz.jei.api.recipe.category.IRecipeCategory;
 import net.aepherastudios.createdefensive.CreateDefensive;
 import net.aepherastudios.createdefensive.block.DefensiveBlocks;
 import net.aepherastudios.createdefensive.compat.jei.animated_elements.AnimatedCokingOven;
-import net.aepherastudios.createdefensive.recipe.custom.CokingRecipe;
+import net.aepherastudios.createdefensive.recipe.type.CokingRecipe;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;

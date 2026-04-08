@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "createdefensive:powdered_fuel_grade_uranium"
+      "item": "createdefensive:powdered_weapons_grade_uranium"
     },
     "$": {
       "item": "minecraft:paper"

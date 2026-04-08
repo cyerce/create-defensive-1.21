@@ -15,10 +15,10 @@ import net.aepherastudios.createdefensive.compat.jei.category.ElectrolysisCatego
 import net.aepherastudios.createdefensive.compat.jei.category.FractionalDistillationCategory;
 import net.aepherastudios.createdefensive.recipe.DefensiveRecipeTypes;
 import net.aepherastudios.createdefensive.recipe.DefensiveRecipes;
-import net.aepherastudios.createdefensive.recipe.custom.CentrifugeRecipe;
-import net.aepherastudios.createdefensive.recipe.custom.CokingRecipe;
-import net.aepherastudios.createdefensive.recipe.custom.ElectrolysisRecipe;
-import net.aepherastudios.createdefensive.recipe.custom.FractionalDistillationRecipe;
+import net.aepherastudios.createdefensive.recipe.type.CentrifugeRecipe;
+import net.aepherastudios.createdefensive.recipe.type.CokingRecipe;
+import net.aepherastudios.createdefensive.recipe.type.ElectrolysisRecipe;
+import net.aepherastudios.createdefensive.recipe.type.FractionalDistillationRecipe;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.resources.ResourceLocation;
