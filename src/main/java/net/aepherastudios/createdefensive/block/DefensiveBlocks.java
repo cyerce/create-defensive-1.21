@@ -193,7 +193,7 @@ public class DefensiveBlocks {
     public static final DeferredBlock<Block> COKING_OVEN = registerBlock("coking_oven",
             () -> new CokingOvenBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final DeferredBlock<Block> CENTRIFUGE = registerBlock("centrifuge",
-            () -> new CentrifugeBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+            () -> new CentrifugeBlock(BlockBehaviour.Properties.of().noOcclusion().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final DeferredBlock<Block> FRACTIONAL_STILL_CONTROLLER = registerBlock("fractional_still_controller",
             () -> new FractionalStillControllerBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final DeferredBlock<Block> FRACTIONAL_STILL_TANK = registerBlock("fractional_still_tank",

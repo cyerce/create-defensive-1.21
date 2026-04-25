@@ -140,6 +140,9 @@ public class DefensiveEvents {
         Entity aggressor = event.getSource().getEntity();
         if (aggressor != null){
             ItemStack weapon = aggressor.getWeaponItem();
+            if (weapon == null || weapon.isEmpty()) {
+                return;
+            }
             if ((weapon.getItem() instanceof ScytheItem) && (aggressor instanceof LivingEntity)){
                 ((LivingEntity) aggressor).heal(victim.getMaxHealth() / 5);
             }

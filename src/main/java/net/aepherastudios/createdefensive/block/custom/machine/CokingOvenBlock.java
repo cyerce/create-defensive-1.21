@@ -44,7 +44,7 @@ public class CokingOvenBlock extends BaseEntityBlock {
 
     public CokingOvenBlock(Properties pProperties) {
         super(pProperties);
-        this.registerDefaultState((BlockState)((BlockState)((BlockState)this.stateDefinition.any()).setValue(FACING, Direction.NORTH)).setValue(LIT, false));
+        this.registerDefaultState(((this.stateDefinition.any()).setValue(FACING, Direction.NORTH)).setValue(LIT, false));
     }
 
     @Override
@@ -53,15 +53,15 @@ public class CokingOvenBlock extends BaseEntityBlock {
     }
 
     public BlockState getStateForPlacement(BlockPlaceContext pContext) {
-        return (BlockState)this.defaultBlockState().setValue(FACING, pContext.getHorizontalDirection().getOpposite());
+        return this.defaultBlockState().setValue(FACING, pContext.getHorizontalDirection().getOpposite());
     }
 
     public BlockState rotate(BlockState pState, Rotation pRotation) {
-        return (BlockState)pState.setValue(FACING, pRotation.rotate((Direction)pState.getValue(FACING)));
+        return pState.setValue(FACING, pRotation.rotate(pState.getValue(FACING)));
     }
 
     public BlockState mirror(BlockState pState, Mirror pMirror) {
-        return pState.rotate(pMirror.getRotation((Direction)pState.getValue(FACING)));
+        return pState.rotate(pMirror.getRotation(pState.getValue(FACING)));
     }
 
     public int getLightValue(BlockState state) {

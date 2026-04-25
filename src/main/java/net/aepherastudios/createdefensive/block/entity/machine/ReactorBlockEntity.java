@@ -427,27 +427,17 @@ public class ReactorBlockEntity extends BlockEntity implements MenuProvider {
         inputCoolantTank.drain(10, IFluidHandler.FluidAction.EXECUTE);
         outputCoolantTank.fill(new FluidStack(DefensiveFluids.SOURCE_SUPERHEATED_IRRADIATED_WATER, 10), IFluidHandler.FluidAction.EXECUTE);
         setChanged();
+    }
 
+    public void moveCoolant(BlockPos leftPos){
         if (level.getBlockEntity(leftPos) instanceof ReactorCoolantTankBlockEntity extraTank){
-            if (inputCoolantTank.isEmpty() || extraTank.inputTank.getFluid().is(inputCoolantTank.getFluid().getFluid())){
-                if (extraTank.inputTank.getFluidAmount() >= 100){
-                    extraTank.inputTank.drain(100, IFluidHandler.FluidAction.EXECUTE);
-                    inputCoolantTank.fill(new FluidStack(extraTank.inputTank.getFluid().getFluid(), 100), IFluidHandler.FluidAction.EXECUTE);
-                }
-            }
-
-            if (outputCoolantTank.getFluidAmount() >= 100 && extraTank.outputTank.getFluidAmount() < extraTank.outputTank.getCapacity() - 100){
-                outputCoolantTank.drain(100, IFluidHandler.FluidAction.EXECUTE);
-                extraTank.outputTank.fill(new FluidStack(DefensiveFluids.SOURCE_SUPERHEATED_IRRADIATED_WATER, 100), IFluidHandler.FluidAction.EXECUTE);
-            }
+            inputCoolantTank.fill(new FluidStack(extraTank.inputTank.getFluid().getFluid(), 10), IFluidHandler.FluidAction.EXECUTE);
+            extraTank.inputTank.drain(10, IFluidHandler.FluidAction.EXECUTE);
+            setChanged();
         }
     }
 
     public void tick(Level level, BlockPos pos, BlockState state){
-        if (!isPowered() && !isMeltdown()) return;
-
-        setMeltdown(shouldMeltdown());
-        setActive(shouldActivate());
 
         Direction facing = state.getValue(BlockStateProperties.HORIZONTAL_FACING);
         Direction leftDir = switch (facing) {
@@ -475,6 +465,13 @@ public class ReactorBlockEntity extends BlockEntity implements MenuProvider {
         BlockPos leftPos = pos.relative(leftDir);
         BlockPos rightPos = pos.relative(rightDir);
         BlockPos backPos = pos.relative(backDir);
+
+        moveCoolant(leftPos);
+
+        if (!isPowered() && !isMeltdown()) return;
+
+        setMeltdown(shouldMeltdown());
+        setActive(shouldActivate());
 
         if (level.getGameTime() % 20 == 0){
             if (isMeltdown()){

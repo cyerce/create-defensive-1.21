@@ -1,7 +1,6 @@
 package net.aepherastudios.createdefensive;
 
 import com.simibubi.create.api.stress.BlockStressValues;
-import com.simibubi.create.compat.jei.category.MixingCategory;
 import dev.engine_room.flywheel.api.visual.BlockEntityVisual;
 import dev.engine_room.flywheel.api.visualization.BlockEntityVisualizer;
 import dev.engine_room.flywheel.api.visualization.VisualizationContext;
@@ -20,7 +19,6 @@ import net.aepherastudios.createdefensive.item.custom.gun.GunItem;
 import net.aepherastudios.createdefensive.particle.DefensiveParticles;
 import net.aepherastudios.createdefensive.particle.custom.MustardGasParticles;
 import net.aepherastudios.createdefensive.particle.custom.RadioactiveCloudParticles;
-import net.aepherastudios.createdefensive.recipe.DefensiveRecipes;
 import net.aepherastudios.createdefensive.screen.DefensiveMenuTypes;
 import net.aepherastudios.createdefensive.screen.screen.CokingOvenScreen;
 import net.aepherastudios.createdefensive.screen.screen.ReactorScreen;
@@ -34,7 +32,6 @@ import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.neoforged.neoforge.client.event.RegisterParticleProvidersEvent;
-import net.neoforged.neoforge.event.server.ServerStartedEvent;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 import net.neoforged.neoforge.network.registration.PayloadRegistrar;
 import org.slf4j.Logger;

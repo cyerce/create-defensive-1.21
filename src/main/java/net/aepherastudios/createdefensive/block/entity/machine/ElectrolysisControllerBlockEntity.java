@@ -26,7 +26,7 @@ public class ElectrolysisControllerBlockEntity extends BlockEntity implements IH
     public final FluidTank inputTank = new FluidTank(8000){
         @Override
         protected void onContentsChanged() {
-            super.onContentsChanged();
+            setChanged();
         }
     };
 

@@ -26,6 +26,7 @@ public class ReactorCoolantTankBlockEntity extends BlockEntity implements IHaveG
     public FluidTank inputTank = new FluidTank(16000){
         @Override
         protected void onContentsChanged() {
+            System.out.println("TANK LOGGER!\n" + inputTank.getFluid() + "\n" + inputTank.getFluidAmount());
             setChanged();
         }
 

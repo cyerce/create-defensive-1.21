@@ -5,9 +5,11 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
+import net.neoforged.neoforge.common.Tags;
 
 public class AsphaltBlock extends Block {
     public AsphaltBlock(Properties properties) {
@@ -20,7 +22,7 @@ public class AsphaltBlock extends Block {
             if (!living.hasEffect(MobEffects.MOVEMENT_SPEED)) {
                 living.addEffect(new MobEffectInstance(
                         MobEffects.MOVEMENT_SPEED,
-                        40,
+                        100,
                         0,
                         false,
                         false
