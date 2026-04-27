@@ -266,6 +266,12 @@ public class DefensiveEvents {
 
         event.registerBlockEntity(
                 Capabilities.FluidHandler.BLOCK,
+                DefensiveBlockEntities.GAS_TRAP_BE.get(),
+                (be, side) -> be.gasTank
+        );
+
+        event.registerBlockEntity(
+                Capabilities.FluidHandler.BLOCK,
                 DefensiveBlockEntities.REACTOR_RESOURCE_TANK_BE.get(),
                 (be, side) -> {
                     if (side == Direction.UP) return be.inputTank;

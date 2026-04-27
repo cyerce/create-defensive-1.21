@@ -60,6 +60,8 @@ public class EventBusRegisters {
         StyreneFluidType.register(modEventBus);
         MoltenSaltFluidType.register(modEventBus);
         MoltenSodiumFluidType.register(modEventBus);
+        IrradiatedWaterFluidType.register(modEventBus);
+        SuperheatedIrradiatedWaterFluidType.register(modEventBus);
 
 
         DefensiveFluids.register(modEventBus);

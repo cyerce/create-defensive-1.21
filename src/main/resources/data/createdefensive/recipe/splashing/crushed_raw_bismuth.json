@@ -2,7 +2,7 @@
   "type": "create:splashing",
   "ingredients": [
     {
-      "item": "createdefensive:crushed_raw_bismuth"
+      "item": "createdefensive:raw_bismuth"
     }
   ],
   "results": [

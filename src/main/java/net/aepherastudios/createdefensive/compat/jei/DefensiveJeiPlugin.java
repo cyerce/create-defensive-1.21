@@ -19,11 +19,12 @@ import net.aepherastudios.createdefensive.recipe.type.CentrifugeRecipe;
 import net.aepherastudios.createdefensive.recipe.type.CokingRecipe;
 import net.aepherastudios.createdefensive.recipe.type.ElectrolysisRecipe;
 import net.aepherastudios.createdefensive.recipe.type.FractionalDistillationRecipe;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.MinecraftServer;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.RecipeHolder;
+import net.minecraft.world.item.crafting.RecipeManager;
+import net.neoforged.neoforge.server.ServerLifecycleHooks;
 
 import java.util.List;
 
@@ -61,20 +62,29 @@ public class DefensiveJeiPlugin implements IModPlugin {
     @Override
     public void registerRecipes(IRecipeRegistration registration) {
         centrifugingCategory.registerRecipes(registration);
-        ClientLevel level = Minecraft.getInstance().level;
-        if (level != null) {
-            List<RecipeHolder<CokingRecipe>> recipes = level.getRecipeManager()
-                    .getAllRecipesFor(DefensiveRecipes.COKING_TYPE.get());
+        MinecraftServer server = ServerLifecycleHooks.getCurrentServer();
+        if (server != null) {
+            RecipeManager manager = server.getRecipeManager();
+
+            List<RecipeHolder<CokingRecipe>> recipes =
+                    manager.getAllRecipesFor(DefensiveRecipes.COKING_TYPE.get());
+
             registration.addRecipes(CokingCategory.RECIPE_TYPE, recipes);
         }
-        if (level != null) {
-            List<RecipeHolder<FractionalDistillationRecipe>> recipes = level.getRecipeManager()
-                    .getAllRecipesFor(DefensiveRecipes.FRACTIONAL_DISTILLATION_TYPE.get());
+        if (server != null) {
+            RecipeManager manager = server.getRecipeManager();
+
+            List<RecipeHolder<FractionalDistillationRecipe>> recipes =
+                    manager.getAllRecipesFor(DefensiveRecipes.FRACTIONAL_DISTILLATION_TYPE.get());
+
             registration.addRecipes(FractionalDistillationCategory.RECIPE_TYPE, recipes);
         }
-        if (level != null) {
-            List<RecipeHolder<ElectrolysisRecipe>> recipes = level.getRecipeManager()
-                    .getAllRecipesFor(DefensiveRecipes.ELECTROLYSIS_TYPE.get());
+        if (server != null) {
+            RecipeManager manager = server.getRecipeManager();
+
+            List<RecipeHolder<ElectrolysisRecipe>> recipes =
+                    manager.getAllRecipesFor(DefensiveRecipes.ELECTROLYSIS_TYPE.get());
+
             registration.addRecipes(ElectrolysisCategory.RECIPE_TYPE, recipes);
         }
     }

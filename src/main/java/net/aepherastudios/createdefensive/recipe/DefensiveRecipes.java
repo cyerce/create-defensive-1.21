@@ -50,6 +50,12 @@ public class DefensiveRecipes {
     public static final Supplier<RecipeType<ReactorFluidRecipe>> REACTOR_FLUID_TYPE =
             TYPES.register("reactor_fluid", () -> RecipeType.simple(CreateDefensive.asResource("reactor_fluid")));
 
+    public static final Supplier<RecipeSerializer<ChemicalReactionRecipe>> CHEMICAL_REACTION_SERIALIZER =
+            SERIALIZERS.register("chemical_reaction", ChemicalReactionRecipeSerializer::new);
+
+    public static final Supplier<RecipeType<ChemicalReactionRecipe>> CHEMICAL_REACTION_TYPE =
+            TYPES.register("chemical_reaction", () -> RecipeType.simple(CreateDefensive.asResource("chemical_reaction")));
+
     public static void register(IEventBus modEventBus) {
         SERIALIZERS.register(modEventBus);
         TYPES.register(modEventBus);
